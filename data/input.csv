@@ -1,0 +1,584 @@
+﻿model
+Dell PowerEdge R650
+CISCO NEXUS 5548UP
+Hewlett Packard ProLiant DL360 Gen9
+Dark Trace DCIP-M
+F5 Big-ip 5050 Switch
+Dell PowerEdge R640
+JUNIPER IDP8200
+Intel True Scale Fabric 12200 Switch
+Cisco Catalyst 4948
+Cisco Nexus 93180YC-FX
+Raritan DOMINION SX32
+CISCO ASA 5585-X
+Cisco WS-C3750-48T-L
+CISCO NEXUS 2248TP GE
+Cisco Nexus 2248TP-E
+Cisco UCS C220 M5
+Dell PowerEdge R730xd
+Hewlett Packard ProLiant DL325 Gen10
+Hewlett Packard ProLiant DL360p Gen8
+Opengear CM7148-2-DAC
+Raritan KX2-232
+Mellanox SN3700C
+Cisco ASR 1006
+Cisco Nexus 9336C-FX2
+Cisco Catalyst 2950g-48
+Palo Alto Networks PA-3430
+Panduit Hawk-I
+Comtrol Devicemaster Pro 8-Port
+Hewlett Packard Apollo 4200 G9
+Oracle Sun Fire X4270 M2
+Hewlett Packard ProLiant DL380 Gen9
+HP Proliant Dl360 G10
+Adva FSP 3000R7
+Nortel Media Gateway 3200
+Cisco UCS S3260
+Cisco Nexus 93108TC-FX Switch
+HEWLETT PACKARD PROLIANT DL380 G7
+Arista 7280SR-48C6
+Cisco Nexus 93180YC-FX3
+Cisco 4331 Integrated Services Routers
+Appear TV XC5100
+Dell EMC Unity XT 680F DPE
+Cisco Nexus 93180YC-EX
+Alcatel 7750 SR-12
+Hewlett Packard ProLiant DL360 Gen11
+Hewlett Packard ProLiant DL360 Gen10
+Cisco Catalyst C9300-48P
+SUN SPARC T4-1
+CISCO ASA 5520
+Cisco NCS 5508
+Cisco MDS 9148
+Sevone DNC 1000HF
+Sinetica Hawk-I
+Qnap QNAP TS-EC2480U-RP Turbo NAS
+Cisco 7200 VXR
+CISCO ASA 5515-x
+ALCATEL LUCENT 1830 PSS-32
+Cisco MDS 9396S 16G Multilayer Fabric Switch
+EMC DS60
+SINETICA ZAEI-01
+Cisco 4321 Integrated Services Routers
+IBM FlashSystem FS9500
+Cisco As5400
+MCAFEE DLP 4400
+Cisco Catalyst 3750x-48t-s
+Cisco Nexus 5596UP
+CISCO NEXUS 7010
+Cisco Nexus 9348GC-FXP
+Cisco 2821
+MRV 4000T
+Procera Procera Server
+Cisco Nexus 2348TQ
+AlgoSec 2040
+PALO ALTO NETWORKS PA-5060
+CISCO ASA 5520 - ASA5520-K8 V2
+Cisco 7609-s
+Hewlett Packard ProLiant DL560 Gen8
+Cisco 887
+GIGAMON SYSTEMS GIGAVUE-HB1
+PALO ALTO NETWORKS M-100
+CISCO CATALYST 4507R
+Dell PowerEdge R660
+HEWLETT PACKARD SANSWITCH 8/24
+Cisco ASA 5545-X
+Hewlett Packard ProLiant DL380p Gen8
+Cisco ASR 1002-X
+Cisco As5350xm
+Lantronix SECURELINX SLC8032
+Cisco Catalyst 4507R+E
+Dell PowerEdge R740xd
+Palo Alto Networks PA-5050
+Cisco C6807-XL
+Cisco 9200L-48T-4G
+Cisco ASR 9904
+EATON APS6-300
+Ruckus Zone Director 3000
+IMPERVA SECURESPHERE X2500
+Hewlett Packard ProLiant DL560 Gen10
+F5 BIGIP I 5600
+CISCO NEXUS 7018
+VMWare Edge 3810
+Juniper Nsmx Press Series Ii
+Cisco UCS C220 M4
+Arista 7010T-48 Gigabit Ethernet Data Center Switches
+Alcatel 7302 ISAM
+Palo Alto Networks M-500
+Dell SonicWALL SuperMassive 9400
+SUN SPARC T3-1
+QUANTEL SQ SERVER
+Cisco C9300-24P
+Cisco Nexus 9504
+EVS XTAccess XTA1-4301D
+Cisco CISCO NCS-55A1-24H
+Cisco ASR-9903
+F5 BIGIP I 4800
+Dell PowerEdge R6515
+Cisco ASR-9902
+Celestica Redstone D2020
+Sanmina BSP-26
+A10 Networks Thunder 4440(S) ADC
+Palo Alto Networks PA-5220
+Hewlett Packard 3PAR StoreServ 20000
+CISCO CATALYST 4948-E
+Cisco Nexus 9364C
+Cisco ASR 1001
+EMC FS25
+CISCO NEXUS 2232PP
+Dell RSA SecurID Appliance 350
+Cisco 2801
+Raritan DOMINION KX2-232
+SevOne PAS 200k
+HP Storageworks MSA 2060
+F5 VIPRION C2400
+Lantronix SLC32
+Cisco ASA 5525-X
+Cisco Nexus 3048TP
+Cisco MDS 9710
+Qnap QNAP REXP-1600U-RP
+Cisco ASR-9001
+CISCO CATALYST 2960-48TC-L
+Cisco SNS-3655-K9
+CISCO ASR 9010
+HEWLETT PACKARD PROLIANT DL580 G7
+22 DOMINION SX16
+Lantronix SLC8032
+Palo Alto Networks PA-5450
+EMC Isilon X410
+Hewlett Packard ProLiant DL380 Gen10
+Oracle 6350
+HEWLETT PACKARD PROLIANT DL380 G6
+Cisco WS-C3650-24PD
+Cisco UCS C220 M3 High-Density Rack Server Large Form Factor
+Super Micro CSE-216-X09
+Cisco Nexus 92348GC-X
+Lantronix SECURELINX SLC32
+Delta Networks AK7448
+Palo Alto Networks PA-3220
+HP ProLiant DL360 Gen11
+Dell EMC ME484 Expansion Enclosure
+Cisco Nexus C9336C-FX2
+Veritas NetBackup 5250
+Cisco Catalyst 4900m
+Dell PowerEdge R750
+Cisco Catalyst 2960 L Series
+Cisco Nexus 9372PX
+Alcatel Lucent 1626LM
+Alcatel Lucent 7210 SAS-X
+Cisco WS-C3650-48P
+Citrix NetScaler MPX 9100
+Arista 7280CR3
+Oracle Fire X4100 Server
+Oracle Acme Packet 4600
+Cisco Nexus 2232TM
+NetOptics Regeneration Tap In-Line
+F5 BIG-IP r10900 Series
+Arista 7280CR2
+Hewlett Packard HP ProLiant DL360 Gen11
+HEWLETT PACKARD STORAGEWORKS
+Palo Alto Networks PA-3420
+F5 VIPRION 2400
+Cisco C9800-40-K9
+Procera PacketLogic PL8840
+Cisco As5300
+Hewlett Packard Apollo 4510 G10
+Cisco 8510
+Radware Defensepro 20
+Tektronix Medius Manager
+Cisco 1921/K9
+Dallmeier S Matrix
+Brocade 6510
+Palo Alto Networks PA-5420
+Cisco C9300-24S-E
+HEWLETT PACKARD MSA2000
+Hewlett Packard MSA P2000 G3
+Sevone DNC 100
+Harmonic Electra XOS
+Panduit Eagle-I
+Super Micro CSE-216-X08
+US Robotics 56K Modem
+Bluecoat Systems Director
+Hewlett Packard 3PAR StoreServ 8000
+Opengear IM7200 Infrastructure Manager
+EMC Isilon X200
+Hewlett Packard Apollo 4510
+Oracle Sun X4-2L
+HEWLETT PACKARD PROLIANT DL360p GEN 10
+Symantec NetBackUp 5230 - Shelf
+CISCO ASA 5550
+CISCO NEXUS 7009
+Cisco Nexus9000 C9336C-FX2
+Cisco 887va
+Cisco 7606
+Gigamon Systems Gigavue-TA25
+Cisco N3K-C31108PC-V
+SUN ENTERPRISE M3000
+Tibco ST 2025-SAN
+CISCO 2901
+CISCO CATALYST 6513
+Adva Fsp 150ccf
+Dark Trace DCIP-Z
+Palo Alto Networks PA-3410
+Cisco CATALYST 6509-E
+Cisco Nexus 93108TC-FX
+Mediakind G9-1057
+EMC DD9900
+Ateme Titan
+Cisco Nexus 93180YC-FX V06
+Symantec NetBackup 5230
+Opengear IM7248-2-DAC-LMV-US
+Cisco Nexus 93108TC-EX
+Palo Alto Networks PA-5410
+Alcatel 1830 PSS-32
+Polycom DMA 7000
+Arista 7050SX3-96YC8 - switch - 96 ports
+Cisco 4331 ISR Router
+Fujitsu M10-1
+Cisco Catalyst 4948E
+Palo Alto Networks PA-5260
+CISCO MDS 9134
+SUN STOREDGE D1000
+CISCO ACS SE
+CISCO ASA 5510
+Ruckus (SCG) 200
+Cisco Catalyst 3550-24
+IBM 3576-E9U
+Dell PowerEdge R6715
+CIPHERTRUST IRONMAIL
+HEWLETT PACKARD MSA1000
+Veritas Netbackup HB-1235
+Cisco Nexus 93240YC-FX2
+Cisco 5508
+Geist Concentrator
+Opengear IM4216 Infrastructure Manager
+Brix Networks 2500
+Palo Alto Networks PA-3060
+THALES DATACRYPTOR 2000
+HEWLETT PACKARD PROLIANT DL560P GEN8
+Cisco As5400xm
+Cisco Nexus 9508
+Tektronix Powerprobe 6000
+Netapp SG5712
+Cisco 7604 Chassis
+Adva FSP 3000
+Cisco ASA 5516-X
+Cisco Catalyst 2960-48tc-s Switch
+Cisco ASR-9010
+IBM Storwize V7000 Controller
+IBM Rackswitch G8052
+Sun Storage Tek 2500 Array
+Veritas unknown device
+Super Micro CSE-216-X10
+Dark Trace DCIP-X2
+HP Proliant Dl365 G11
+Lantronix EDS16PR
+Netapp DS224C
+Dark Trace DCIP-XA
+Palo Alto Networks PA-5430
+Sencore DMG 4200
+Cisco ASR 9906
+Tektronix Sentry
+Cisco ME-3600X-24TS-M
+Cisco ASR 9922
+Cisco WS-C3750X-48T-L
+IBM Storwize V7000 Expansion
+F5 Big-IP 5250v Switch
+IBM 3576-L5B
+Hewlett Packard D3700
+F5 Big-IP 4200v
+Vss Monitoring V24 Expert distributed Tap
+Dell EMC Unity XT DAE
+Cisco SNS-3615-K9
+AlgoSec 2320
+Cisco SNS-3695-K9
+Cisco Catalyst 2960G-24TC-L
+Hewlett Packard Apollo 4200 G10
+DANTECH DA441/8
+CISCO CATALYST 6509
+Cisco Nexus 93600 CD-GX
+SUN ENTERPRISE T5120
+Cisco 1121 Secure Access Control System
+NOKIA 7750 SR-2s
+Hewlett Packard SN6000B Fibre Channel Switch
+Super Micro CSE-216-X10 - 200-0025-01
+Sun Storagetek 2540
+Hewlett Packard Storageworks 8/24  San Switch
+Opengear IM 4216 Infrastructure Manager
+Veritas NetBackup 5340
+Cisco 877
+Cisco N9K-C93240YC-FX2
+Veritas NETBACKUP 5350 EXPANSION SHELF
+Palo Alto Networks PA-5020
+GIGAMON SYSTEMS GIGAVUE-2404
+GIGAMON SYSTEMS GIGAVUE-212
+Hewlett Packard Storageworks MSA 2040
+Netapp BES-53248 Cluster Switch
+SUN L100
+Hewlett Packard P2000 G3
+Cisco DNA Center Appliance
+Cisco 2901 Integrated Services Router
+IBM Storwize V3700 Expansion
+Genband G9
+Cisco Nexus C93240YC-FX2
+Raritan DOMINION KX2-216
+CISCO MDS 9513
+I - BOX E-SQUARED
+Cisco 1120 Connected Grid Router
+Unknown Unknown
+HEWLETT PACKARD LEFTHAND P4500
+IBM 8670-31X
+THALES BACSTEL-IP
+RSA RSA-80010510
+Juniper Strm2500
+Huawei Osta 2.0
+PALO ALTO NETWORKS PA-500
+F5 BIG-IP 4000 Series
+Senetas CN6010 SafeNet
+Oracle Acme Packet 3820
+Accton Technology AS7816-64X
+Cisco Catalyst C9407R
+LOGLOGIC ST 2025-SAN
+F5 VELOS CX410
+Cisco Catalyst 6509-V-E
+Cisco Catalyst 2960 - L Series
+Cisco Catalyst 2960+24TC-S
+Dell EMC Isilon H500
+QUANTEL Video Server
+Dell EMC Isilon H400
+Palo Alto Networks PA-3050
+Alcatel Lucent Multiplexer 1642MC
+Polycom RPCS 1830
+Palo Alto Networks ION 1200-S-C5G-WW
+Brix Networks 3500T
+Hewlett Packard AF621A
+Pure Storage FA-X20R3
+Arista CCS-720XP-48Y6
+Nokia Celestica DX010
+Quanta Computer T1048-LB9A
+Hewlett Packard AF621A - AF621A V2
+SUN ENTERPRISE T5220
+CISCO NEXUS 5020
+Oracle ZFS Storage ZS3-2
+Palo Alto Networks PA-3020
+SYNETICA HAWK-I
+HEWLETT PACKARD PROLIANT DL380P GEN10
+Palo Alto Networks Ion 9000
+Palo Alto Networks PA-5250
+EMC DS6520-B
+Sevone HSA 200k
+Cisco ASR 1002
+HP Proliant Dl360 G6
+Cisco 3560x-24t
+OPNET TECHNOLOGIES AL DIRECTOR 100
+Alcatel 7750 SR-1e
+HEWLETT PACKARD PROLIANT DL380 G5
+F5 BIGIP I 5800
+Hewlett Packard D2600
+SUN T5220
+CISCO ASA 5540
+Nokia 1830 PSS-16ii
+Cisco Nexus 2224TP GE Fabric Extender
+HP Proliant DL385 G10
+Thales Nshield NH2033
+Cisco 4500-X Series
+Hewlett Packard M6710
+Cisco Nexus 7000 9-slot Switch
+Veritas NetBackup 5250 Expansion
+Safenet Luna SA HSM
+POLYCOM CMA 4000
+TP Link TL-MC1400
+Alcatel Lucent OS6250-8M
+Cisco Nexus 9348GC-FXP Chassis
+NetApp FAS2020 Storage Controller
+Veritas NetBackup 5350
+Cisco CATALYST 4500-X
+Cisco 867VAE-K9
+Cisco CATALYST 2960-24TC-L
+Hewlett Packard ProLiant DL580 Gen8
+Checkpoint Checkpoint
+Cisco ASA 5555-X
+HP HPE ProLiant DL360 Gen10 Server
+Cisco Catalyst C9500-24Q
+Juniper IDP800
+Raritan CommandCenter - CC-SG-V1
+CISCO CATALYST 4507R-E
+Cisco UCS C220 M7
+Brix Networks NTP
+IBM System Storage Exp2524
+Cisco APIC L3
+HP Proliant DL380 G10
+Arista DCS 7804CH
+Hewlett Packard ProLiant DL380 Gen8
+Infoblox Trinzic 1526
+Dell EMC Unity Array XT 480F
+IBM V3700
+Infoblox Trinzic 1425
+Dell Networking Z9100-ON Multi-rate Fabric Switch
+Thales Nshield NH2054
+F5 VIPRION
+Hewlett Packard ProLiant DL560 Gen9
+F5 BIG-IP 6900
+Cisco 
+EMC DS-6505B
+BLUECOAT SG810-B
+F5 BIG-IP LTM 3600
+SUN T5120
+Cisco ASR-9901
+Juniper IDP 8200
+Palo Alto Networks PA-3440
+Cisco FPR4100
+G&D RACK CONSOLE 17
+Infoblox Trinzic 2225
+Qnap QNAP 1U
+HP Proliant Dl385 G7
+Cisco Firepower 4145
+F5 BIGIP 2800
+Mellanox SX6790
+Cisco 9200L-24T-4G
+Netgear ReadyNAS 1100
+Nortel Contivity 600
+QUANTEL 113
+Raritan DOMINION SX16
+Cisco Catalyst C9200-48T
+Lantronix SLC8
+Lucent Stinger Fs+
+Arista 7280SR2-48YC6
+Cisco 5520 Wireless Controller
+Cisco Nexus 2232PP 10GE
+Cisco Catalyst C9300L-48
+Dell PowerEdge R650xs
+POLYCOM ACCESS DIRECTOR
+Rubrik R6408S
+NETWORK APPLIANCE DS4243
+CISCO CATALYST 4500-X - WS-C4500X-32SFP PLUS
+HP ProLiant DL360 Gen10
+Cisco Nexus 7000 10-Slot Switch
+AXON SFR18
+Cisco UCS-FI-6454
+Sevone PAS 200k M2
+Cisco 2811
+Cisco 4431
+Arista 7280SR3-48YC6
+Appear TV X20
+Cisco ASR-9000V-AC
+Thales Nshield NH2075
+Cisco Ace 4710
+HP Hewlett-Packard Apollo 4510 Gen 10
+Raritan DOMINION KX432
+Cisco 7201 Router
+HP StorageWorks Msa70
+Alcatel Lucent 1678MCC
+Lantronix SECURELINX SLC32 - SLC03212N-02
+LOGLOGIC LX 1025
+Arbor Peakflow
+Super Micro CSE-216-X10 - 200 -0025-01
+POLYCOM RMX 2000
+Imperva Secure Sphere X8520
+Triveni Triveni StreamScope MT-60-01U
+Thales NH2033
+Fortinet FortiManager 200F
+Cisco Nexus 9372TX-E
+Cisco 5508 Wireless Lan Controller
+Palo Alto Networks PA-820
+SUN STOREDGE S1
+Cisco MGMT-CWA-ASWT-03
+Citrix NetScaler SDX 15000
+Synology SA3400
+Qnap QNAP 2U
+Elemental Technologies Stream 200 Series
+Adva FSP 150CM
+Hewlett Packard 3PAR StoreServ 7400
+Hewlett Packard ProLiant DL360 Gen8
+Cisco UCS C225 M6
+IBM Storwize v7000
+CLEVERSAFE MANAGER 2100
+Raritan Dominion Sx 32
+Wti Netreach Cms-16
+Cisco IOS XRV9000-APLN-ROUT
+Cisco -
+Alcatel Lucent 7210 SAS-S
+NetApp DS4243
+Tufin T-1000
+Cisco Nexus 9336PQ
+F5 Big-ip 5000 Switch
+CISCO CATALYST 4948 - WS-C4948
+Cisco 4451-X Integrated Services
+BOMGAR B300
+Fortinet FortiAnalyzer 200f
+Cisco MDS 9718 Multilayer Director
+Opengear OM2224-24E-L-UK
+QUANTEL 116-7
+Netapp AFF A400
+Dell EMC ME4084 Storage Array
+Ixia Optixia XM2
+SUN SUNFIRE T2000
+Cisco N540X-ACC-SYS
+EMC DD9400
+Nokia Celestica DX010-B2F
+Fortinet FortiGate 400F
+Arista 7280CR2A-60
+RSA SecurID Appliance 250
+Cisco ASR 1001-X
+Google Transfer Appliance
+Axis PoE Midspan 16 port
+Dell EMC Unity Array XT 380F
+Cisco Secure Acs 1113-k9
+DALLMEIER M-DMS4
+Palo Alto Networks PA-850
+Lantronix SLC48
+Triveni StreamScope MT-60
+Alcatel Lucent OS6250-24M
+SUN STOREDGE T3
+Comtrol Rocketport USB Serial Hub III 8-Port
+Netapp Fas8300
+Dell EMC DD9800
+NetApp FAS2240-4
+Lantronix cm4.SYCWR
+D LINK DES-1008D
+Lantronix CM11.YCWR
+Checkpoint CPAP-SG16200-PLUS-SNBT
+Cisco ASR 9000 Series
+CISCO NEXUS 5548UP - N5K-C5548UP-FA REVERSED
+CIPHERTRUST IRONMAIL E3000E
+Transmode TM3000/II
+SUN ENTERPRISE T5240
+Sandvine Pts22000
+CISCO CATALYST 6506
+NETWORK APPLIANCE FAS2020
+Cisco MDS 9148S 16G Multilayer Fabric Switch
+QUALYS QGSA-2120-D2
+Sun Storagetek DAT 72 External Tape Drive
+Cisco ASA 4145 FIREPOWER
+SEAGATE RealStor 5005
+Lantronix CM5.SYCWR
+HP Tft7600
+Keymile MileGate 2500
+Symmetricom Timeprovider 1000
+AudioCodes Mediakind
+Alcatel 7750 SR-7
+VDCP VDCP
+PROTEGO NETWORKS MARS-50
+CISCO GSS-4490-K9
+Arista 7150S-24
+Adva FSP 3000R7-SH9HU
+Dell EMC Unity 300
+HP ProLiant DL360 G5
+NETWORK APPLIANCE FAS2240-4
+HP 3PAR StoreServ 8400 4-node Storage Base
+Cisco 3845
+Cisco Catalyst C9200 L 48
+Lantronix CM3.sycwr
+Sun Storedge 3320 SCSI
+Netapp DS460C Disk Array Enclosure
+Raritan COMMANDCENTER
+Cisco WLC 3504
+Cisco Catalyst 4507r+e Switch
+CISCO CATALYST 2960 Plus Series SI
+Dell Storage NX3240
+MCAFEE FS850
+Alcatel Lucent 1662SMC
+Cisco 4500
+Dell (for Supermicro) 600GB SAS 12Gb -10Krpm h-swap -2.5SAS 12Gbs
+Cisco ASA Aip Ssm-10
+Cisco ASA Aip Ssm-20
