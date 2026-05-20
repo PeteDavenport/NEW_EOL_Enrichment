@@ -1,17 +1,17 @@
 manufacturer,source_url,source_type,confidence
 Dell,https://www.dell.com/support/home/en-us,manufacturer,0.99
-Dell,https://en.wikipedia.org/wiki/Dell,third_party,0.80
+Dell,https://www.parkplacetechnologies.com/supported-products/,third_party,0.80
 Dell EMC,https://www.dell.com/support/home/en-us,manufacturer,0.99
 Cisco,https://www.cisco.com/c/en/us/products/index.html,manufacturer,0.99
-Cisco,https://en.wikipedia.org/wiki/Cisco_Systems,third_party,0.80
+Cisco,https://www.parkplacetechnologies.com/supported-products/,third_party,0.80
 Hewlett Packard,https://support.hpe.com/hpesc/public/home,manufacturer,0.99
-Hewlett Packard,https://en.wikipedia.org/wiki/Hewlett-Packard,third_party,0.80
+Hewlett Packard,https://www.parkplacetechnologies.com/supported-products/,third_party,0.80
 F5,https://www.f5.com/products,manufacturer,0.99
-F5,https://en.wikipedia.org/wiki/F5_Networks,third_party,0.80
+F5,https://www.parkplacetechnologies.com/supported-products/,third_party,0.80
 Juniper,https://www.juniper.net/us/en/products-services/,manufacturer,0.99
-Juniper,https://en.wikipedia.org/wiki/Juniper_Networks,third_party,0.80
+Juniper,https://www.parkplacetechnologies.com/supported-products/,third_party,0.80
 Palo Alto Networks,https://www.paloaltonetworks.com/network-security,manufacturer,0.99
-Palo Alto Networks,https://en.wikipedia.org/wiki/Palo_Alto_Networks,third_party,0.80
+Palo Alto Networks,https://www.parkplacetechnologies.com/supported-products/,third_party,0.80
 Intel,https://www.intel.com/content/www/us/en/products/networking/data-center-products.html,manufacturer,0.99
 Arista,https://www.arista.com/en/products,manufacturer,0.99
 Qnap,https://www.qnap.com/en-us/,manufacturer,0.99
@@ -24,7 +24,7 @@ Mellanox,https://www.nvidia.com/en-us/networking/,manufacturer,0.99
 Raritan,https://www.raritan.com/products,manufacturer,0.99
 Opengear,https://opengear.com/products,manufacturer,0.99
 Panduit,https://www.panduit.com/en/home.html,manufacturer,0.99
-Brocade,https://en.wikipedia.org/wiki/Brocade_Communications_Systems,third_party,0.75
+Brocade,https://www.parkplacetechnologies.com/supported-products/,third_party,0.75
 Nortel,https://en.wikipedia.org/wiki/Nortel,third_party,0.75
 Gigamon,https://www.gigamon.com/products,manufacturer,0.99
 VMWare,https://www.vmware.com/products.html,manufacturer,0.99
