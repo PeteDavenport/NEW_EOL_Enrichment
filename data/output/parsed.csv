@@ -26,17 +26,17 @@ AlgoSec 2320,algosec 2320,UNKNOWN,algosec,2320,LOCAL_RULESET,algosec,0.55,SUGGES
 Appear TV X20,appear tv x20,UNKNOWN,appear tv x20,UNKNOWN,LOCAL_RULESET,appear tv x20,0.35,NO_CHANGE,CONFIDENCE_LOW,False,Appear TV X20
 Appear TV XC5100,appear tv xc5100,UNKNOWN,appear tv xc5100,UNKNOWN,LOCAL_RULESET,appear tv xc5100,0.35,NO_CHANGE,CONFIDENCE_LOW,False,Appear TV XC5100
 Arbor Peakflow,arbor peakflow,UNKNOWN,arbor peakflow,UNKNOWN,LOCAL_RULESET,arbor peakflow,0.35,NO_CHANGE,CONFIDENCE_LOW,False,Arbor Peakflow
-Arista 7010T-48 Gigabit Ethernet Data Center Switches,arista 7010t-48 gigabit ethernet data center switches,Arista,gigabit ethernet switches,7010T-48,LOCAL_RULESET,gigabit ethernet switches,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,gigabit ethernet switches
-Arista 7050SX3-96YC8 - switch - 96 ports,arista 7050sx3-96yc8 - switch - 96 ports,Arista,7050sx3-96yc8 - - 96 ports,UNKNOWN,LOCAL_RULESET,7050sx3-96yc8 - - 96 ports,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Arista 7050SX3-96YC8 - switch - 96 ports
-Arista 7150S-24,arista 7150s-24,Arista,UNKNOWN,7150S-24,LOCAL_RULESET,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Arista 7150S-24
-Arista 7280CR2,arista 7280cr2,Arista,7280cr2,UNKNOWN,LOCAL_RULESET,7280cr2,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Arista 7280CR2
-Arista 7280CR2A-60,arista 7280cr2a-60,Arista,7280cr2a-60,UNKNOWN,LOCAL_RULESET,7280cr2a-60,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Arista 7280CR2A-60
-Arista 7280CR3,arista 7280cr3,Arista,7280cr3,UNKNOWN,LOCAL_RULESET,7280cr3,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Arista 7280CR3
-Arista 7280SR-48C6,arista 7280sr-48c6,Arista,7280sr-48c6,UNKNOWN,LOCAL_RULESET,7280sr-48c6,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Arista 7280SR-48C6
-Arista 7280SR2-48YC6,arista 7280sr2-48yc6,Arista,7280sr2-48yc6,UNKNOWN,LOCAL_RULESET,7280sr2-48yc6,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Arista 7280SR2-48YC6
-Arista 7280SR3-48YC6,arista 7280sr3-48yc6,Arista,7280sr3-48yc6,UNKNOWN,LOCAL_RULESET,7280sr3-48yc6,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Arista 7280SR3-48YC6
-Arista CCS-720XP-48Y6,arista ccs-720xp-48y6,Arista,ccs-720xp-48y6,UNKNOWN,LOCAL_RULESET,ccs-720xp-48y6,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Arista CCS-720XP-48Y6
-Arista DCS 7804CH,arista dcs 7804ch,Arista,dcs 7804ch,UNKNOWN,LOCAL_RULESET,dcs 7804ch,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Arista DCS 7804CH
+Arista 7010T-48 Gigabit Ethernet Data Center Switches,arista 7010t-48 gigabit ethernet data center switches,Arista,gigabit ethernet switches,7010T-48,https://www.arista.com/en/products,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,gigabit ethernet switches
+Arista 7050SX3-96YC8 - switch - 96 ports,arista 7050sx3-96yc8 - switch - 96 ports,Arista,7050sx3-96yc8 - - 96 ports,UNKNOWN,https://www.arista.com/en/products,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Arista 7050SX3-96YC8 - switch - 96 ports
+Arista 7150S-24,arista 7150s-24,Arista,UNKNOWN,7150S-24,https://www.arista.com/en/products,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Arista 7150S-24
+Arista 7280CR2,arista 7280cr2,Arista,7280cr2,UNKNOWN,https://www.arista.com/en/products,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Arista 7280CR2
+Arista 7280CR2A-60,arista 7280cr2a-60,Arista,7280cr2a-60,UNKNOWN,https://www.arista.com/en/products,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Arista 7280CR2A-60
+Arista 7280CR3,arista 7280cr3,Arista,7280cr3,UNKNOWN,https://www.arista.com/en/products,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Arista 7280CR3
+Arista 7280SR-48C6,arista 7280sr-48c6,Arista,7280sr-48c6,UNKNOWN,https://www.arista.com/en/products,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Arista 7280SR-48C6
+Arista 7280SR2-48YC6,arista 7280sr2-48yc6,Arista,7280sr2-48yc6,UNKNOWN,https://www.arista.com/en/products,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Arista 7280SR2-48YC6
+Arista 7280SR3-48YC6,arista 7280sr3-48yc6,Arista,7280sr3-48yc6,UNKNOWN,https://www.arista.com/en/products,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Arista 7280SR3-48YC6
+Arista CCS-720XP-48Y6,arista ccs-720xp-48y6,Arista,ccs-720xp-48y6,UNKNOWN,https://www.arista.com/en/products,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Arista CCS-720XP-48Y6
+Arista DCS 7804CH,arista dcs 7804ch,Arista,dcs 7804ch,UNKNOWN,https://www.arista.com/en/products,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Arista DCS 7804CH
 Ateme Titan,ateme titan,UNKNOWN,ateme titan,UNKNOWN,LOCAL_RULESET,ateme titan,0.35,NO_CHANGE,CONFIDENCE_LOW,False,Ateme Titan
 AudioCodes Mediakind,audiocodes mediakind,UNKNOWN,audiocodes mediakind,UNKNOWN,LOCAL_RULESET,audiocodes mediakind,0.35,NO_CHANGE,CONFIDENCE_LOW,False,AudioCodes Mediakind
 Axis PoE Midspan 16 port,axis poe midspan 16 port,UNKNOWN,axis poe midspan 16 port,UNKNOWN,LOCAL_RULESET,axis poe midspan 16 port,0.35,NO_CHANGE,CONFIDENCE_LOW,False,Axis PoE Midspan 16 port
@@ -47,194 +47,194 @@ BOMGAR B300,bomgar b300,UNKNOWN,bomgar b300,UNKNOWN,LOCAL_RULESET,bomgar b300,0.
 Brix Networks 2500,brix networks 2500,UNKNOWN,brix networks,2500,LOCAL_RULESET,brix networks,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Brix Networks 2500
 Brix Networks 3500T,brix networks 3500t,UNKNOWN,brix networks,3500T,LOCAL_RULESET,brix networks,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Brix Networks 3500T
 Brix Networks NTP,brix networks ntp,UNKNOWN,brix networks ntp,UNKNOWN,LOCAL_RULESET,brix networks ntp,0.35,NO_CHANGE,CONFIDENCE_LOW,False,Brix Networks NTP
-Brocade 6510,brocade 6510,Brocade,UNKNOWN,6510,LOCAL_RULESET,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Brocade 6510
+Brocade 6510,brocade 6510,Brocade,UNKNOWN,6510,https://en.wikipedia.org/wiki/Brocade_Communications_Systems,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Brocade 6510
 Celestica Redstone D2020,celestica redstone d2020,UNKNOWN,celestica redstone d2020,UNKNOWN,LOCAL_RULESET,celestica redstone d2020,0.35,NO_CHANGE,CONFIDENCE_LOW,False,Celestica Redstone D2020
 Checkpoint Checkpoint,checkpoint checkpoint,UNKNOWN,checkpoint checkpoint,UNKNOWN,LOCAL_RULESET,checkpoint checkpoint,0.35,NO_CHANGE,CONFIDENCE_LOW,False,Checkpoint Checkpoint
 Checkpoint CPAP-SG16200-PLUS-SNBT,checkpoint cpap-sg16200-plus-snbt,UNKNOWN,checkpoint cpap-sg16200-plus-snbt,UNKNOWN,LOCAL_RULESET,checkpoint cpap-sg16200-plus-snbt,0.35,NO_CHANGE,CONFIDENCE_LOW,False,Checkpoint CPAP-SG16200-PLUS-SNBT
 CIPHERTRUST IRONMAIL,ciphertrust ironmail,UNKNOWN,ciphertrust ironmail,UNKNOWN,LOCAL_RULESET,ciphertrust ironmail,0.35,NO_CHANGE,CONFIDENCE_LOW,False,CIPHERTRUST IRONMAIL
 CIPHERTRUST IRONMAIL E3000E,ciphertrust ironmail e3000e,UNKNOWN,ciphertrust ironmail e3000e,UNKNOWN,LOCAL_RULESET,ciphertrust ironmail e3000e,0.35,NO_CHANGE,CONFIDENCE_LOW,False,CIPHERTRUST IRONMAIL E3000E
-Cisco,cisco,Cisco,UNKNOWN,UNKNOWN,LOCAL_RULESET,,0.35,NO_CHANGE,CONFIDENCE_LOW,False,Cisco
-Cisco -,cisco -,Cisco,-,UNKNOWN,LOCAL_RULESET,-,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco -
-Cisco 1120 Connected Grid Router,cisco 1120 connected grid router,Cisco,connected grid,1120,LOCAL_RULESET,connected grid,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,connected grid
-Cisco 1121 Secure Access Control System,cisco 1121 secure access control system,Cisco,secure access control,1121,LOCAL_RULESET,secure access control,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,secure access control
-Cisco 1921/K9,cisco 1921 k9,Cisco,k9,1921,LOCAL_RULESET,k9,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,k9
-Cisco 2801,cisco 2801,Cisco,UNKNOWN,2801,LOCAL_RULESET,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco 2801
-Cisco 2811,cisco 2811,Cisco,UNKNOWN,2811,LOCAL_RULESET,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco 2811
-Cisco 2821,cisco 2821,Cisco,UNKNOWN,2821,LOCAL_RULESET,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco 2821
-CISCO 2901,cisco 2901,Cisco,UNKNOWN,2901,LOCAL_RULESET,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,CISCO 2901
-Cisco 2901 Integrated Services Router,cisco 2901 integrated services router,Cisco,UNKNOWN,2901,LOCAL_RULESET,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco 2901 Integrated Services Router
-Cisco 3560x-24t,cisco 3560x-24t,Cisco,UNKNOWN,3560X-24T,LOCAL_RULESET,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco 3560x-24t
-Cisco 3845,cisco 3845,Cisco,UNKNOWN,3845,LOCAL_RULESET,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco 3845
-Cisco 4321 Integrated Services Routers,cisco 4321 integrated services routers,Cisco,routers,4321,LOCAL_RULESET,routers,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,routers
-Cisco 4331 Integrated Services Routers,cisco 4331 integrated services routers,Cisco,routers,4331,LOCAL_RULESET,routers,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,routers
-Cisco 4331 ISR Router,cisco 4331 isr router,Cisco,isr,4331,LOCAL_RULESET,isr,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,isr
-Cisco 4431,cisco 4431,Cisco,UNKNOWN,4431,LOCAL_RULESET,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco 4431
-Cisco 4451-X Integrated Services,cisco 4451-x integrated services,Cisco,UNKNOWN,4451-X,LOCAL_RULESET,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco 4451-X Integrated Services
-Cisco 4500,cisco 4500,Cisco,UNKNOWN,4500,LOCAL_RULESET,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco 4500
-Cisco 4500-X Series,cisco 4500-x series,Cisco,UNKNOWN,4500-X,LOCAL_RULESET,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco 4500-X Series
-Cisco 5508,cisco 5508,Cisco,UNKNOWN,5508,LOCAL_RULESET,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco 5508
-Cisco 5508 Wireless Lan Controller,cisco 5508 wireless lan controller,Cisco,wireless lan controller,5508,LOCAL_RULESET,wireless lan controller,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,wireless lan controller
-Cisco 5520 Wireless Controller,cisco 5520 wireless controller,Cisco,wireless controller,5520,LOCAL_RULESET,wireless controller,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,wireless controller
-Cisco 7200 VXR,cisco 7200 vxr,Cisco,vxr,7200,LOCAL_RULESET,vxr,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,vxr
-Cisco 7201 Router,cisco 7201 router,Cisco,UNKNOWN,7201,LOCAL_RULESET,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco 7201 Router
-Cisco 7604 Chassis,cisco 7604 chassis,Cisco,chassis,7604,LOCAL_RULESET,chassis,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,chassis
-Cisco 7606,cisco 7606,Cisco,UNKNOWN,7606,LOCAL_RULESET,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco 7606
-Cisco 7609-s,cisco 7609-s,Cisco,UNKNOWN,7609-S,LOCAL_RULESET,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco 7609-s
-Cisco 8510,cisco 8510,Cisco,UNKNOWN,8510,LOCAL_RULESET,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco 8510
-Cisco 867VAE-K9,cisco 867vae-k9,Cisco,867vae-k9,UNKNOWN,LOCAL_RULESET,867vae-k9,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco 867VAE-K9
-Cisco 877,cisco 877,Cisco,UNKNOWN,877,LOCAL_RULESET,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco 877
-Cisco 887,cisco 887,Cisco,UNKNOWN,887,LOCAL_RULESET,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco 887
-Cisco 887va,cisco 887va,Cisco,887va,UNKNOWN,LOCAL_RULESET,887va,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco 887va
-Cisco 9200L-24T-4G,cisco 9200l-24t-4g,Cisco,-4g,9200L-24T,LOCAL_RULESET,-4g,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,-4g
-Cisco 9200L-48T-4G,cisco 9200l-48t-4g,Cisco,-4g,9200L-48T,LOCAL_RULESET,-4g,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,-4g
-Cisco Ace 4710,cisco ace 4710,Cisco,ace,4710,LOCAL_RULESET,ace,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,ace
-CISCO ACS SE,cisco acs se,Cisco,acs se,UNKNOWN,LOCAL_RULESET,acs se,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,CISCO ACS SE
-Cisco APIC L3,cisco apic l3,Cisco,apic l3,UNKNOWN,LOCAL_RULESET,apic l3,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco APIC L3
-Cisco As5300,cisco as5300,Cisco,as5300,UNKNOWN,LOCAL_RULESET,as5300,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco As5300
-Cisco As5350xm,cisco as5350xm,Cisco,as5350xm,UNKNOWN,LOCAL_RULESET,as5350xm,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco As5350xm
-Cisco As5400,cisco as5400,Cisco,as5400,UNKNOWN,LOCAL_RULESET,as5400,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco As5400
-Cisco As5400xm,cisco as5400xm,Cisco,as5400xm,UNKNOWN,LOCAL_RULESET,as5400xm,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco As5400xm
-Cisco ASA 4145 FIREPOWER,cisco asa 4145 firepower,Cisco,firepower,ASA 4145,LOCAL_RULESET,firepower,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,firepower
-CISCO ASA 5510,cisco asa 5510,Cisco,UNKNOWN,ASA 5510,LOCAL_RULESET,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,CISCO ASA 5510
-CISCO ASA 5515-x,cisco asa 5515-x,Cisco,-x,ASA 5515,LOCAL_RULESET,-x,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,-x
-Cisco ASA 5516-X,cisco asa 5516-x,Cisco,-x,ASA 5516,LOCAL_RULESET,-x,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,-x
-CISCO ASA 5520,cisco asa 5520,Cisco,UNKNOWN,ASA 5520,LOCAL_RULESET,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,CISCO ASA 5520
-CISCO ASA 5520 - ASA5520-K8 V2,cisco asa 5520 - asa5520-k8 v2,Cisco,- asa5520-k8 v2,ASA 5520,LOCAL_RULESET,- asa5520-k8 v2,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,- asa5520-k8 v2
-Cisco ASA 5525-X,cisco asa 5525-x,Cisco,-x,ASA 5525,LOCAL_RULESET,-x,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,-x
-CISCO ASA 5540,cisco asa 5540,Cisco,UNKNOWN,ASA 5540,LOCAL_RULESET,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,CISCO ASA 5540
-Cisco ASA 5545-X,cisco asa 5545-x,Cisco,-x,ASA 5545,LOCAL_RULESET,-x,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,-x
-CISCO ASA 5550,cisco asa 5550,Cisco,UNKNOWN,ASA 5550,LOCAL_RULESET,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,CISCO ASA 5550
-Cisco ASA 5555-X,cisco asa 5555-x,Cisco,-x,ASA 5555,LOCAL_RULESET,-x,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,-x
-CISCO ASA 5585-X,cisco asa 5585-x,Cisco,-x,ASA 5585,LOCAL_RULESET,-x,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,-x
-Cisco ASA Aip Ssm-10,cisco asa aip ssm-10,Cisco,asa aip ssm-10,UNKNOWN,LOCAL_RULESET,asa aip ssm-10,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco ASA Aip Ssm-10
-Cisco ASA Aip Ssm-20,cisco asa aip ssm-20,Cisco,asa aip ssm-20,UNKNOWN,LOCAL_RULESET,asa aip ssm-20,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco ASA Aip Ssm-20
-Cisco ASR 1001,cisco asr 1001,Cisco,asr,1001,LOCAL_RULESET,asr,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,asr
-Cisco ASR 1001-X,cisco asr 1001-x,Cisco,asr,1001-X,LOCAL_RULESET,asr,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,asr
-Cisco ASR 1002,cisco asr 1002,Cisco,asr,1002,LOCAL_RULESET,asr,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,asr
-Cisco ASR 1002-X,cisco asr 1002-x,Cisco,asr,1002-X,LOCAL_RULESET,asr,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,asr
-Cisco ASR 1006,cisco asr 1006,Cisco,asr,1006,LOCAL_RULESET,asr,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,asr
-Cisco ASR 9000 Series,cisco asr 9000 series,Cisco,asr,9000,LOCAL_RULESET,asr,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,asr
-CISCO ASR 9010,cisco asr 9010,Cisco,asr,9010,LOCAL_RULESET,asr,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,asr
-Cisco ASR 9904,cisco asr 9904,Cisco,asr,9904,LOCAL_RULESET,asr,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,asr
-Cisco ASR 9906,cisco asr 9906,Cisco,asr,9906,LOCAL_RULESET,asr,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,asr
-Cisco ASR 9922,cisco asr 9922,Cisco,asr,9922,LOCAL_RULESET,asr,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,asr
-Cisco ASR-9000V-AC,cisco asr-9000v-ac,Cisco,asr-,9000V-AC,LOCAL_RULESET,asr-,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,asr-
-Cisco ASR-9001,cisco asr-9001,Cisco,asr-,9001,LOCAL_RULESET,asr-,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,asr-
-Cisco ASR-9010,cisco asr-9010,Cisco,asr-,9010,LOCAL_RULESET,asr-,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,asr-
-Cisco ASR-9901,cisco asr-9901,Cisco,asr-,9901,LOCAL_RULESET,asr-,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,asr-
-Cisco ASR-9902,cisco asr-9902,Cisco,asr-,9902,LOCAL_RULESET,asr-,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,asr-
-Cisco ASR-9903,cisco asr-9903,Cisco,asr-,9903,LOCAL_RULESET,asr-,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,asr-
-Cisco C6807-XL,cisco c6807-xl,Cisco,c6807-xl,UNKNOWN,LOCAL_RULESET,c6807-xl,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco C6807-XL
-Cisco C9300-24P,cisco c9300-24p,Cisco,c9300-24p,UNKNOWN,LOCAL_RULESET,c9300-24p,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco C9300-24P
-Cisco C9300-24S-E,cisco c9300-24s-e,Cisco,c9300-24s-e,UNKNOWN,LOCAL_RULESET,c9300-24s-e,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco C9300-24S-E
-Cisco C9800-40-K9,cisco c9800-40-k9,Cisco,c9800-40-k9,UNKNOWN,LOCAL_RULESET,c9800-40-k9,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco C9800-40-K9
-Cisco Catalyst 2950g-48,cisco catalyst 2950g-48,Cisco,catalyst,2950G-48,LOCAL_RULESET,catalyst,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,catalyst
-Cisco Catalyst 2960 - L Series,cisco catalyst 2960 - l series,Cisco,catalyst - l,2960,LOCAL_RULESET,catalyst - l,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,catalyst - l
-Cisco Catalyst 2960+24TC-S,cisco catalyst 2960 24tc-s,Cisco,catalyst 24tc-s,2960,LOCAL_RULESET,catalyst 24tc-s,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,catalyst 24tc-s
-Cisco Catalyst 2960 L Series,cisco catalyst 2960 l series,Cisco,catalyst l,2960,LOCAL_RULESET,catalyst l,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,catalyst l
-CISCO CATALYST 2960 Plus Series SI,cisco catalyst 2960 plus series si,Cisco,catalyst plus si,2960,LOCAL_RULESET,catalyst plus si,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,catalyst plus si
-Cisco CATALYST 2960-24TC-L,cisco catalyst 2960-24tc-l,Cisco,catalyst -l,2960-24TC,LOCAL_RULESET,catalyst -l,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,catalyst -l
-CISCO CATALYST 2960-48TC-L,cisco catalyst 2960-48tc-l,Cisco,catalyst -l,2960-48TC,LOCAL_RULESET,catalyst -l,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,catalyst -l
-Cisco Catalyst 2960-48tc-s Switch,cisco catalyst 2960-48tc-s switch,Cisco,catalyst -s,2960-48TC,LOCAL_RULESET,catalyst -s,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,catalyst -s
-Cisco Catalyst 2960G-24TC-L,cisco catalyst 2960g-24tc-l,Cisco,catalyst -l,2960G-24TC,LOCAL_RULESET,catalyst -l,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,catalyst -l
-Cisco Catalyst 3550-24,cisco catalyst 3550-24,Cisco,catalyst,3550-24,LOCAL_RULESET,catalyst,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,catalyst
-Cisco Catalyst 3750x-48t-s,cisco catalyst 3750x-48t-s,Cisco,catalyst -s,3750X-48T,LOCAL_RULESET,catalyst -s,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,catalyst -s
-Cisco CATALYST 4500-X,cisco catalyst 4500-x,Cisco,catalyst,4500-X,LOCAL_RULESET,catalyst,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,catalyst
-CISCO CATALYST 4500-X - WS-C4500X-32SFP PLUS,cisco catalyst 4500-x - ws-c4500x-32sfp plus,Cisco,catalyst - ws-c4500x-32sfp plus,4500-X,LOCAL_RULESET,catalyst - ws-c4500x-32sfp plus,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,catalyst - ws-c4500x-32sfp plus
-CISCO CATALYST 4507R,cisco catalyst 4507r,Cisco,catalyst,4507R,LOCAL_RULESET,catalyst,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,catalyst
-Cisco Catalyst 4507R+E,cisco catalyst 4507r e,Cisco,catalyst e,4507R,LOCAL_RULESET,catalyst e,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,catalyst e
-Cisco Catalyst 4507r+e Switch,cisco catalyst 4507r e switch,Cisco,catalyst e,4507R,LOCAL_RULESET,catalyst e,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,catalyst e
-CISCO CATALYST 4507R-E,cisco catalyst 4507r-e,Cisco,catalyst,4507R-E,LOCAL_RULESET,catalyst,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,catalyst
-Cisco Catalyst 4900m,cisco catalyst 4900m,Cisco,catalyst,4900M,LOCAL_RULESET,catalyst,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,catalyst
-Cisco Catalyst 4948,cisco catalyst 4948,Cisco,catalyst,4948,LOCAL_RULESET,catalyst,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,catalyst
-CISCO CATALYST 4948 - WS-C4948,cisco catalyst 4948 - ws-c4948,Cisco,catalyst - ws-c,4948,LOCAL_RULESET,catalyst - ws-c,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,catalyst - ws-c
-CISCO CATALYST 4948-E,cisco catalyst 4948-e,Cisco,catalyst,4948-E,LOCAL_RULESET,catalyst,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,catalyst
-Cisco Catalyst 4948E,cisco catalyst 4948e,Cisco,catalyst,4948E,LOCAL_RULESET,catalyst,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,catalyst
-CISCO CATALYST 6506,cisco catalyst 6506,Cisco,catalyst,6506,LOCAL_RULESET,catalyst,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,catalyst
-CISCO CATALYST 6509,cisco catalyst 6509,Cisco,catalyst,6509,LOCAL_RULESET,catalyst,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,catalyst
-Cisco CATALYST 6509-E,cisco catalyst 6509-e,Cisco,catalyst,6509-E,LOCAL_RULESET,catalyst,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,catalyst
-Cisco Catalyst 6509-V-E,cisco catalyst 6509-v-e,Cisco,catalyst -e,6509-V,LOCAL_RULESET,catalyst -e,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,catalyst -e
-CISCO CATALYST 6513,cisco catalyst 6513,Cisco,catalyst,6513,LOCAL_RULESET,catalyst,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,catalyst
-Cisco Catalyst C9200 L 48,cisco catalyst c9200 l 48,Cisco,catalyst c9200 l 48,UNKNOWN,LOCAL_RULESET,catalyst c9200 l 48,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco Catalyst C9200 L 48
-Cisco Catalyst C9200-48T,cisco catalyst c9200-48t,Cisco,catalyst c9200-48t,UNKNOWN,LOCAL_RULESET,catalyst c9200-48t,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco Catalyst C9200-48T
-Cisco Catalyst C9300-48P,cisco catalyst c9300-48p,Cisco,catalyst c9300-48p,UNKNOWN,LOCAL_RULESET,catalyst c9300-48p,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco Catalyst C9300-48P
-Cisco Catalyst C9300L-48,cisco catalyst c9300l-48,Cisco,catalyst c9300l-48,UNKNOWN,LOCAL_RULESET,catalyst c9300l-48,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco Catalyst C9300L-48
-Cisco Catalyst C9407R,cisco catalyst c9407r,Cisco,catalyst c9407r,UNKNOWN,LOCAL_RULESET,catalyst c9407r,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco Catalyst C9407R
-Cisco Catalyst C9500-24Q,cisco catalyst c9500-24q,Cisco,catalyst c9500-24q,UNKNOWN,LOCAL_RULESET,catalyst c9500-24q,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco Catalyst C9500-24Q
-Cisco CISCO NCS-55A1-24H,cisco cisco ncs-55a1-24h,Cisco,ncs-55a1-24h,UNKNOWN,LOCAL_RULESET,ncs-55a1-24h,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco CISCO NCS-55A1-24H
-Cisco DNA Center Appliance,cisco dna center appliance,Cisco,dna,UNKNOWN,LOCAL_RULESET,dna,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco DNA Center Appliance
-Cisco Firepower 4145,cisco firepower 4145,Cisco,firepower,4145,LOCAL_RULESET,firepower,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,firepower
-Cisco FPR4100,cisco fpr4100,Cisco,fpr4100,UNKNOWN,LOCAL_RULESET,fpr4100,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco FPR4100
-CISCO GSS-4490-K9,cisco gss-4490-k9,Cisco,gss-,4490-K9,LOCAL_RULESET,gss-,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,gss-
-Cisco IOS XRV9000-APLN-ROUT,cisco ios xrv9000-apln-rout,Cisco,ios xrv9000-apln-rout,UNKNOWN,LOCAL_RULESET,ios xrv9000-apln-rout,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco IOS XRV9000-APLN-ROUT
-CISCO MDS 9134,cisco mds 9134,Cisco,mds,9134,LOCAL_RULESET,mds,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,mds
-Cisco MDS 9148,cisco mds 9148,Cisco,mds,9148,LOCAL_RULESET,mds,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,mds
-Cisco MDS 9148S 16G Multilayer Fabric Switch,cisco mds 9148s 16g multilayer fabric switch,Cisco,mds 16g multilayer,9148S,LOCAL_RULESET,mds 16g multilayer,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,mds 16g multilayer
-Cisco MDS 9396S 16G Multilayer Fabric Switch,cisco mds 9396s 16g multilayer fabric switch,Cisco,mds 16g multilayer,9396S,LOCAL_RULESET,mds 16g multilayer,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,mds 16g multilayer
-CISCO MDS 9513,cisco mds 9513,Cisco,mds,9513,LOCAL_RULESET,mds,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,mds
-Cisco MDS 9710,cisco mds 9710,Cisco,mds,9710,LOCAL_RULESET,mds,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,mds
-Cisco MDS 9718 Multilayer Director,cisco mds 9718 multilayer director,Cisco,mds multilayer director,9718,LOCAL_RULESET,mds multilayer director,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,mds multilayer director
-Cisco ME-3600X-24TS-M,cisco me-3600x-24ts-m,Cisco,me- -m,3600X-24TS,LOCAL_RULESET,me- -m,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,me- -m
-Cisco MGMT-CWA-ASWT-03,cisco mgmt-cwa-aswt-03,Cisco,mgmt-cwa-aswt-03,UNKNOWN,LOCAL_RULESET,mgmt-cwa-aswt-03,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco MGMT-CWA-ASWT-03
-Cisco N3K-C31108PC-V,cisco n3k-c31108pc-v,Cisco,n3k-c31108pc-v,UNKNOWN,LOCAL_RULESET,n3k-c31108pc-v,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco N3K-C31108PC-V
-Cisco N540X-ACC-SYS,cisco n540x-acc-sys,Cisco,n540x-acc-sys,UNKNOWN,LOCAL_RULESET,n540x-acc-sys,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco N540X-ACC-SYS
-Cisco N9K-C93240YC-FX2,cisco n9k-c93240yc-fx2,Cisco,n9k-c93240yc-fx2,UNKNOWN,LOCAL_RULESET,n9k-c93240yc-fx2,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco N9K-C93240YC-FX2
-Cisco NCS 5508,cisco ncs 5508,Cisco,ncs,5508,LOCAL_RULESET,ncs,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,ncs
-Cisco Nexus 2224TP GE Fabric Extender,cisco nexus 2224tp ge fabric extender,Cisco,nexus 2224tp ge extender,UNKNOWN,LOCAL_RULESET,nexus 2224tp ge extender,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco Nexus 2224TP GE Fabric Extender
-CISCO NEXUS 2232PP,cisco nexus 2232pp,Cisco,nexus 2232pp,UNKNOWN,LOCAL_RULESET,nexus 2232pp,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,CISCO NEXUS 2232PP
-Cisco Nexus 2232PP 10GE,cisco nexus 2232pp 10ge,Cisco,nexus 2232pp 10ge,UNKNOWN,LOCAL_RULESET,nexus 2232pp 10ge,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco Nexus 2232PP 10GE
-Cisco Nexus 2232TM,cisco nexus 2232tm,Cisco,nexus 2232tm,UNKNOWN,LOCAL_RULESET,nexus 2232tm,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco Nexus 2232TM
-CISCO NEXUS 2248TP GE,cisco nexus 2248tp ge,Cisco,nexus 2248tp ge,UNKNOWN,LOCAL_RULESET,nexus 2248tp ge,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,CISCO NEXUS 2248TP GE
-Cisco Nexus 2248TP-E,cisco nexus 2248tp-e,Cisco,nexus 2248tp-e,UNKNOWN,LOCAL_RULESET,nexus 2248tp-e,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco Nexus 2248TP-E
-Cisco Nexus 2348TQ,cisco nexus 2348tq,Cisco,nexus 2348tq,UNKNOWN,LOCAL_RULESET,nexus 2348tq,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco Nexus 2348TQ
-Cisco Nexus 3048TP,cisco nexus 3048tp,Cisco,nexus 3048tp,UNKNOWN,LOCAL_RULESET,nexus 3048tp,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco Nexus 3048TP
-CISCO NEXUS 5020,cisco nexus 5020,Cisco,nexus,5020,LOCAL_RULESET,nexus,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,nexus
-CISCO NEXUS 5548UP,cisco nexus 5548up,Cisco,nexus 5548up,UNKNOWN,LOCAL_RULESET,nexus 5548up,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,CISCO NEXUS 5548UP
-CISCO NEXUS 5548UP - N5K-C5548UP-FA REVERSED,cisco nexus 5548up - n5k-c5548up-fa reversed,Cisco,nexus 5548up - n5k-c5548up-fa reversed,UNKNOWN,LOCAL_RULESET,nexus 5548up - n5k-c5548up-fa reversed,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,CISCO NEXUS 5548UP - N5K-C5548UP-FA REVERSED
-Cisco Nexus 5596UP,cisco nexus 5596up,Cisco,nexus 5596up,UNKNOWN,LOCAL_RULESET,nexus 5596up,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco Nexus 5596UP
-Cisco Nexus 7000 10-Slot Switch,cisco nexus 7000 10-slot switch,Cisco,nexus 10-slot,7000,LOCAL_RULESET,nexus 10-slot,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,nexus 10-slot
-Cisco Nexus 7000 9-slot Switch,cisco nexus 7000 9-slot switch,Cisco,nexus 9-slot,7000,LOCAL_RULESET,nexus 9-slot,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,nexus 9-slot
-CISCO NEXUS 7009,cisco nexus 7009,Cisco,nexus,7009,LOCAL_RULESET,nexus,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,nexus
-CISCO NEXUS 7010,cisco nexus 7010,Cisco,nexus,7010,LOCAL_RULESET,nexus,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,nexus
-CISCO NEXUS 7018,cisco nexus 7018,Cisco,nexus,7018,LOCAL_RULESET,nexus,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,nexus
-Cisco Nexus 92348GC-X,cisco nexus 92348gc-x,Cisco,nexus 92348gc-x,UNKNOWN,LOCAL_RULESET,nexus 92348gc-x,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco Nexus 92348GC-X
-Cisco Nexus 93108TC-EX,cisco nexus 93108tc-ex,Cisco,nexus 93108tc-ex,UNKNOWN,LOCAL_RULESET,nexus 93108tc-ex,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco Nexus 93108TC-EX
-Cisco Nexus 93108TC-FX,cisco nexus 93108tc-fx,Cisco,nexus 93108tc-fx,UNKNOWN,LOCAL_RULESET,nexus 93108tc-fx,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco Nexus 93108TC-FX
-Cisco Nexus 93108TC-FX Switch,cisco nexus 93108tc-fx switch,Cisco,nexus 93108tc-fx,UNKNOWN,LOCAL_RULESET,nexus 93108tc-fx,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco Nexus 93108TC-FX Switch
-Cisco Nexus 93180YC-EX,cisco nexus 93180yc-ex,Cisco,nexus 93180yc-ex,UNKNOWN,LOCAL_RULESET,nexus 93180yc-ex,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco Nexus 93180YC-EX
-Cisco Nexus 93180YC-FX,cisco nexus 93180yc-fx,Cisco,nexus 93180yc-fx,UNKNOWN,LOCAL_RULESET,nexus 93180yc-fx,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco Nexus 93180YC-FX
-Cisco Nexus 93180YC-FX V06,cisco nexus 93180yc-fx v06,Cisco,nexus 93180yc-fx v06,UNKNOWN,LOCAL_RULESET,nexus 93180yc-fx v06,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco Nexus 93180YC-FX V06
-Cisco Nexus 93180YC-FX3,cisco nexus 93180yc-fx3,Cisco,nexus 93180yc-fx3,UNKNOWN,LOCAL_RULESET,nexus 93180yc-fx3,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco Nexus 93180YC-FX3
-Cisco Nexus 93240YC-FX2,cisco nexus 93240yc-fx2,Cisco,nexus 93240yc-fx2,UNKNOWN,LOCAL_RULESET,nexus 93240yc-fx2,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco Nexus 93240YC-FX2
-Cisco Nexus 9336C-FX2,cisco nexus 9336c-fx2,Cisco,nexus,9336C-FX2,LOCAL_RULESET,nexus,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,nexus
-Cisco Nexus 9336PQ,cisco nexus 9336pq,Cisco,nexus 9336pq,UNKNOWN,LOCAL_RULESET,nexus 9336pq,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco Nexus 9336PQ
-Cisco Nexus 9348GC-FXP,cisco nexus 9348gc-fxp,Cisco,nexus 9348gc-fxp,UNKNOWN,LOCAL_RULESET,nexus 9348gc-fxp,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco Nexus 9348GC-FXP
-Cisco Nexus 9348GC-FXP Chassis,cisco nexus 9348gc-fxp chassis,Cisco,nexus 9348gc-fxp chassis,UNKNOWN,LOCAL_RULESET,nexus 9348gc-fxp chassis,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco Nexus 9348GC-FXP Chassis
-Cisco Nexus 93600 CD-GX,cisco nexus 93600 cd-gx,Cisco,nexus 93600 cd-gx,UNKNOWN,LOCAL_RULESET,nexus 93600 cd-gx,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco Nexus 93600 CD-GX
-Cisco Nexus 9364C,cisco nexus 9364c,Cisco,nexus,9364C,LOCAL_RULESET,nexus,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,nexus
-Cisco Nexus 9372PX,cisco nexus 9372px,Cisco,nexus 9372px,UNKNOWN,LOCAL_RULESET,nexus 9372px,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco Nexus 9372PX
-Cisco Nexus 9372TX-E,cisco nexus 9372tx-e,Cisco,nexus 9372tx-e,UNKNOWN,LOCAL_RULESET,nexus 9372tx-e,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco Nexus 9372TX-E
-Cisco Nexus 9504,cisco nexus 9504,Cisco,nexus,9504,LOCAL_RULESET,nexus,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,nexus
-Cisco Nexus 9508,cisco nexus 9508,Cisco,nexus,9508,LOCAL_RULESET,nexus,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,nexus
-Cisco Nexus C93240YC-FX2,cisco nexus c93240yc-fx2,Cisco,nexus c93240yc-fx2,UNKNOWN,LOCAL_RULESET,nexus c93240yc-fx2,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco Nexus C93240YC-FX2
-Cisco Nexus C9336C-FX2,cisco nexus c9336c-fx2,Cisco,nexus c9336c-fx2,UNKNOWN,LOCAL_RULESET,nexus c9336c-fx2,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco Nexus C9336C-FX2
-Cisco Nexus9000 C9336C-FX2,cisco nexus9000 c9336c-fx2,Cisco,nexus9000 c9336c-fx2,UNKNOWN,LOCAL_RULESET,nexus9000 c9336c-fx2,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco Nexus9000 C9336C-FX2
-Cisco Secure Acs 1113-k9,cisco secure acs 1113-k9,Cisco,secure acs,1113-K9,LOCAL_RULESET,secure acs,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,secure acs
-Cisco SNS-3615-K9,cisco sns-3615-k9,Cisco,sns-,3615-K9,LOCAL_RULESET,sns-,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,sns-
-Cisco SNS-3655-K9,cisco sns-3655-k9,Cisco,sns-,3655-K9,LOCAL_RULESET,sns-,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,sns-
-Cisco SNS-3695-K9,cisco sns-3695-k9,Cisco,sns-,3695-K9,LOCAL_RULESET,sns-,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,sns-
-Cisco UCS C220 M3 High-Density Rack Server Large Form Factor,cisco ucs c220 m3 high-density rack server large form factor,Cisco,ucs c220 m3 - large form factor,UNKNOWN,LOCAL_RULESET,ucs c220 m3 - large form factor,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco UCS C220 M3 High-Density Rack Server Large Form Factor
-Cisco UCS C220 M4,cisco ucs c220 m4,Cisco,ucs c220 m4,UNKNOWN,LOCAL_RULESET,ucs c220 m4,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco UCS C220 M4
-Cisco UCS C220 M5,cisco ucs c220 m5,Cisco,ucs c220 m5,UNKNOWN,LOCAL_RULESET,ucs c220 m5,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco UCS C220 M5
-Cisco UCS C220 M7,cisco ucs c220 m7,Cisco,ucs c220 m7,UNKNOWN,LOCAL_RULESET,ucs c220 m7,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco UCS C220 M7
-Cisco UCS C225 M6,cisco ucs c225 m6,Cisco,ucs c225 m6,UNKNOWN,LOCAL_RULESET,ucs c225 m6,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco UCS C225 M6
-Cisco UCS S3260,cisco ucs s3260,Cisco,ucs s3260,UNKNOWN,LOCAL_RULESET,ucs s3260,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco UCS S3260
-Cisco UCS-FI-6454,cisco ucs-fi-6454,Cisco,ucs-fi-,6454,LOCAL_RULESET,ucs-fi-,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,ucs-fi-
-Cisco WLC 3504,cisco wlc 3504,Cisco,wlc,3504,LOCAL_RULESET,wlc,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,wlc
-Cisco WS-C3650-24PD,cisco ws-c3650-24pd,Cisco,ws-c3650-24pd,UNKNOWN,LOCAL_RULESET,ws-c3650-24pd,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco WS-C3650-24PD
-Cisco WS-C3650-48P,cisco ws-c3650-48p,Cisco,ws-c3650-48p,UNKNOWN,LOCAL_RULESET,ws-c3650-48p,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco WS-C3650-48P
-Cisco WS-C3750-48T-L,cisco ws-c3750-48t-l,Cisco,ws-c3750-48t-l,UNKNOWN,LOCAL_RULESET,ws-c3750-48t-l,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco WS-C3750-48T-L
-Cisco WS-C3750X-48T-L,cisco ws-c3750x-48t-l,Cisco,ws-c3750x-48t-l,UNKNOWN,LOCAL_RULESET,ws-c3750x-48t-l,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco WS-C3750X-48T-L
+Cisco,cisco,Cisco,UNKNOWN,UNKNOWN,https://www.cisco.com/c/en/us/products/index.html,,0.35,NO_CHANGE,CONFIDENCE_LOW,False,Cisco
+Cisco -,cisco -,Cisco,-,UNKNOWN,https://www.cisco.com/c/en/us/products/index.html,cisco products networking security data center - cisco skip to main content skip to search skip to footer cisco com worldwide pr,0.89,APPLY_CHANGE,CONFIDENCE_HIGH,True,-
+Cisco 1120 Connected Grid Router,cisco 1120 connected grid router,Cisco,connected grid,1120,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,connected grid
+Cisco 1121 Secure Access Control System,cisco 1121 secure access control system,Cisco,secure access control,1121,https://www.cisco.com/c/en/us/products/index.html,otect your network using firewall solutions with advanced threat protection and secure access controls choose your firewall cisco hypershield safeguard your infrastructure from cybe,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,secure access control
+Cisco 1921/K9,cisco 1921 k9,Cisco,k9,1921,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,k9
+Cisco 2801,cisco 2801,Cisco,UNKNOWN,2801,https://www.cisco.com/c/en/us/products/index.html,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco 2801
+Cisco 2811,cisco 2811,Cisco,UNKNOWN,2811,https://www.cisco.com/c/en/us/products/index.html,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco 2811
+Cisco 2821,cisco 2821,Cisco,UNKNOWN,2821,https://www.cisco.com/c/en/us/products/index.html,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco 2821
+CISCO 2901,cisco 2901,Cisco,UNKNOWN,2901,https://www.cisco.com/c/en/us/products/index.html,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,CISCO 2901
+Cisco 2901 Integrated Services Router,cisco 2901 integrated services router,Cisco,UNKNOWN,2901,https://www.cisco.com/c/en/us/products/index.html,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco 2901 Integrated Services Router
+Cisco 3560x-24t,cisco 3560x-24t,Cisco,UNKNOWN,3560X-24T,https://www.cisco.com/c/en/us/products/index.html,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco 3560x-24t
+Cisco 3845,cisco 3845,Cisco,UNKNOWN,3845,https://www.cisco.com/c/en/us/products/index.html,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco 3845
+Cisco 4321 Integrated Services Routers,cisco 4321 integrated services routers,Cisco,routers,4321,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,routers
+Cisco 4331 Integrated Services Routers,cisco 4331 integrated services routers,Cisco,routers,4331,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,routers
+Cisco 4331 ISR Router,cisco 4331 isr router,Cisco,isr,4331,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,isr
+Cisco 4431,cisco 4431,Cisco,UNKNOWN,4431,https://www.cisco.com/c/en/us/products/index.html,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco 4431
+Cisco 4451-X Integrated Services,cisco 4451-x integrated services,Cisco,UNKNOWN,4451-X,https://www.cisco.com/c/en/us/products/index.html,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco 4451-X Integrated Services
+Cisco 4500,cisco 4500,Cisco,UNKNOWN,4500,https://www.cisco.com/c/en/us/products/index.html,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco 4500
+Cisco 4500-X Series,cisco 4500-x series,Cisco,UNKNOWN,4500-X,https://www.cisco.com/c/en/us/products/index.html,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco 4500-X Series
+Cisco 5508,cisco 5508,Cisco,UNKNOWN,5508,https://www.cisco.com/c/en/us/products/index.html,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco 5508
+Cisco 5508 Wireless Lan Controller,cisco 5508 wireless lan controller,Cisco,wireless lan controller,5508,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,wireless lan controller
+Cisco 5520 Wireless Controller,cisco 5520 wireless controller,Cisco,wireless controller,5520,https://www.cisco.com/c/en/us/products/index.html,your network experience with software-enabled switching and wireless solutions explore access networking data center and cloud n,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,wireless controller
+Cisco 7200 VXR,cisco 7200 vxr,Cisco,vxr,7200,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,vxr
+Cisco 7201 Router,cisco 7201 router,Cisco,UNKNOWN,7201,https://www.cisco.com/c/en/us/products/index.html,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco 7201 Router
+Cisco 7604 Chassis,cisco 7604 chassis,Cisco,chassis,7604,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,chassis
+Cisco 7606,cisco 7606,Cisco,UNKNOWN,7606,https://www.cisco.com/c/en/us/products/index.html,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco 7606
+Cisco 7609-s,cisco 7609-s,Cisco,UNKNOWN,7609-S,https://www.cisco.com/c/en/us/products/index.html,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco 7609-s
+Cisco 8510,cisco 8510,Cisco,UNKNOWN,8510,https://www.cisco.com/c/en/us/products/index.html,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco 8510
+Cisco 867VAE-K9,cisco 867vae-k9,Cisco,867vae-k9,UNKNOWN,https://www.cisco.com/c/en/us/products/index.html,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco 867VAE-K9
+Cisco 877,cisco 877,Cisco,UNKNOWN,877,https://www.cisco.com/c/en/us/products/index.html,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco 877
+Cisco 887,cisco 887,Cisco,UNKNOWN,887,https://www.cisco.com/c/en/us/products/index.html,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco 887
+Cisco 887va,cisco 887va,Cisco,887va,UNKNOWN,https://www.cisco.com/c/en/us/products/index.html,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco 887va
+Cisco 9200L-24T-4G,cisco 9200l-24t-4g,Cisco,-4g,9200L-24T,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,-4g
+Cisco 9200L-48T-4G,cisco 9200l-48t-4g,Cisco,-4g,9200L-48T,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,-4g
+Cisco Ace 4710,cisco ace 4710,Cisco,ace,4710,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,ace
+CISCO ACS SE,cisco acs se,Cisco,acs se,UNKNOWN,https://www.cisco.com/c/en/us/products/index.html,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,CISCO ACS SE
+Cisco APIC L3,cisco apic l3,Cisco,apic l3,UNKNOWN,https://www.cisco.com/c/en/us/products/index.html,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco APIC L3
+Cisco As5300,cisco as5300,Cisco,as5300,UNKNOWN,https://www.cisco.com/c/en/us/products/index.html,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco As5300
+Cisco As5350xm,cisco as5350xm,Cisco,as5350xm,UNKNOWN,https://www.cisco.com/c/en/us/products/index.html,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco As5350xm
+Cisco As5400,cisco as5400,Cisco,as5400,UNKNOWN,https://www.cisco.com/c/en/us/products/index.html,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco As5400
+Cisco As5400xm,cisco as5400xm,Cisco,as5400xm,UNKNOWN,https://www.cisco.com/c/en/us/products/index.html,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco As5400xm
+Cisco ASA 4145 FIREPOWER,cisco asa 4145 firepower,Cisco,firepower,ASA 4145,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,firepower
+CISCO ASA 5510,cisco asa 5510,Cisco,UNKNOWN,ASA 5510,https://www.cisco.com/c/en/us/products/index.html,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,CISCO ASA 5510
+CISCO ASA 5515-x,cisco asa 5515-x,Cisco,-x,ASA 5515,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,-x
+Cisco ASA 5516-X,cisco asa 5516-x,Cisco,-x,ASA 5516,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,-x
+CISCO ASA 5520,cisco asa 5520,Cisco,UNKNOWN,ASA 5520,https://www.cisco.com/c/en/us/products/index.html,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,CISCO ASA 5520
+CISCO ASA 5520 - ASA5520-K8 V2,cisco asa 5520 - asa5520-k8 v2,Cisco,- asa5520-k8 v2,ASA 5520,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,- asa5520-k8 v2
+Cisco ASA 5525-X,cisco asa 5525-x,Cisco,-x,ASA 5525,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,-x
+CISCO ASA 5540,cisco asa 5540,Cisco,UNKNOWN,ASA 5540,https://www.cisco.com/c/en/us/products/index.html,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,CISCO ASA 5540
+Cisco ASA 5545-X,cisco asa 5545-x,Cisco,-x,ASA 5545,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,-x
+CISCO ASA 5550,cisco asa 5550,Cisco,UNKNOWN,ASA 5550,https://www.cisco.com/c/en/us/products/index.html,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,CISCO ASA 5550
+Cisco ASA 5555-X,cisco asa 5555-x,Cisco,-x,ASA 5555,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,-x
+CISCO ASA 5585-X,cisco asa 5585-x,Cisco,-x,ASA 5585,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,-x
+Cisco ASA Aip Ssm-10,cisco asa aip ssm-10,Cisco,asa aip ssm-10,UNKNOWN,https://www.cisco.com/c/en/us/products/index.html,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco ASA Aip Ssm-10
+Cisco ASA Aip Ssm-20,cisco asa aip ssm-20,Cisco,asa aip ssm-20,UNKNOWN,https://www.cisco.com/c/en/us/products/index.html,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco ASA Aip Ssm-20
+Cisco ASR 1001,cisco asr 1001,Cisco,asr,1001,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,asr
+Cisco ASR 1001-X,cisco asr 1001-x,Cisco,asr,1001-X,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,asr
+Cisco ASR 1002,cisco asr 1002,Cisco,asr,1002,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,asr
+Cisco ASR 1002-X,cisco asr 1002-x,Cisco,asr,1002-X,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,asr
+Cisco ASR 1006,cisco asr 1006,Cisco,asr,1006,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,asr
+Cisco ASR 9000 Series,cisco asr 9000 series,Cisco,asr,9000,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,asr
+CISCO ASR 9010,cisco asr 9010,Cisco,asr,9010,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,asr
+Cisco ASR 9904,cisco asr 9904,Cisco,asr,9904,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,asr
+Cisco ASR 9906,cisco asr 9906,Cisco,asr,9906,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,asr
+Cisco ASR 9922,cisco asr 9922,Cisco,asr,9922,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,asr
+Cisco ASR-9000V-AC,cisco asr-9000v-ac,Cisco,asr-,9000V-AC,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,asr-
+Cisco ASR-9001,cisco asr-9001,Cisco,asr-,9001,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,asr-
+Cisco ASR-9010,cisco asr-9010,Cisco,asr-,9010,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,asr-
+Cisco ASR-9901,cisco asr-9901,Cisco,asr-,9901,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,asr-
+Cisco ASR-9902,cisco asr-9902,Cisco,asr-,9902,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,asr-
+Cisco ASR-9903,cisco asr-9903,Cisco,asr-,9903,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,asr-
+Cisco C6807-XL,cisco c6807-xl,Cisco,c6807-xl,UNKNOWN,https://www.cisco.com/c/en/us/products/index.html,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco C6807-XL
+Cisco C9300-24P,cisco c9300-24p,Cisco,c9300-24p,UNKNOWN,https://www.cisco.com/c/en/us/products/index.html,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco C9300-24P
+Cisco C9300-24S-E,cisco c9300-24s-e,Cisco,c9300-24s-e,UNKNOWN,https://www.cisco.com/c/en/us/products/index.html,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco C9300-24S-E
+Cisco C9800-40-K9,cisco c9800-40-k9,Cisco,c9800-40-k9,UNKNOWN,https://www.cisco.com/c/en/us/products/index.html,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco C9800-40-K9
+Cisco Catalyst 2950g-48,cisco catalyst 2950g-48,Cisco,catalyst,2950G-48,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,catalyst
+Cisco Catalyst 2960 - L Series,cisco catalyst 2960 - l series,Cisco,catalyst - l,2960,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,catalyst - l
+Cisco Catalyst 2960+24TC-S,cisco catalyst 2960 24tc-s,Cisco,catalyst 24tc-s,2960,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,catalyst 24tc-s
+Cisco Catalyst 2960 L Series,cisco catalyst 2960 l series,Cisco,catalyst l,2960,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,catalyst l
+CISCO CATALYST 2960 Plus Series SI,cisco catalyst 2960 plus series si,Cisco,catalyst plus si,2960,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,catalyst plus si
+Cisco CATALYST 2960-24TC-L,cisco catalyst 2960-24tc-l,Cisco,catalyst -l,2960-24TC,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,catalyst -l
+CISCO CATALYST 2960-48TC-L,cisco catalyst 2960-48tc-l,Cisco,catalyst -l,2960-48TC,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,catalyst -l
+Cisco Catalyst 2960-48tc-s Switch,cisco catalyst 2960-48tc-s switch,Cisco,catalyst -s,2960-48TC,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,catalyst -s
+Cisco Catalyst 2960G-24TC-L,cisco catalyst 2960g-24tc-l,Cisco,catalyst -l,2960G-24TC,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,catalyst -l
+Cisco Catalyst 3550-24,cisco catalyst 3550-24,Cisco,catalyst,3550-24,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,catalyst
+Cisco Catalyst 3750x-48t-s,cisco catalyst 3750x-48t-s,Cisco,catalyst -s,3750X-48T,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,catalyst -s
+Cisco CATALYST 4500-X,cisco catalyst 4500-x,Cisco,catalyst,4500-X,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,catalyst
+CISCO CATALYST 4500-X - WS-C4500X-32SFP PLUS,cisco catalyst 4500-x - ws-c4500x-32sfp plus,Cisco,catalyst - ws-c4500x-32sfp plus,4500-X,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,catalyst - ws-c4500x-32sfp plus
+CISCO CATALYST 4507R,cisco catalyst 4507r,Cisco,catalyst,4507R,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,catalyst
+Cisco Catalyst 4507R+E,cisco catalyst 4507r e,Cisco,catalyst e,4507R,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,catalyst e
+Cisco Catalyst 4507r+e Switch,cisco catalyst 4507r e switch,Cisco,catalyst e,4507R,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,catalyst e
+CISCO CATALYST 4507R-E,cisco catalyst 4507r-e,Cisco,catalyst,4507R-E,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,catalyst
+Cisco Catalyst 4900m,cisco catalyst 4900m,Cisco,catalyst,4900M,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,catalyst
+Cisco Catalyst 4948,cisco catalyst 4948,Cisco,catalyst,4948,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,catalyst
+CISCO CATALYST 4948 - WS-C4948,cisco catalyst 4948 - ws-c4948,Cisco,catalyst - ws-c,4948,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,catalyst - ws-c
+CISCO CATALYST 4948-E,cisco catalyst 4948-e,Cisco,catalyst,4948-E,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,catalyst
+Cisco Catalyst 4948E,cisco catalyst 4948e,Cisco,catalyst,4948E,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,catalyst
+CISCO CATALYST 6506,cisco catalyst 6506,Cisco,catalyst,6506,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,catalyst
+CISCO CATALYST 6509,cisco catalyst 6509,Cisco,catalyst,6509,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,catalyst
+Cisco CATALYST 6509-E,cisco catalyst 6509-e,Cisco,catalyst,6509-E,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,catalyst
+Cisco Catalyst 6509-V-E,cisco catalyst 6509-v-e,Cisco,catalyst -e,6509-V,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,catalyst -e
+CISCO CATALYST 6513,cisco catalyst 6513,Cisco,catalyst,6513,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,catalyst
+Cisco Catalyst C9200 L 48,cisco catalyst c9200 l 48,Cisco,catalyst c9200 l 48,UNKNOWN,https://www.cisco.com/c/en/us/products/index.html,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco Catalyst C9200 L 48
+Cisco Catalyst C9200-48T,cisco catalyst c9200-48t,Cisco,catalyst c9200-48t,UNKNOWN,https://www.cisco.com/c/en/us/products/index.html,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco Catalyst C9200-48T
+Cisco Catalyst C9300-48P,cisco catalyst c9300-48p,Cisco,catalyst c9300-48p,UNKNOWN,https://www.cisco.com/c/en/us/products/index.html,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco Catalyst C9300-48P
+Cisco Catalyst C9300L-48,cisco catalyst c9300l-48,Cisco,catalyst c9300l-48,UNKNOWN,https://www.cisco.com/c/en/us/products/index.html,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco Catalyst C9300L-48
+Cisco Catalyst C9407R,cisco catalyst c9407r,Cisco,catalyst c9407r,UNKNOWN,https://www.cisco.com/c/en/us/products/index.html,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco Catalyst C9407R
+Cisco Catalyst C9500-24Q,cisco catalyst c9500-24q,Cisco,catalyst c9500-24q,UNKNOWN,https://www.cisco.com/c/en/us/products/index.html,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco Catalyst C9500-24Q
+Cisco CISCO NCS-55A1-24H,cisco cisco ncs-55a1-24h,Cisco,ncs-55a1-24h,UNKNOWN,https://www.cisco.com/c/en/us/products/index.html,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco CISCO NCS-55A1-24H
+Cisco DNA Center Appliance,cisco dna center appliance,Cisco,dna,UNKNOWN,https://www.cisco.com/c/en/us/products/index.html,of-life products cisco contracts cisco customer contract experience tools cisco dna cisco feature navigator cisco security advisories cisco software central visio ,0.89,APPLY_CHANGE,CONFIDENCE_HIGH,True,dna
+Cisco Firepower 4145,cisco firepower 4145,Cisco,firepower,4145,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,firepower
+Cisco FPR4100,cisco fpr4100,Cisco,fpr4100,UNKNOWN,https://www.cisco.com/c/en/us/products/index.html,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco FPR4100
+CISCO GSS-4490-K9,cisco gss-4490-k9,Cisco,gss-,4490-K9,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,gss-
+Cisco IOS XRV9000-APLN-ROUT,cisco ios xrv9000-apln-rout,Cisco,ios xrv9000-apln-rout,UNKNOWN,https://www.cisco.com/c/en/us/products/index.html,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco IOS XRV9000-APLN-ROUT
+CISCO MDS 9134,cisco mds 9134,Cisco,mds,9134,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,mds
+Cisco MDS 9148,cisco mds 9148,Cisco,mds,9148,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,mds
+Cisco MDS 9148S 16G Multilayer Fabric Switch,cisco mds 9148s 16g multilayer fabric switch,Cisco,mds 16g multilayer,9148S,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,mds 16g multilayer
+Cisco MDS 9396S 16G Multilayer Fabric Switch,cisco mds 9396s 16g multilayer fabric switch,Cisco,mds 16g multilayer,9396S,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,mds 16g multilayer
+CISCO MDS 9513,cisco mds 9513,Cisco,mds,9513,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,mds
+Cisco MDS 9710,cisco mds 9710,Cisco,mds,9710,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,mds
+Cisco MDS 9718 Multilayer Director,cisco mds 9718 multilayer director,Cisco,mds multilayer director,9718,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,mds multilayer director
+Cisco ME-3600X-24TS-M,cisco me-3600x-24ts-m,Cisco,me- -m,3600X-24TS,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,me- -m
+Cisco MGMT-CWA-ASWT-03,cisco mgmt-cwa-aswt-03,Cisco,mgmt-cwa-aswt-03,UNKNOWN,https://www.cisco.com/c/en/us/products/index.html,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco MGMT-CWA-ASWT-03
+Cisco N3K-C31108PC-V,cisco n3k-c31108pc-v,Cisco,n3k-c31108pc-v,UNKNOWN,https://www.cisco.com/c/en/us/products/index.html,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco N3K-C31108PC-V
+Cisco N540X-ACC-SYS,cisco n540x-acc-sys,Cisco,n540x-acc-sys,UNKNOWN,https://www.cisco.com/c/en/us/products/index.html,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco N540X-ACC-SYS
+Cisco N9K-C93240YC-FX2,cisco n9k-c93240yc-fx2,Cisco,n9k-c93240yc-fx2,UNKNOWN,https://www.cisco.com/c/en/us/products/index.html,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco N9K-C93240YC-FX2
+Cisco NCS 5508,cisco ncs 5508,Cisco,ncs,5508,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,ncs
+Cisco Nexus 2224TP GE Fabric Extender,cisco nexus 2224tp ge fabric extender,Cisco,nexus 2224tp ge extender,UNKNOWN,https://www.cisco.com/c/en/us/products/index.html,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco Nexus 2224TP GE Fabric Extender
+CISCO NEXUS 2232PP,cisco nexus 2232pp,Cisco,nexus 2232pp,UNKNOWN,https://www.cisco.com/c/en/us/products/index.html,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,CISCO NEXUS 2232PP
+Cisco Nexus 2232PP 10GE,cisco nexus 2232pp 10ge,Cisco,nexus 2232pp 10ge,UNKNOWN,https://www.cisco.com/c/en/us/products/index.html,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco Nexus 2232PP 10GE
+Cisco Nexus 2232TM,cisco nexus 2232tm,Cisco,nexus 2232tm,UNKNOWN,https://www.cisco.com/c/en/us/products/index.html,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco Nexus 2232TM
+CISCO NEXUS 2248TP GE,cisco nexus 2248tp ge,Cisco,nexus 2248tp ge,UNKNOWN,https://www.cisco.com/c/en/us/products/index.html,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,CISCO NEXUS 2248TP GE
+Cisco Nexus 2248TP-E,cisco nexus 2248tp-e,Cisco,nexus 2248tp-e,UNKNOWN,https://www.cisco.com/c/en/us/products/index.html,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco Nexus 2248TP-E
+Cisco Nexus 2348TQ,cisco nexus 2348tq,Cisco,nexus 2348tq,UNKNOWN,https://www.cisco.com/c/en/us/products/index.html,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco Nexus 2348TQ
+Cisco Nexus 3048TP,cisco nexus 3048tp,Cisco,nexus 3048tp,UNKNOWN,https://www.cisco.com/c/en/us/products/index.html,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco Nexus 3048TP
+CISCO NEXUS 5020,cisco nexus 5020,Cisco,nexus,5020,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,nexus
+CISCO NEXUS 5548UP,cisco nexus 5548up,Cisco,nexus 5548up,UNKNOWN,https://www.cisco.com/c/en/us/products/index.html,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,CISCO NEXUS 5548UP
+CISCO NEXUS 5548UP - N5K-C5548UP-FA REVERSED,cisco nexus 5548up - n5k-c5548up-fa reversed,Cisco,nexus 5548up - n5k-c5548up-fa reversed,UNKNOWN,https://www.cisco.com/c/en/us/products/index.html,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,CISCO NEXUS 5548UP - N5K-C5548UP-FA REVERSED
+Cisco Nexus 5596UP,cisco nexus 5596up,Cisco,nexus 5596up,UNKNOWN,https://www.cisco.com/c/en/us/products/index.html,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco Nexus 5596UP
+Cisco Nexus 7000 10-Slot Switch,cisco nexus 7000 10-slot switch,Cisco,nexus 10-slot,7000,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,nexus 10-slot
+Cisco Nexus 7000 9-slot Switch,cisco nexus 7000 9-slot switch,Cisco,nexus 9-slot,7000,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,nexus 9-slot
+CISCO NEXUS 7009,cisco nexus 7009,Cisco,nexus,7009,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,nexus
+CISCO NEXUS 7010,cisco nexus 7010,Cisco,nexus,7010,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,nexus
+CISCO NEXUS 7018,cisco nexus 7018,Cisco,nexus,7018,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,nexus
+Cisco Nexus 92348GC-X,cisco nexus 92348gc-x,Cisco,nexus 92348gc-x,UNKNOWN,https://www.cisco.com/c/en/us/products/index.html,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco Nexus 92348GC-X
+Cisco Nexus 93108TC-EX,cisco nexus 93108tc-ex,Cisco,nexus 93108tc-ex,UNKNOWN,https://www.cisco.com/c/en/us/products/index.html,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco Nexus 93108TC-EX
+Cisco Nexus 93108TC-FX,cisco nexus 93108tc-fx,Cisco,nexus 93108tc-fx,UNKNOWN,https://www.cisco.com/c/en/us/products/index.html,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco Nexus 93108TC-FX
+Cisco Nexus 93108TC-FX Switch,cisco nexus 93108tc-fx switch,Cisco,nexus 93108tc-fx,UNKNOWN,https://www.cisco.com/c/en/us/products/index.html,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco Nexus 93108TC-FX Switch
+Cisco Nexus 93180YC-EX,cisco nexus 93180yc-ex,Cisco,nexus 93180yc-ex,UNKNOWN,https://www.cisco.com/c/en/us/products/index.html,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco Nexus 93180YC-EX
+Cisco Nexus 93180YC-FX,cisco nexus 93180yc-fx,Cisco,nexus 93180yc-fx,UNKNOWN,https://www.cisco.com/c/en/us/products/index.html,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco Nexus 93180YC-FX
+Cisco Nexus 93180YC-FX V06,cisco nexus 93180yc-fx v06,Cisco,nexus 93180yc-fx v06,UNKNOWN,https://www.cisco.com/c/en/us/products/index.html,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco Nexus 93180YC-FX V06
+Cisco Nexus 93180YC-FX3,cisco nexus 93180yc-fx3,Cisco,nexus 93180yc-fx3,UNKNOWN,https://www.cisco.com/c/en/us/products/index.html,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco Nexus 93180YC-FX3
+Cisco Nexus 93240YC-FX2,cisco nexus 93240yc-fx2,Cisco,nexus 93240yc-fx2,UNKNOWN,https://www.cisco.com/c/en/us/products/index.html,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco Nexus 93240YC-FX2
+Cisco Nexus 9336C-FX2,cisco nexus 9336c-fx2,Cisco,nexus,9336C-FX2,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,nexus
+Cisco Nexus 9336PQ,cisco nexus 9336pq,Cisco,nexus 9336pq,UNKNOWN,https://www.cisco.com/c/en/us/products/index.html,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco Nexus 9336PQ
+Cisco Nexus 9348GC-FXP,cisco nexus 9348gc-fxp,Cisco,nexus 9348gc-fxp,UNKNOWN,https://www.cisco.com/c/en/us/products/index.html,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco Nexus 9348GC-FXP
+Cisco Nexus 9348GC-FXP Chassis,cisco nexus 9348gc-fxp chassis,Cisco,nexus 9348gc-fxp chassis,UNKNOWN,https://www.cisco.com/c/en/us/products/index.html,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco Nexus 9348GC-FXP Chassis
+Cisco Nexus 93600 CD-GX,cisco nexus 93600 cd-gx,Cisco,nexus 93600 cd-gx,UNKNOWN,https://www.cisco.com/c/en/us/products/index.html,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco Nexus 93600 CD-GX
+Cisco Nexus 9364C,cisco nexus 9364c,Cisco,nexus,9364C,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,nexus
+Cisco Nexus 9372PX,cisco nexus 9372px,Cisco,nexus 9372px,UNKNOWN,https://www.cisco.com/c/en/us/products/index.html,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco Nexus 9372PX
+Cisco Nexus 9372TX-E,cisco nexus 9372tx-e,Cisco,nexus 9372tx-e,UNKNOWN,https://www.cisco.com/c/en/us/products/index.html,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco Nexus 9372TX-E
+Cisco Nexus 9504,cisco nexus 9504,Cisco,nexus,9504,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,nexus
+Cisco Nexus 9508,cisco nexus 9508,Cisco,nexus,9508,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,nexus
+Cisco Nexus C93240YC-FX2,cisco nexus c93240yc-fx2,Cisco,nexus c93240yc-fx2,UNKNOWN,https://www.cisco.com/c/en/us/products/index.html,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco Nexus C93240YC-FX2
+Cisco Nexus C9336C-FX2,cisco nexus c9336c-fx2,Cisco,nexus c9336c-fx2,UNKNOWN,https://www.cisco.com/c/en/us/products/index.html,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco Nexus C9336C-FX2
+Cisco Nexus9000 C9336C-FX2,cisco nexus9000 c9336c-fx2,Cisco,nexus9000 c9336c-fx2,UNKNOWN,https://www.cisco.com/c/en/us/products/index.html,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco Nexus9000 C9336C-FX2
+Cisco Secure Acs 1113-k9,cisco secure acs 1113-k9,Cisco,secure acs,1113-K9,https://www.cisco.com/c/en/us/products/index.html,lore all networking access networking simplify automate and secure your network experience with software-enabled switching and,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,secure acs
+Cisco SNS-3615-K9,cisco sns-3615-k9,Cisco,sns-,3615-K9,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,sns-
+Cisco SNS-3655-K9,cisco sns-3655-k9,Cisco,sns-,3655-K9,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,sns-
+Cisco SNS-3695-K9,cisco sns-3695-k9,Cisco,sns-,3695-K9,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,sns-
+Cisco UCS C220 M3 High-Density Rack Server Large Form Factor,cisco ucs c220 m3 high-density rack server large form factor,Cisco,ucs c220 m3 - large form factor,UNKNOWN,https://www.cisco.com/c/en/us/products/index.html,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco UCS C220 M3 High-Density Rack Server Large Form Factor
+Cisco UCS C220 M4,cisco ucs c220 m4,Cisco,ucs c220 m4,UNKNOWN,https://www.cisco.com/c/en/us/products/index.html,ol of your apps and infrastructure explore cisco intersight ucs x-series run any application on a flexible scalable modular,0.86,APPLY_CHANGE,CONFIDENCE_HIGH,True,ucs c220 m4
+Cisco UCS C220 M5,cisco ucs c220 m5,Cisco,ucs c220 m5,UNKNOWN,https://www.cisco.com/c/en/us/products/index.html,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco UCS C220 M5
+Cisco UCS C220 M7,cisco ucs c220 m7,Cisco,ucs c220 m7,UNKNOWN,https://www.cisco.com/c/en/us/products/index.html,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco UCS C220 M7
+Cisco UCS C225 M6,cisco ucs c225 m6,Cisco,ucs c225 m6,UNKNOWN,https://www.cisco.com/c/en/us/products/index.html,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco UCS C225 M6
+Cisco UCS S3260,cisco ucs s3260,Cisco,ucs s3260,UNKNOWN,https://www.cisco.com/c/en/us/products/index.html,ol of your apps and infrastructure explore cisco intersight ucs x-series run any application on a flexible scalable modular,0.86,APPLY_CHANGE,CONFIDENCE_HIGH,True,ucs s3260
+Cisco UCS-FI-6454,cisco ucs-fi-6454,Cisco,ucs-fi-,6454,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,ucs-fi-
+Cisco WLC 3504,cisco wlc 3504,Cisco,wlc,3504,https://www.cisco.com/c/en/us/products/index.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,wlc
+Cisco WS-C3650-24PD,cisco ws-c3650-24pd,Cisco,ws-c3650-24pd,UNKNOWN,https://www.cisco.com/c/en/us/products/index.html,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco WS-C3650-24PD
+Cisco WS-C3650-48P,cisco ws-c3650-48p,Cisco,ws-c3650-48p,UNKNOWN,https://www.cisco.com/c/en/us/products/index.html,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco WS-C3650-48P
+Cisco WS-C3750-48T-L,cisco ws-c3750-48t-l,Cisco,ws-c3750-48t-l,UNKNOWN,https://www.cisco.com/c/en/us/products/index.html,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco WS-C3750-48T-L
+Cisco WS-C3750X-48T-L,cisco ws-c3750x-48t-l,Cisco,ws-c3750x-48t-l,UNKNOWN,https://www.cisco.com/c/en/us/products/index.html,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Cisco WS-C3750X-48T-L
 Citrix NetScaler MPX 9100,citrix netscaler mpx 9100,UNKNOWN,citrix netscaler mpx,9100,LOCAL_RULESET,citrix netscaler mpx,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Citrix NetScaler MPX 9100
 Citrix NetScaler SDX 15000,citrix netscaler sdx 15000,UNKNOWN,citrix netscaler sdx 15000,UNKNOWN,LOCAL_RULESET,citrix netscaler sdx 15000,0.35,NO_CHANGE,CONFIDENCE_LOW,False,Citrix NetScaler SDX 15000
 CLEVERSAFE MANAGER 2100,cleversafe manager 2100,UNKNOWN,cleversafe manager,2100,LOCAL_RULESET,cleversafe manager,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,CLEVERSAFE MANAGER 2100
@@ -248,30 +248,30 @@ Dark Trace DCIP-M,dark trace dcip-m,UNKNOWN,dark trace dcip-m,UNKNOWN,LOCAL_RULE
 Dark Trace DCIP-X2,dark trace dcip-x2,UNKNOWN,dark trace dcip-x2,UNKNOWN,LOCAL_RULESET,dark trace dcip-x2,0.35,NO_CHANGE,CONFIDENCE_LOW,False,Dark Trace DCIP-X2
 Dark Trace DCIP-XA,dark trace dcip-xa,UNKNOWN,dark trace dcip-xa,UNKNOWN,LOCAL_RULESET,dark trace dcip-xa,0.35,NO_CHANGE,CONFIDENCE_LOW,False,Dark Trace DCIP-XA
 Dark Trace DCIP-Z,dark trace dcip-z,UNKNOWN,dark trace dcip-z,UNKNOWN,LOCAL_RULESET,dark trace dcip-z,0.35,NO_CHANGE,CONFIDENCE_LOW,False,Dark Trace DCIP-Z
-Dell EMC DD9800,dell emc dd9800,Dell EMC,dd9800,UNKNOWN,LOCAL_RULESET,dd9800,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Dell EMC DD9800
-Dell EMC Isilon H400,dell emc isilon h400,Dell EMC,isilon h400,UNKNOWN,LOCAL_RULESET,isilon h400,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Dell EMC Isilon H400
-Dell EMC Isilon H500,dell emc isilon h500,Dell EMC,isilon h500,UNKNOWN,LOCAL_RULESET,isilon h500,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Dell EMC Isilon H500
-Dell EMC ME4084 Storage Array,dell emc me4084 storage array,Dell EMC,me4084 array,UNKNOWN,LOCAL_RULESET,me4084 array,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Dell EMC ME4084 Storage Array
-Dell EMC ME484 Expansion Enclosure,dell emc me484 expansion enclosure,Dell EMC,me484 expansion,UNKNOWN,LOCAL_RULESET,me484 expansion,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Dell EMC ME484 Expansion Enclosure
-Dell EMC Unity 300,dell emc unity 300,Dell EMC,unity,300,LOCAL_RULESET,unity,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,unity
-Dell EMC Unity Array XT 380F,dell emc unity array xt 380f,Dell EMC,unity array xt,380F,LOCAL_RULESET,unity array xt,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,unity array xt
-Dell EMC Unity Array XT 480F,dell emc unity array xt 480f,Dell EMC,unity array xt,480F,LOCAL_RULESET,unity array xt,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,unity array xt
-Dell EMC Unity XT 680F DPE,dell emc unity xt 680f dpe,Dell EMC,unity xt dpe,680F,LOCAL_RULESET,unity xt dpe,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,unity xt dpe
-Dell EMC Unity XT DAE,dell emc unity xt dae,Dell EMC,unity xt dae,UNKNOWN,LOCAL_RULESET,unity xt dae,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Dell EMC Unity XT DAE
-Dell (for Supermicro) 600GB SAS 12Gb -10Krpm h-swap -2.5SAS 12Gbs,dell for supermicro 600gb sas 12gb -10krpm h-swap -2 5sas 12gbs,Dell,for supermicro 600gb sas 12gb -10krpm h-swap -2 5sas 12gbs,UNKNOWN,LOCAL_RULESET,for supermicro 600gb sas 12gb -10krpm h-swap -2 5sas 12gbs,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Dell (for Supermicro) 600GB SAS 12Gb -10Krpm h-swap -2.5SAS 12Gbs
-Dell Networking Z9100-ON Multi-rate Fabric Switch,dell networking z9100-on multi-rate fabric switch,Dell,networking z9100-on multi-rate,UNKNOWN,LOCAL_RULESET,networking z9100-on multi-rate,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Dell Networking Z9100-ON Multi-rate Fabric Switch
-Dell PowerEdge R640,dell poweredge r640,Dell,poweredge r640,UNKNOWN,LOCAL_RULESET,poweredge r640,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Dell PowerEdge R640
-Dell PowerEdge R650,dell poweredge r650,Dell,poweredge r650,UNKNOWN,LOCAL_RULESET,poweredge r650,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Dell PowerEdge R650
-Dell PowerEdge R650xs,dell poweredge r650xs,Dell,poweredge r650xs,UNKNOWN,LOCAL_RULESET,poweredge r650xs,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Dell PowerEdge R650xs
-Dell PowerEdge R6515,dell poweredge r6515,Dell,poweredge r6515,UNKNOWN,LOCAL_RULESET,poweredge r6515,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Dell PowerEdge R6515
-Dell PowerEdge R660,dell poweredge r660,Dell,poweredge r660,UNKNOWN,LOCAL_RULESET,poweredge r660,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Dell PowerEdge R660
-Dell PowerEdge R6715,dell poweredge r6715,Dell,poweredge r6715,UNKNOWN,LOCAL_RULESET,poweredge r6715,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Dell PowerEdge R6715
-Dell PowerEdge R730xd,dell poweredge r730xd,Dell,poweredge r730xd,UNKNOWN,LOCAL_RULESET,poweredge r730xd,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Dell PowerEdge R730xd
-Dell PowerEdge R740xd,dell poweredge r740xd,Dell,poweredge r740xd,UNKNOWN,LOCAL_RULESET,poweredge r740xd,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Dell PowerEdge R740xd
-Dell PowerEdge R750,dell poweredge r750,Dell,poweredge r750,UNKNOWN,LOCAL_RULESET,poweredge r750,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Dell PowerEdge R750
-Dell RSA SecurID Appliance 350,dell rsa securid appliance 350,Dell,rsa securid,350,LOCAL_RULESET,rsa securid,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,rsa securid
-Dell SonicWALL SuperMassive 9400,dell sonicwall supermassive 9400,Dell,sonicwall supermassive,9400,LOCAL_RULESET,sonicwall supermassive,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,sonicwall supermassive
-Dell Storage NX3240,dell storage nx3240,Dell,nx3240,UNKNOWN,LOCAL_RULESET,nx3240,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Dell Storage NX3240
+Dell EMC DD9800,dell emc dd9800,Dell EMC,dd9800,UNKNOWN,https://www.dell.com/support/home/en-us,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Dell EMC DD9800
+Dell EMC Isilon H400,dell emc isilon h400,Dell EMC,isilon h400,UNKNOWN,https://www.dell.com/support/home/en-us,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Dell EMC Isilon H400
+Dell EMC Isilon H500,dell emc isilon h500,Dell EMC,isilon h500,UNKNOWN,https://www.dell.com/support/home/en-us,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Dell EMC Isilon H500
+Dell EMC ME4084 Storage Array,dell emc me4084 storage array,Dell EMC,me4084 array,UNKNOWN,https://www.dell.com/support/home/en-us,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Dell EMC ME4084 Storage Array
+Dell EMC ME484 Expansion Enclosure,dell emc me484 expansion enclosure,Dell EMC,me484 expansion,UNKNOWN,https://www.dell.com/support/home/en-us,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Dell EMC ME484 Expansion Enclosure
+Dell EMC Unity 300,dell emc unity 300,Dell EMC,unity,300,https://www.dell.com/support/home/en-us,ts service requests dispatch status order support contact technical support community contact us uk en back sign in switch to business support need help with windows,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,unity
+Dell EMC Unity Array XT 380F,dell emc unity array xt 380f,Dell EMC,unity array xt,380F,https://www.dell.com/support/home/en-us,dispatch status order support contact technical support community contact us uk en back sign in switch to business support ne,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,unity array xt
+Dell EMC Unity Array XT 480F,dell emc unity array xt 480f,Dell EMC,unity array xt,480F,https://www.dell.com/support/home/en-us,dispatch status order support contact technical support community contact us uk en back sign in switch to business support ne,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,unity array xt
+Dell EMC Unity XT 680F DPE,dell emc unity xt 680f dpe,Dell EMC,unity xt dpe,680F,https://www.dell.com/support/home/en-us,dispatch status order support contact technical support community contact us uk en back sign in switch to business support ne,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,unity xt dpe
+Dell EMC Unity XT DAE,dell emc unity xt dae,Dell EMC,unity xt dae,UNKNOWN,https://www.dell.com/support/home/en-us,dispatch status order support contact technical support community contact us uk en back sign in switch to business support ne,0.86,APPLY_CHANGE,CONFIDENCE_HIGH,True,unity xt dae
+Dell (for Supermicro) 600GB SAS 12Gb -10Krpm h-swap -2.5SAS 12Gbs,dell for supermicro 600gb sas 12gb -10krpm h-swap -2 5sas 12gbs,Dell,for supermicro 600gb sas 12gb -10krpm h-swap -2 5sas 12gbs,UNKNOWN,https://www.dell.com/support/home/en-us,lways verify ai-generated responses do not share personal information troubleshoot an issue find a driver diagnose my syste,0.85,APPLY_CHANGE,CONFIDENCE_HIGH,True,for supermicro 600gb sas 12gb -10krpm h-swap -2 5sas 12gbs
+Dell Networking Z9100-ON Multi-rate Fabric Switch,dell networking z9100-on multi-rate fabric switch,Dell,networking z9100-on multi-rate,UNKNOWN,https://www.dell.com/support/home/en-us,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Dell Networking Z9100-ON Multi-rate Fabric Switch
+Dell PowerEdge R640,dell poweredge r640,Dell,poweredge r640,UNKNOWN,https://www.dell.com/support/home/en-us,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Dell PowerEdge R640
+Dell PowerEdge R650,dell poweredge r650,Dell,poweredge r650,UNKNOWN,https://www.dell.com/support/home/en-us,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Dell PowerEdge R650
+Dell PowerEdge R650xs,dell poweredge r650xs,Dell,poweredge r650xs,UNKNOWN,https://www.dell.com/support/home/en-us,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Dell PowerEdge R650xs
+Dell PowerEdge R6515,dell poweredge r6515,Dell,poweredge r6515,UNKNOWN,https://www.dell.com/support/home/en-us,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Dell PowerEdge R6515
+Dell PowerEdge R660,dell poweredge r660,Dell,poweredge r660,UNKNOWN,https://www.dell.com/support/home/en-us,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Dell PowerEdge R660
+Dell PowerEdge R6715,dell poweredge r6715,Dell,poweredge r6715,UNKNOWN,https://www.dell.com/support/home/en-us,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Dell PowerEdge R6715
+Dell PowerEdge R730xd,dell poweredge r730xd,Dell,poweredge r730xd,UNKNOWN,https://www.dell.com/support/home/en-us,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Dell PowerEdge R730xd
+Dell PowerEdge R740xd,dell poweredge r740xd,Dell,poweredge r740xd,UNKNOWN,https://www.dell.com/support/home/en-us,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Dell PowerEdge R740xd
+Dell PowerEdge R750,dell poweredge r750,Dell,poweredge r750,UNKNOWN,https://www.dell.com/support/home/en-us,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Dell PowerEdge R750
+Dell RSA SecurID Appliance 350,dell rsa securid appliance 350,Dell,rsa securid,350,https://www.dell.com/support/home/en-us,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,rsa securid
+Dell SonicWALL SuperMassive 9400,dell sonicwall supermassive 9400,Dell,sonicwall supermassive,9400,https://www.dell.com/support/home/en-us,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,sonicwall supermassive
+Dell Storage NX3240,dell storage nx3240,Dell,nx3240,UNKNOWN,https://www.dell.com/support/home/en-us,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Dell Storage NX3240
 Delta Networks AK7448,delta networks ak7448,UNKNOWN,delta networks ak7448,UNKNOWN,LOCAL_RULESET,delta networks ak7448,0.35,NO_CHANGE,CONFIDENCE_LOW,False,Delta Networks AK7448
 EATON APS6-300,eaton aps6-300,UNKNOWN,eaton aps6-,300,LOCAL_RULESET,eaton aps6-,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,EATON APS6-300
 Elemental Technologies Stream 200 Series,elemental technologies stream 200 series,UNKNOWN,elemental technologies stream,200,LOCAL_RULESET,elemental technologies stream,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Elemental Technologies Stream 200 Series
@@ -284,22 +284,22 @@ EMC FS25,emc fs25,UNKNOWN,emc fs25,UNKNOWN,LOCAL_RULESET,emc fs25,0.35,NO_CHANGE
 EMC Isilon X200,emc isilon x200,UNKNOWN,emc isilon x200,UNKNOWN,LOCAL_RULESET,emc isilon x200,0.35,NO_CHANGE,CONFIDENCE_LOW,False,EMC Isilon X200
 EMC Isilon X410,emc isilon x410,UNKNOWN,emc isilon x410,UNKNOWN,LOCAL_RULESET,emc isilon x410,0.35,NO_CHANGE,CONFIDENCE_LOW,False,EMC Isilon X410
 EVS XTAccess XTA1-4301D,evs xtaccess xta1-4301d,UNKNOWN,evs xtaccess xta1-,4301D,LOCAL_RULESET,evs xtaccess xta1-,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,EVS XTAccess XTA1-4301D
-F5 BIG-IP 4000 Series,f5 big-ip 4000 series,F5,big-ip,4000,LOCAL_RULESET,big-ip,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,big-ip
-F5 Big-IP 4200v,f5 big-ip 4200v,F5,big-ip,4200V,LOCAL_RULESET,big-ip,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,big-ip
-F5 Big-ip 5000 Switch,f5 big-ip 5000 switch,F5,big-ip,5000,LOCAL_RULESET,big-ip,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,big-ip
-F5 Big-ip 5050 Switch,f5 big-ip 5050 switch,F5,big-ip,5050,LOCAL_RULESET,big-ip,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,big-ip
-F5 Big-IP 5250v Switch,f5 big-ip 5250v switch,F5,big-ip,5250V,LOCAL_RULESET,big-ip,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,big-ip
-F5 BIG-IP 6900,f5 big-ip 6900,F5,big-ip,6900,LOCAL_RULESET,big-ip,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,big-ip
-F5 BIG-IP LTM 3600,f5 big-ip ltm 3600,F5,big-ip ltm,3600,LOCAL_RULESET,big-ip ltm,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,big-ip ltm
-F5 BIG-IP r10900 Series,f5 big-ip r10900 series,F5,big-ip r10900,UNKNOWN,LOCAL_RULESET,big-ip r10900,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,F5 BIG-IP r10900 Series
-F5 BIGIP 2800,f5 bigip 2800,F5,bigip,2800,LOCAL_RULESET,bigip,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,bigip
-F5 BIGIP I 4800,f5 bigip i 4800,F5,bigip i,4800,LOCAL_RULESET,bigip i,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,bigip i
-F5 BIGIP I 5600,f5 bigip i 5600,F5,bigip i,5600,LOCAL_RULESET,bigip i,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,bigip i
-F5 BIGIP I 5800,f5 bigip i 5800,F5,bigip i,5800,LOCAL_RULESET,bigip i,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,bigip i
-F5 VELOS CX410,f5 velos cx410,F5,velos cx410,UNKNOWN,LOCAL_RULESET,velos cx410,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,F5 VELOS CX410
-F5 VIPRION,f5 viprion,F5,viprion,UNKNOWN,LOCAL_RULESET,viprion,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,F5 VIPRION
-F5 VIPRION 2400,f5 viprion 2400,F5,viprion,2400,LOCAL_RULESET,viprion,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,viprion
-F5 VIPRION C2400,f5 viprion c2400,F5,viprion c2400,UNKNOWN,LOCAL_RULESET,viprion c2400,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,F5 VIPRION C2400
+F5 BIG-IP 4000 Series,f5 big-ip 4000 series,F5,big-ip,4000,https://www.f5.com/products,uardrails red teaming cloud-native dpu hardware saas software view all products big-ip upgrade customer case studies digital sovereignty managed services product demo,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,big-ip
+F5 Big-IP 4200v,f5 big-ip 4200v,F5,big-ip,4200V,https://www.f5.com/products,uardrails red teaming cloud-native dpu hardware saas software view all products big-ip upgrade customer case studies digital sovereignty managed services product demo,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,big-ip
+F5 Big-ip 5000 Switch,f5 big-ip 5000 switch,F5,big-ip,5000,https://www.f5.com/products,uardrails red teaming cloud-native dpu hardware saas software view all products big-ip upgrade customer case studies digital sovereignty managed services product demo,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,big-ip
+F5 Big-ip 5050 Switch,f5 big-ip 5050 switch,F5,big-ip,5050,https://www.f5.com/products,uardrails red teaming cloud-native dpu hardware saas software view all products big-ip upgrade customer case studies digital sovereignty managed services product demo,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,big-ip
+F5 Big-IP 5250v Switch,f5 big-ip 5250v switch,F5,big-ip,5250V,https://www.f5.com/products,uardrails red teaming cloud-native dpu hardware saas software view all products big-ip upgrade customer case studies digital sovereignty managed services product demo,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,big-ip
+F5 BIG-IP 6900,f5 big-ip 6900,F5,big-ip,6900,https://www.f5.com/products,uardrails red teaming cloud-native dpu hardware saas software view all products big-ip upgrade customer case studies digital sovereignty managed services product demo,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,big-ip
+F5 BIG-IP LTM 3600,f5 big-ip ltm 3600,F5,big-ip ltm,3600,https://www.f5.com/products,g cloud-native dpu hardware saas software view all products big-ip upgrade customer case studies digital sovereignty managed s,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,big-ip ltm
+F5 BIG-IP r10900 Series,f5 big-ip r10900 series,F5,big-ip r10900,UNKNOWN,https://www.f5.com/products,g cloud-native dpu hardware saas software view all products big-ip upgrade customer case studies digital sovereignty managed s,0.86,APPLY_CHANGE,CONFIDENCE_HIGH,True,big-ip r10900
+F5 BIGIP 2800,f5 bigip 2800,F5,bigip,2800,https://www.f5.com/products,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,bigip
+F5 BIGIP I 4800,f5 bigip i 4800,F5,bigip i,4800,https://www.f5.com/products,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,bigip i
+F5 BIGIP I 5600,f5 bigip i 5600,F5,bigip i,5600,https://www.f5.com/products,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,bigip i
+F5 BIGIP I 5800,f5 bigip i 5800,F5,bigip i,5800,https://www.f5.com/products,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,bigip i
+F5 VELOS CX410,f5 velos cx410,F5,velos cx410,UNKNOWN,https://www.f5.com/products,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,F5 VELOS CX410
+F5 VIPRION,f5 viprion,F5,viprion,UNKNOWN,https://www.f5.com/products,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,F5 VIPRION
+F5 VIPRION 2400,f5 viprion 2400,F5,viprion,2400,https://www.f5.com/products,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,viprion
+F5 VIPRION C2400,f5 viprion c2400,F5,viprion c2400,UNKNOWN,https://www.f5.com/products,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,F5 VIPRION C2400
 Fortinet FortiAnalyzer 200f,fortinet fortianalyzer 200f,UNKNOWN,fortinet fortianalyzer,200F,LOCAL_RULESET,fortinet fortianalyzer,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Fortinet FortiAnalyzer 200f
 Fortinet FortiGate 400F,fortinet fortigate 400f,UNKNOWN,fortinet fortigate,400F,LOCAL_RULESET,fortinet fortigate,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Fortinet FortiGate 400F
 Fortinet FortiManager 200F,fortinet fortimanager 200f,UNKNOWN,fortinet fortimanager,200F,LOCAL_RULESET,fortinet fortimanager,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Fortinet FortiManager 200F
@@ -313,78 +313,78 @@ GIGAMON SYSTEMS GIGAVUE-HB1,gigamon systems gigavue-hb1,UNKNOWN,gigamon systems 
 Gigamon Systems Gigavue-TA25,gigamon systems gigavue-ta25,UNKNOWN,gigamon systems gigavue-ta25,UNKNOWN,LOCAL_RULESET,gigamon systems gigavue-ta25,0.35,NO_CHANGE,CONFIDENCE_LOW,False,Gigamon Systems Gigavue-TA25
 Google Transfer Appliance,google transfer appliance,UNKNOWN,google transfer,UNKNOWN,LOCAL_RULESET,google transfer,0.35,NO_CHANGE,CONFIDENCE_LOW,False,Google Transfer Appliance
 Harmonic Electra XOS,harmonic electra xos,UNKNOWN,harmonic electra xos,UNKNOWN,LOCAL_RULESET,harmonic electra xos,0.35,NO_CHANGE,CONFIDENCE_LOW,False,Harmonic Electra XOS
-Hewlett Packard 3PAR StoreServ 20000,hewlett packard 3par storeserv 20000,Hewlett Packard,3par storeserv 20000,UNKNOWN,LOCAL_RULESET,3par storeserv 20000,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Hewlett Packard 3PAR StoreServ 20000
-Hewlett Packard 3PAR StoreServ 7400,hewlett packard 3par storeserv 7400,Hewlett Packard,3par storeserv,7400,LOCAL_RULESET,3par storeserv,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,3par storeserv
-Hewlett Packard 3PAR StoreServ 8000,hewlett packard 3par storeserv 8000,Hewlett Packard,3par storeserv,8000,LOCAL_RULESET,3par storeserv,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,3par storeserv
-Hewlett Packard AF621A,hewlett packard af621a,Hewlett Packard,af621a,UNKNOWN,LOCAL_RULESET,af621a,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Hewlett Packard AF621A
-Hewlett Packard AF621A - AF621A V2,hewlett packard af621a - af621a v2,Hewlett Packard,af621a - af621a v2,UNKNOWN,LOCAL_RULESET,af621a - af621a v2,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Hewlett Packard AF621A - AF621A V2
-Hewlett Packard Apollo 4200 G10,hewlett packard apollo 4200 g10,Hewlett Packard,apollo g10,4200,LOCAL_RULESET,apollo g10,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,apollo g10
-Hewlett Packard Apollo 4200 G9,hewlett packard apollo 4200 g9,Hewlett Packard,apollo g9,4200,LOCAL_RULESET,apollo g9,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,apollo g9
-Hewlett Packard Apollo 4510,hewlett packard apollo 4510,Hewlett Packard,apollo,4510,LOCAL_RULESET,apollo,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,apollo
-Hewlett Packard Apollo 4510 G10,hewlett packard apollo 4510 g10,Hewlett Packard,apollo g10,4510,LOCAL_RULESET,apollo g10,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,apollo g10
-Hewlett Packard D2600,hewlett packard d2600,Hewlett Packard,d2600,UNKNOWN,LOCAL_RULESET,d2600,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Hewlett Packard D2600
-Hewlett Packard D3700,hewlett packard d3700,Hewlett Packard,d3700,UNKNOWN,LOCAL_RULESET,d3700,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Hewlett Packard D3700
-Hewlett Packard HP ProLiant DL360 Gen11,hewlett packard hp proliant dl360 gen11,Hewlett Packard,proliant dl360,GEN11,LOCAL_RULESET,proliant dl360,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,proliant dl360
-HEWLETT PACKARD LEFTHAND P4500,hewlett packard lefthand p4500,Hewlett Packard,lefthand p4500,UNKNOWN,LOCAL_RULESET,lefthand p4500,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,HEWLETT PACKARD LEFTHAND P4500
-Hewlett Packard M6710,hewlett packard m6710,Hewlett Packard,m6710,UNKNOWN,LOCAL_RULESET,m6710,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Hewlett Packard M6710
-Hewlett Packard MSA P2000 G3,hewlett packard msa p2000 g3,Hewlett Packard,msa p2000 g3,UNKNOWN,LOCAL_RULESET,msa p2000 g3,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Hewlett Packard MSA P2000 G3
-HEWLETT PACKARD MSA1000,hewlett packard msa1000,Hewlett Packard,msa1000,UNKNOWN,LOCAL_RULESET,msa1000,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,HEWLETT PACKARD MSA1000
-HEWLETT PACKARD MSA2000,hewlett packard msa2000,Hewlett Packard,msa2000,UNKNOWN,LOCAL_RULESET,msa2000,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,HEWLETT PACKARD MSA2000
-Hewlett Packard P2000 G3,hewlett packard p2000 g3,Hewlett Packard,p2000 g3,UNKNOWN,LOCAL_RULESET,p2000 g3,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Hewlett Packard P2000 G3
-Hewlett Packard ProLiant DL325 Gen10,hewlett packard proliant dl325 gen10,Hewlett Packard,proliant dl325,GEN10,LOCAL_RULESET,proliant dl325,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,proliant dl325
-Hewlett Packard ProLiant DL360 Gen10,hewlett packard proliant dl360 gen10,Hewlett Packard,proliant dl360,GEN10,LOCAL_RULESET,proliant dl360,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,proliant dl360
-Hewlett Packard ProLiant DL360 Gen11,hewlett packard proliant dl360 gen11,Hewlett Packard,proliant dl360,GEN11,LOCAL_RULESET,proliant dl360,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,proliant dl360
-Hewlett Packard ProLiant DL360 Gen8,hewlett packard proliant dl360 gen8,Hewlett Packard,proliant dl360,GEN8,LOCAL_RULESET,proliant dl360,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,proliant dl360
-Hewlett Packard ProLiant DL360 Gen9,hewlett packard proliant dl360 gen9,Hewlett Packard,proliant dl360,GEN9,LOCAL_RULESET,proliant dl360,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,proliant dl360
-HEWLETT PACKARD PROLIANT DL360p GEN 10,hewlett packard proliant dl360p gen 10,Hewlett Packard,proliant dl360p,GEN 10,LOCAL_RULESET,proliant dl360p,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,proliant dl360p
-Hewlett Packard ProLiant DL360p Gen8,hewlett packard proliant dl360p gen8,Hewlett Packard,proliant dl360p,GEN8,LOCAL_RULESET,proliant dl360p,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,proliant dl360p
-HEWLETT PACKARD PROLIANT DL380 G5,hewlett packard proliant dl380 g5,Hewlett Packard,proliant dl380 g5,UNKNOWN,LOCAL_RULESET,proliant dl380 g5,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,HEWLETT PACKARD PROLIANT DL380 G5
-HEWLETT PACKARD PROLIANT DL380 G6,hewlett packard proliant dl380 g6,Hewlett Packard,proliant dl380 g6,UNKNOWN,LOCAL_RULESET,proliant dl380 g6,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,HEWLETT PACKARD PROLIANT DL380 G6
-HEWLETT PACKARD PROLIANT DL380 G7,hewlett packard proliant dl380 g7,Hewlett Packard,proliant dl380 g7,UNKNOWN,LOCAL_RULESET,proliant dl380 g7,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,HEWLETT PACKARD PROLIANT DL380 G7
-Hewlett Packard ProLiant DL380 Gen10,hewlett packard proliant dl380 gen10,Hewlett Packard,proliant dl380,GEN10,LOCAL_RULESET,proliant dl380,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,proliant dl380
-Hewlett Packard ProLiant DL380 Gen8,hewlett packard proliant dl380 gen8,Hewlett Packard,proliant dl380,GEN8,LOCAL_RULESET,proliant dl380,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,proliant dl380
-Hewlett Packard ProLiant DL380 Gen9,hewlett packard proliant dl380 gen9,Hewlett Packard,proliant dl380,GEN9,LOCAL_RULESET,proliant dl380,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,proliant dl380
-HEWLETT PACKARD PROLIANT DL380P GEN10,hewlett packard proliant dl380p gen10,Hewlett Packard,proliant dl380p,GEN10,LOCAL_RULESET,proliant dl380p,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,proliant dl380p
-Hewlett Packard ProLiant DL380p Gen8,hewlett packard proliant dl380p gen8,Hewlett Packard,proliant dl380p,GEN8,LOCAL_RULESET,proliant dl380p,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,proliant dl380p
-Hewlett Packard ProLiant DL560 Gen10,hewlett packard proliant dl560 gen10,Hewlett Packard,proliant dl560,GEN10,LOCAL_RULESET,proliant dl560,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,proliant dl560
-Hewlett Packard ProLiant DL560 Gen8,hewlett packard proliant dl560 gen8,Hewlett Packard,proliant dl560,GEN8,LOCAL_RULESET,proliant dl560,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,proliant dl560
-Hewlett Packard ProLiant DL560 Gen9,hewlett packard proliant dl560 gen9,Hewlett Packard,proliant dl560,GEN9,LOCAL_RULESET,proliant dl560,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,proliant dl560
-HEWLETT PACKARD PROLIANT DL560P GEN8,hewlett packard proliant dl560p gen8,Hewlett Packard,proliant dl560p,GEN8,LOCAL_RULESET,proliant dl560p,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,proliant dl560p
-HEWLETT PACKARD PROLIANT DL580 G7,hewlett packard proliant dl580 g7,Hewlett Packard,proliant dl580 g7,UNKNOWN,LOCAL_RULESET,proliant dl580 g7,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,HEWLETT PACKARD PROLIANT DL580 G7
-Hewlett Packard ProLiant DL580 Gen8,hewlett packard proliant dl580 gen8,Hewlett Packard,proliant dl580,GEN8,LOCAL_RULESET,proliant dl580,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,proliant dl580
-HEWLETT PACKARD SANSWITCH 8/24,hewlett packard sanswitch 8 24,Hewlett Packard,sanswitch 8 24,UNKNOWN,LOCAL_RULESET,sanswitch 8 24,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,HEWLETT PACKARD SANSWITCH 8/24
-Hewlett Packard SN6000B Fibre Channel Switch,hewlett packard sn6000b fibre channel switch,Hewlett Packard,sn6000b fibre channel,UNKNOWN,LOCAL_RULESET,sn6000b fibre channel,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Hewlett Packard SN6000B Fibre Channel Switch
-HEWLETT PACKARD STORAGEWORKS,hewlett packard storageworks,Hewlett Packard,storageworks,UNKNOWN,LOCAL_RULESET,storageworks,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,HEWLETT PACKARD STORAGEWORKS
-Hewlett Packard Storageworks 8/24  San Switch,hewlett packard storageworks 8 24 san switch,Hewlett Packard,storageworks 8 24 san,UNKNOWN,LOCAL_RULESET,storageworks 8 24 san,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Hewlett Packard Storageworks 8/24  San Switch
-Hewlett Packard Storageworks MSA 2040,hewlett packard storageworks msa 2040,Hewlett Packard,storageworks msa,2040,LOCAL_RULESET,storageworks msa,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,storageworks msa
-HP 3PAR StoreServ 8400 4-node Storage Base,hp 3par storeserv 8400 4-node storage base,Hewlett Packard,3par storeserv 4-node base,8400,LOCAL_RULESET,3par storeserv 4-node base,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,3par storeserv 4-node base
-HP Hewlett-Packard Apollo 4510 Gen 10,hp hewlett-packard apollo 4510 gen 10,Hewlett Packard,hewlett-packard apollo 4510,GEN 10,LOCAL_RULESET,hewlett-packard apollo 4510,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,hewlett-packard apollo 4510
-HP HPE ProLiant DL360 Gen10 Server,hp hpe proliant dl360 gen10 server,Hewlett Packard,e proliant dl360,GEN10,LOCAL_RULESET,e proliant dl360,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,e proliant dl360
-HP Proliant Dl360 G10,hp proliant dl360 g10,Hewlett Packard,proliant dl360 g10,UNKNOWN,LOCAL_RULESET,proliant dl360 g10,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,HP Proliant Dl360 G10
-HP ProLiant DL360 G5,hp proliant dl360 g5,Hewlett Packard,proliant dl360 g5,UNKNOWN,LOCAL_RULESET,proliant dl360 g5,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,HP ProLiant DL360 G5
-HP Proliant Dl360 G6,hp proliant dl360 g6,Hewlett Packard,proliant dl360 g6,UNKNOWN,LOCAL_RULESET,proliant dl360 g6,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,HP Proliant Dl360 G6
-HP ProLiant DL360 Gen10,hp proliant dl360 gen10,Hewlett Packard,proliant dl360,GEN10,LOCAL_RULESET,proliant dl360,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,proliant dl360
-HP ProLiant DL360 Gen11,hp proliant dl360 gen11,Hewlett Packard,proliant dl360,GEN11,LOCAL_RULESET,proliant dl360,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,proliant dl360
-HP Proliant Dl365 G11,hp proliant dl365 g11,Hewlett Packard,proliant dl365 g11,UNKNOWN,LOCAL_RULESET,proliant dl365 g11,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,HP Proliant Dl365 G11
-HP Proliant DL380 G10,hp proliant dl380 g10,Hewlett Packard,proliant dl380 g10,UNKNOWN,LOCAL_RULESET,proliant dl380 g10,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,HP Proliant DL380 G10
-HP Proliant DL385 G10,hp proliant dl385 g10,Hewlett Packard,proliant dl385 g10,UNKNOWN,LOCAL_RULESET,proliant dl385 g10,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,HP Proliant DL385 G10
-HP Proliant Dl385 G7,hp proliant dl385 g7,Hewlett Packard,proliant dl385 g7,UNKNOWN,LOCAL_RULESET,proliant dl385 g7,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,HP Proliant Dl385 G7
-HP Storageworks MSA 2060,hp storageworks msa 2060,Hewlett Packard,storageworks msa,2060,LOCAL_RULESET,storageworks msa,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,storageworks msa
-HP StorageWorks Msa70,hp storageworks msa70,Hewlett Packard,storageworks msa70,UNKNOWN,LOCAL_RULESET,storageworks msa70,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,HP StorageWorks Msa70
-HP Tft7600,hp tft7600,Hewlett Packard,tft7600,UNKNOWN,LOCAL_RULESET,tft7600,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,HP Tft7600
+Hewlett Packard 3PAR StoreServ 20000,hewlett packard 3par storeserv 20000,Hewlett Packard,3par storeserv 20000,UNKNOWN,https://support.hpe.com/hpesc/public/home,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Hewlett Packard 3PAR StoreServ 20000
+Hewlett Packard 3PAR StoreServ 7400,hewlett packard 3par storeserv 7400,Hewlett Packard,3par storeserv,7400,https://support.hpe.com/hpesc/public/home,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,3par storeserv
+Hewlett Packard 3PAR StoreServ 8000,hewlett packard 3par storeserv 8000,Hewlett Packard,3par storeserv,8000,https://support.hpe.com/hpesc/public/home,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,3par storeserv
+Hewlett Packard AF621A,hewlett packard af621a,Hewlett Packard,af621a,UNKNOWN,https://support.hpe.com/hpesc/public/home,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Hewlett Packard AF621A
+Hewlett Packard AF621A - AF621A V2,hewlett packard af621a - af621a v2,Hewlett Packard,af621a - af621a v2,UNKNOWN,https://support.hpe.com/hpesc/public/home,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Hewlett Packard AF621A - AF621A V2
+Hewlett Packard Apollo 4200 G10,hewlett packard apollo 4200 g10,Hewlett Packard,apollo g10,4200,https://support.hpe.com/hpesc/public/home,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,apollo g10
+Hewlett Packard Apollo 4200 G9,hewlett packard apollo 4200 g9,Hewlett Packard,apollo g9,4200,https://support.hpe.com/hpesc/public/home,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,apollo g9
+Hewlett Packard Apollo 4510,hewlett packard apollo 4510,Hewlett Packard,apollo,4510,https://support.hpe.com/hpesc/public/home,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,apollo
+Hewlett Packard Apollo 4510 G10,hewlett packard apollo 4510 g10,Hewlett Packard,apollo g10,4510,https://support.hpe.com/hpesc/public/home,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,apollo g10
+Hewlett Packard D2600,hewlett packard d2600,Hewlett Packard,d2600,UNKNOWN,https://support.hpe.com/hpesc/public/home,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Hewlett Packard D2600
+Hewlett Packard D3700,hewlett packard d3700,Hewlett Packard,d3700,UNKNOWN,https://support.hpe.com/hpesc/public/home,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Hewlett Packard D3700
+Hewlett Packard HP ProLiant DL360 Gen11,hewlett packard hp proliant dl360 gen11,Hewlett Packard,proliant dl360,GEN11,https://support.hpe.com/hpesc/public/home,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,proliant dl360
+HEWLETT PACKARD LEFTHAND P4500,hewlett packard lefthand p4500,Hewlett Packard,lefthand p4500,UNKNOWN,https://support.hpe.com/hpesc/public/home,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,HEWLETT PACKARD LEFTHAND P4500
+Hewlett Packard M6710,hewlett packard m6710,Hewlett Packard,m6710,UNKNOWN,https://support.hpe.com/hpesc/public/home,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Hewlett Packard M6710
+Hewlett Packard MSA P2000 G3,hewlett packard msa p2000 g3,Hewlett Packard,msa p2000 g3,UNKNOWN,https://support.hpe.com/hpesc/public/home,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Hewlett Packard MSA P2000 G3
+HEWLETT PACKARD MSA1000,hewlett packard msa1000,Hewlett Packard,msa1000,UNKNOWN,https://support.hpe.com/hpesc/public/home,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,HEWLETT PACKARD MSA1000
+HEWLETT PACKARD MSA2000,hewlett packard msa2000,Hewlett Packard,msa2000,UNKNOWN,https://support.hpe.com/hpesc/public/home,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,HEWLETT PACKARD MSA2000
+Hewlett Packard P2000 G3,hewlett packard p2000 g3,Hewlett Packard,p2000 g3,UNKNOWN,https://support.hpe.com/hpesc/public/home,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Hewlett Packard P2000 G3
+Hewlett Packard ProLiant DL325 Gen10,hewlett packard proliant dl325 gen10,Hewlett Packard,proliant dl325,GEN10,https://support.hpe.com/hpesc/public/home,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,proliant dl325
+Hewlett Packard ProLiant DL360 Gen10,hewlett packard proliant dl360 gen10,Hewlett Packard,proliant dl360,GEN10,https://support.hpe.com/hpesc/public/home,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,proliant dl360
+Hewlett Packard ProLiant DL360 Gen11,hewlett packard proliant dl360 gen11,Hewlett Packard,proliant dl360,GEN11,https://support.hpe.com/hpesc/public/home,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,proliant dl360
+Hewlett Packard ProLiant DL360 Gen8,hewlett packard proliant dl360 gen8,Hewlett Packard,proliant dl360,GEN8,https://support.hpe.com/hpesc/public/home,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,proliant dl360
+Hewlett Packard ProLiant DL360 Gen9,hewlett packard proliant dl360 gen9,Hewlett Packard,proliant dl360,GEN9,https://support.hpe.com/hpesc/public/home,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,proliant dl360
+HEWLETT PACKARD PROLIANT DL360p GEN 10,hewlett packard proliant dl360p gen 10,Hewlett Packard,proliant dl360p,GEN 10,https://support.hpe.com/hpesc/public/home,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,proliant dl360p
+Hewlett Packard ProLiant DL360p Gen8,hewlett packard proliant dl360p gen8,Hewlett Packard,proliant dl360p,GEN8,https://support.hpe.com/hpesc/public/home,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,proliant dl360p
+HEWLETT PACKARD PROLIANT DL380 G5,hewlett packard proliant dl380 g5,Hewlett Packard,proliant dl380 g5,UNKNOWN,https://support.hpe.com/hpesc/public/home,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,HEWLETT PACKARD PROLIANT DL380 G5
+HEWLETT PACKARD PROLIANT DL380 G6,hewlett packard proliant dl380 g6,Hewlett Packard,proliant dl380 g6,UNKNOWN,https://support.hpe.com/hpesc/public/home,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,HEWLETT PACKARD PROLIANT DL380 G6
+HEWLETT PACKARD PROLIANT DL380 G7,hewlett packard proliant dl380 g7,Hewlett Packard,proliant dl380 g7,UNKNOWN,https://support.hpe.com/hpesc/public/home,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,HEWLETT PACKARD PROLIANT DL380 G7
+Hewlett Packard ProLiant DL380 Gen10,hewlett packard proliant dl380 gen10,Hewlett Packard,proliant dl380,GEN10,https://support.hpe.com/hpesc/public/home,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,proliant dl380
+Hewlett Packard ProLiant DL380 Gen8,hewlett packard proliant dl380 gen8,Hewlett Packard,proliant dl380,GEN8,https://support.hpe.com/hpesc/public/home,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,proliant dl380
+Hewlett Packard ProLiant DL380 Gen9,hewlett packard proliant dl380 gen9,Hewlett Packard,proliant dl380,GEN9,https://support.hpe.com/hpesc/public/home,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,proliant dl380
+HEWLETT PACKARD PROLIANT DL380P GEN10,hewlett packard proliant dl380p gen10,Hewlett Packard,proliant dl380p,GEN10,https://support.hpe.com/hpesc/public/home,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,proliant dl380p
+Hewlett Packard ProLiant DL380p Gen8,hewlett packard proliant dl380p gen8,Hewlett Packard,proliant dl380p,GEN8,https://support.hpe.com/hpesc/public/home,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,proliant dl380p
+Hewlett Packard ProLiant DL560 Gen10,hewlett packard proliant dl560 gen10,Hewlett Packard,proliant dl560,GEN10,https://support.hpe.com/hpesc/public/home,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,proliant dl560
+Hewlett Packard ProLiant DL560 Gen8,hewlett packard proliant dl560 gen8,Hewlett Packard,proliant dl560,GEN8,https://support.hpe.com/hpesc/public/home,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,proliant dl560
+Hewlett Packard ProLiant DL560 Gen9,hewlett packard proliant dl560 gen9,Hewlett Packard,proliant dl560,GEN9,https://support.hpe.com/hpesc/public/home,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,proliant dl560
+HEWLETT PACKARD PROLIANT DL560P GEN8,hewlett packard proliant dl560p gen8,Hewlett Packard,proliant dl560p,GEN8,https://support.hpe.com/hpesc/public/home,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,proliant dl560p
+HEWLETT PACKARD PROLIANT DL580 G7,hewlett packard proliant dl580 g7,Hewlett Packard,proliant dl580 g7,UNKNOWN,https://support.hpe.com/hpesc/public/home,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,HEWLETT PACKARD PROLIANT DL580 G7
+Hewlett Packard ProLiant DL580 Gen8,hewlett packard proliant dl580 gen8,Hewlett Packard,proliant dl580,GEN8,https://support.hpe.com/hpesc/public/home,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,proliant dl580
+HEWLETT PACKARD SANSWITCH 8/24,hewlett packard sanswitch 8 24,Hewlett Packard,sanswitch 8 24,UNKNOWN,https://support.hpe.com/hpesc/public/home,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,HEWLETT PACKARD SANSWITCH 8/24
+Hewlett Packard SN6000B Fibre Channel Switch,hewlett packard sn6000b fibre channel switch,Hewlett Packard,sn6000b fibre channel,UNKNOWN,https://support.hpe.com/hpesc/public/home,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Hewlett Packard SN6000B Fibre Channel Switch
+HEWLETT PACKARD STORAGEWORKS,hewlett packard storageworks,Hewlett Packard,storageworks,UNKNOWN,https://support.hpe.com/hpesc/public/home,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,HEWLETT PACKARD STORAGEWORKS
+Hewlett Packard Storageworks 8/24  San Switch,hewlett packard storageworks 8 24 san switch,Hewlett Packard,storageworks 8 24 san,UNKNOWN,https://support.hpe.com/hpesc/public/home,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Hewlett Packard Storageworks 8/24  San Switch
+Hewlett Packard Storageworks MSA 2040,hewlett packard storageworks msa 2040,Hewlett Packard,storageworks msa,2040,https://support.hpe.com/hpesc/public/home,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,storageworks msa
+HP 3PAR StoreServ 8400 4-node Storage Base,hp 3par storeserv 8400 4-node storage base,Hewlett Packard,3par storeserv 4-node base,8400,https://support.hpe.com/hpesc/public/home,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,3par storeserv 4-node base
+HP Hewlett-Packard Apollo 4510 Gen 10,hp hewlett-packard apollo 4510 gen 10,Hewlett Packard,hewlett-packard apollo 4510,GEN 10,https://support.hpe.com/hpesc/public/home,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,hewlett-packard apollo 4510
+HP HPE ProLiant DL360 Gen10 Server,hp hpe proliant dl360 gen10 server,Hewlett Packard,e proliant dl360,GEN10,https://support.hpe.com/hpesc/public/home,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,e proliant dl360
+HP Proliant Dl360 G10,hp proliant dl360 g10,Hewlett Packard,proliant dl360 g10,UNKNOWN,https://support.hpe.com/hpesc/public/home,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,HP Proliant Dl360 G10
+HP ProLiant DL360 G5,hp proliant dl360 g5,Hewlett Packard,proliant dl360 g5,UNKNOWN,https://support.hpe.com/hpesc/public/home,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,HP ProLiant DL360 G5
+HP Proliant Dl360 G6,hp proliant dl360 g6,Hewlett Packard,proliant dl360 g6,UNKNOWN,https://support.hpe.com/hpesc/public/home,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,HP Proliant Dl360 G6
+HP ProLiant DL360 Gen10,hp proliant dl360 gen10,Hewlett Packard,proliant dl360,GEN10,https://support.hpe.com/hpesc/public/home,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,proliant dl360
+HP ProLiant DL360 Gen11,hp proliant dl360 gen11,Hewlett Packard,proliant dl360,GEN11,https://support.hpe.com/hpesc/public/home,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,proliant dl360
+HP Proliant Dl365 G11,hp proliant dl365 g11,Hewlett Packard,proliant dl365 g11,UNKNOWN,https://support.hpe.com/hpesc/public/home,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,HP Proliant Dl365 G11
+HP Proliant DL380 G10,hp proliant dl380 g10,Hewlett Packard,proliant dl380 g10,UNKNOWN,https://support.hpe.com/hpesc/public/home,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,HP Proliant DL380 G10
+HP Proliant DL385 G10,hp proliant dl385 g10,Hewlett Packard,proliant dl385 g10,UNKNOWN,https://support.hpe.com/hpesc/public/home,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,HP Proliant DL385 G10
+HP Proliant Dl385 G7,hp proliant dl385 g7,Hewlett Packard,proliant dl385 g7,UNKNOWN,https://support.hpe.com/hpesc/public/home,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,HP Proliant Dl385 G7
+HP Storageworks MSA 2060,hp storageworks msa 2060,Hewlett Packard,storageworks msa,2060,https://support.hpe.com/hpesc/public/home,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,storageworks msa
+HP StorageWorks Msa70,hp storageworks msa70,Hewlett Packard,storageworks msa70,UNKNOWN,https://support.hpe.com/hpesc/public/home,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,HP StorageWorks Msa70
+HP Tft7600,hp tft7600,Hewlett Packard,tft7600,UNKNOWN,https://support.hpe.com/hpesc/public/home,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,HP Tft7600
 Huawei Osta 2.0,huawei osta 2 0,UNKNOWN,huawei osta 2 0,UNKNOWN,LOCAL_RULESET,huawei osta 2 0,0.35,NO_CHANGE,CONFIDENCE_LOW,False,Huawei Osta 2.0
 I - BOX E-SQUARED,i - box e-squared,UNKNOWN,i - box e-squared,UNKNOWN,LOCAL_RULESET,i - box e-squared,0.35,NO_CHANGE,CONFIDENCE_LOW,False,I - BOX E-SQUARED
-IBM 3576-E9U,ibm 3576-e9u,IBM,UNKNOWN,3576-E9U,LOCAL_RULESET,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,IBM 3576-E9U
-IBM 3576-L5B,ibm 3576-l5b,IBM,UNKNOWN,3576-L5B,LOCAL_RULESET,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,IBM 3576-L5B
-IBM 8670-31X,ibm 8670-31x,IBM,UNKNOWN,8670-31X,LOCAL_RULESET,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,IBM 8670-31X
-IBM FlashSystem FS9500,ibm flashsystem fs9500,IBM,flashsystem fs9500,UNKNOWN,LOCAL_RULESET,flashsystem fs9500,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,IBM FlashSystem FS9500
-IBM Rackswitch G8052,ibm rackswitch g8052,IBM,rackswitch g8052,UNKNOWN,LOCAL_RULESET,rackswitch g8052,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,IBM Rackswitch G8052
-IBM Storwize V3700 Expansion,ibm storwize v3700 expansion,IBM,storwize v3700 expansion,UNKNOWN,LOCAL_RULESET,storwize v3700 expansion,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,IBM Storwize V3700 Expansion
-IBM Storwize v7000,ibm storwize v7000,IBM,storwize v7000,UNKNOWN,LOCAL_RULESET,storwize v7000,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,IBM Storwize v7000
-IBM Storwize V7000 Controller,ibm storwize v7000 controller,IBM,storwize v7000 controller,UNKNOWN,LOCAL_RULESET,storwize v7000 controller,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,IBM Storwize V7000 Controller
-IBM Storwize V7000 Expansion,ibm storwize v7000 expansion,IBM,storwize v7000 expansion,UNKNOWN,LOCAL_RULESET,storwize v7000 expansion,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,IBM Storwize V7000 Expansion
-IBM System Storage Exp2524,ibm system storage exp2524,IBM,exp2524,UNKNOWN,LOCAL_RULESET,exp2524,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,IBM System Storage Exp2524
-IBM V3700,ibm v3700,IBM,v3700,UNKNOWN,LOCAL_RULESET,v3700,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,IBM V3700
+IBM 3576-E9U,ibm 3576-e9u,IBM,UNKNOWN,3576-E9U,https://www.ibm.com/products,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,IBM 3576-E9U
+IBM 3576-L5B,ibm 3576-l5b,IBM,UNKNOWN,3576-L5B,https://www.ibm.com/products,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,IBM 3576-L5B
+IBM 8670-31X,ibm 8670-31x,IBM,UNKNOWN,8670-31X,https://www.ibm.com/products,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,IBM 8670-31X
+IBM FlashSystem FS9500,ibm flashsystem fs9500,IBM,flashsystem fs9500,UNKNOWN,https://www.ibm.com/products,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,IBM FlashSystem FS9500
+IBM Rackswitch G8052,ibm rackswitch g8052,IBM,rackswitch g8052,UNKNOWN,https://www.ibm.com/products,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,IBM Rackswitch G8052
+IBM Storwize V3700 Expansion,ibm storwize v3700 expansion,IBM,storwize v3700 expansion,UNKNOWN,https://www.ibm.com/products,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,IBM Storwize V3700 Expansion
+IBM Storwize v7000,ibm storwize v7000,IBM,storwize v7000,UNKNOWN,https://www.ibm.com/products,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,IBM Storwize v7000
+IBM Storwize V7000 Controller,ibm storwize v7000 controller,IBM,storwize v7000 controller,UNKNOWN,https://www.ibm.com/products,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,IBM Storwize V7000 Controller
+IBM Storwize V7000 Expansion,ibm storwize v7000 expansion,IBM,storwize v7000 expansion,UNKNOWN,https://www.ibm.com/products,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,IBM Storwize V7000 Expansion
+IBM System Storage Exp2524,ibm system storage exp2524,IBM,exp2524,UNKNOWN,https://www.ibm.com/products,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,IBM System Storage Exp2524
+IBM V3700,ibm v3700,IBM,v3700,UNKNOWN,https://www.ibm.com/products,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,IBM V3700
 Imperva Secure Sphere X8520,imperva secure sphere x8520,UNKNOWN,imperva secure sphere x8520,UNKNOWN,LOCAL_RULESET,imperva secure sphere x8520,0.35,NO_CHANGE,CONFIDENCE_LOW,False,Imperva Secure Sphere X8520
 IMPERVA SECURESPHERE X2500,imperva securesphere x2500,UNKNOWN,imperva securesphere x2500,UNKNOWN,LOCAL_RULESET,imperva securesphere x2500,0.35,NO_CHANGE,CONFIDENCE_LOW,False,IMPERVA SECURESPHERE X2500
 Infoblox Trinzic 1425,infoblox trinzic 1425,UNKNOWN,infoblox trinzic,1425,LOCAL_RULESET,infoblox trinzic,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Infoblox Trinzic 1425
@@ -392,11 +392,11 @@ Infoblox Trinzic 1526,infoblox trinzic 1526,UNKNOWN,infoblox trinzic,1526,LOCAL_
 Infoblox Trinzic 2225,infoblox trinzic 2225,UNKNOWN,infoblox trinzic,2225,LOCAL_RULESET,infoblox trinzic,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Infoblox Trinzic 2225
 Intel True Scale Fabric 12200 Switch,intel true scale fabric 12200 switch,UNKNOWN,intel true scale 12200,UNKNOWN,LOCAL_RULESET,intel true scale 12200,0.35,NO_CHANGE,CONFIDENCE_LOW,False,Intel True Scale Fabric 12200 Switch
 Ixia Optixia XM2,ixia optixia xm2,UNKNOWN,ixia optixia xm2,UNKNOWN,LOCAL_RULESET,ixia optixia xm2,0.35,NO_CHANGE,CONFIDENCE_LOW,False,Ixia Optixia XM2
-Juniper IDP 8200,juniper idp 8200,Juniper,idp,8200,LOCAL_RULESET,idp,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,idp
-Juniper IDP800,juniper idp800,Juniper,idp800,UNKNOWN,LOCAL_RULESET,idp800,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Juniper IDP800
-JUNIPER IDP8200,juniper idp8200,Juniper,idp8200,UNKNOWN,LOCAL_RULESET,idp8200,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,JUNIPER IDP8200
-Juniper Nsmx Press Series Ii,juniper nsmx press series ii,Juniper,nsmx press ii,UNKNOWN,LOCAL_RULESET,nsmx press ii,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Juniper Nsmx Press Series Ii
-Juniper Strm2500,juniper strm2500,Juniper,strm2500,UNKNOWN,LOCAL_RULESET,strm2500,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Juniper Strm2500
+Juniper IDP 8200,juniper idp 8200,Juniper,idp,8200,https://www.juniper.net/us/en/products-services/,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,idp
+Juniper IDP800,juniper idp800,Juniper,idp800,UNKNOWN,https://www.juniper.net/us/en/products-services/,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Juniper IDP800
+JUNIPER IDP8200,juniper idp8200,Juniper,idp8200,UNKNOWN,https://www.juniper.net/us/en/products-services/,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,JUNIPER IDP8200
+Juniper Nsmx Press Series Ii,juniper nsmx press series ii,Juniper,nsmx press ii,UNKNOWN,https://www.juniper.net/us/en/products-services/,ed as statements of fact gartner disclaims all warranties expressed or implied with respect to this research including any wa,0.86,APPLY_CHANGE,CONFIDENCE_HIGH,True,nsmx press ii
+Juniper Strm2500,juniper strm2500,Juniper,strm2500,UNKNOWN,https://www.juniper.net/us/en/products-services/,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Juniper Strm2500
 Keymile MileGate 2500,keymile milegate 2500,UNKNOWN,keymile milegate,2500,LOCAL_RULESET,keymile milegate,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Keymile MileGate 2500
 Lantronix CM11.YCWR,lantronix cm11 ycwr,UNKNOWN,lantronix cm11 ycwr,UNKNOWN,LOCAL_RULESET,lantronix cm11 ycwr,0.35,NO_CHANGE,CONFIDENCE_LOW,False,Lantronix CM11.YCWR
 Lantronix CM3.sycwr,lantronix cm3 sycwr,UNKNOWN,lantronix cm3 sycwr,UNKNOWN,LOCAL_RULESET,lantronix cm3 sycwr,0.35,NO_CHANGE,CONFIDENCE_LOW,False,Lantronix CM3.sycwr
@@ -413,11 +413,11 @@ Lantronix SLC8032,lantronix slc8032,UNKNOWN,lantronix slc8032,UNKNOWN,LOCAL_RULE
 LOGLOGIC LX 1025,loglogic lx 1025,UNKNOWN,loglogic lx,1025,LOCAL_RULESET,loglogic lx,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,LOGLOGIC LX 1025
 LOGLOGIC ST 2025-SAN,loglogic st 2025-san,UNKNOWN,loglogic st,2025-SAN,LOCAL_RULESET,loglogic st,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,LOGLOGIC ST 2025-SAN
 Lucent Stinger Fs+,lucent stinger fs,UNKNOWN,lucent stinger fs,UNKNOWN,LOCAL_RULESET,lucent stinger fs,0.35,NO_CHANGE,CONFIDENCE_LOW,False,Lucent Stinger Fs+
-MCAFEE DLP 4400,mcafee dlp 4400,McAfee,dlp,4400,LOCAL_RULESET,dlp,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,dlp
-MCAFEE FS850,mcafee fs850,McAfee,fs850,UNKNOWN,LOCAL_RULESET,fs850,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,MCAFEE FS850
+MCAFEE DLP 4400,mcafee dlp 4400,McAfee,dlp,4400,https://www.mcafee.com/enterprise/en-us/products.html,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,dlp
+MCAFEE FS850,mcafee fs850,McAfee,fs850,UNKNOWN,https://www.mcafee.com/enterprise/en-us/products.html,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,MCAFEE FS850
 Mediakind G9-1057,mediakind g9-1057,UNKNOWN,mediakind g9-,1057,LOCAL_RULESET,mediakind g9-,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Mediakind G9-1057
-Mellanox SN3700C,mellanox sn3700c,Mellanox,sn3700c,UNKNOWN,LOCAL_RULESET,sn3700c,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Mellanox SN3700C
-Mellanox SX6790,mellanox sx6790,Mellanox,sx6790,UNKNOWN,LOCAL_RULESET,sx6790,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Mellanox SX6790
+Mellanox SN3700C,mellanox sn3700c,Mellanox,sn3700c,UNKNOWN,https://www.nvidia.com/en-us/networking/,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Mellanox SN3700C
+Mellanox SX6790,mellanox sx6790,Mellanox,sx6790,UNKNOWN,https://www.nvidia.com/en-us/networking/,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Mellanox SX6790
 ﻿model,model,UNKNOWN,model,UNKNOWN,LOCAL_RULESET,model,0.35,NO_CHANGE,CONFIDENCE_LOW,False,﻿model
 MRV 4000T,mrv 4000t,UNKNOWN,mrv,4000T,LOCAL_RULESET,mrv,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,MRV 4000T
 Netapp AFF A400,netapp aff a400,UNKNOWN,netapp aff a400,UNKNOWN,LOCAL_RULESET,netapp aff a400,0.35,NO_CHANGE,CONFIDENCE_LOW,False,Netapp AFF A400
@@ -447,38 +447,38 @@ Opengear IM7200 Infrastructure Manager,opengear im7200 infrastructure manager,UN
 Opengear IM7248-2-DAC-LMV-US,opengear im7248-2-dac-lmv-us,UNKNOWN,opengear im7248-2-dac-lmv-us,UNKNOWN,LOCAL_RULESET,opengear im7248-2-dac-lmv-us,0.35,NO_CHANGE,CONFIDENCE_LOW,False,Opengear IM7248-2-DAC-LMV-US
 Opengear OM2224-24E-L-UK,opengear om2224-24e-l-uk,UNKNOWN,opengear om2224-24e-l-uk,UNKNOWN,LOCAL_RULESET,opengear om2224-24e-l-uk,0.35,NO_CHANGE,CONFIDENCE_LOW,False,Opengear OM2224-24E-L-UK
 OPNET TECHNOLOGIES AL DIRECTOR 100,opnet technologies al director 100,UNKNOWN,opnet technologies al director,100,LOCAL_RULESET,opnet technologies al director,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,OPNET TECHNOLOGIES AL DIRECTOR 100
-Oracle 6350,oracle 6350,Oracle,UNKNOWN,6350,LOCAL_RULESET,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Oracle 6350
-Oracle Acme Packet 3820,oracle acme packet 3820,Oracle,acme packet,3820,LOCAL_RULESET,acme packet,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,acme packet
-Oracle Acme Packet 4600,oracle acme packet 4600,Oracle,acme packet,4600,LOCAL_RULESET,acme packet,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,acme packet
-Oracle Fire X4100 Server,oracle fire x4100 server,Oracle,fire x4100,UNKNOWN,LOCAL_RULESET,fire x4100,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Oracle Fire X4100 Server
-Oracle Sun Fire X4270 M2,oracle sun fire x4270 m2,Oracle,sun fire x4270 m2,UNKNOWN,LOCAL_RULESET,sun fire x4270 m2,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Oracle Sun Fire X4270 M2
-Oracle Sun X4-2L,oracle sun x4-2l,Oracle,sun x4-2l,UNKNOWN,LOCAL_RULESET,sun x4-2l,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Oracle Sun X4-2L
-Oracle ZFS Storage ZS3-2,oracle zfs storage zs3-2,Oracle,zfs zs3-2,UNKNOWN,LOCAL_RULESET,zfs zs3-2,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Oracle ZFS Storage ZS3-2
-Palo Alto Networks ION 1200-S-C5G-WW,palo alto networks ion 1200-s-c5g-ww,Palo Alto Networks,ion -c5g-ww,1200-S,LOCAL_RULESET,ion -c5g-ww,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,ion -c5g-ww
-Palo Alto Networks Ion 9000,palo alto networks ion 9000,Palo Alto Networks,ion,9000,LOCAL_RULESET,ion,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,ion
-PALO ALTO NETWORKS M-100,palo alto networks m-100,Palo Alto Networks,m-,100,LOCAL_RULESET,m-,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,m-
-Palo Alto Networks M-500,palo alto networks m-500,Palo Alto Networks,m-,500,LOCAL_RULESET,m-,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,m-
-Palo Alto Networks PA-3020,palo alto networks pa-3020,Palo Alto Networks,UNKNOWN,PA-3020,LOCAL_RULESET,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Palo Alto Networks PA-3020
-Palo Alto Networks PA-3050,palo alto networks pa-3050,Palo Alto Networks,UNKNOWN,PA-3050,LOCAL_RULESET,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Palo Alto Networks PA-3050
-Palo Alto Networks PA-3060,palo alto networks pa-3060,Palo Alto Networks,UNKNOWN,PA-3060,LOCAL_RULESET,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Palo Alto Networks PA-3060
-Palo Alto Networks PA-3220,palo alto networks pa-3220,Palo Alto Networks,UNKNOWN,PA-3220,LOCAL_RULESET,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Palo Alto Networks PA-3220
-Palo Alto Networks PA-3410,palo alto networks pa-3410,Palo Alto Networks,UNKNOWN,PA-3410,LOCAL_RULESET,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Palo Alto Networks PA-3410
-Palo Alto Networks PA-3420,palo alto networks pa-3420,Palo Alto Networks,UNKNOWN,PA-3420,LOCAL_RULESET,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Palo Alto Networks PA-3420
-Palo Alto Networks PA-3430,palo alto networks pa-3430,Palo Alto Networks,UNKNOWN,PA-3430,LOCAL_RULESET,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Palo Alto Networks PA-3430
-Palo Alto Networks PA-3440,palo alto networks pa-3440,Palo Alto Networks,UNKNOWN,PA-3440,LOCAL_RULESET,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Palo Alto Networks PA-3440
-PALO ALTO NETWORKS PA-500,palo alto networks pa-500,Palo Alto Networks,UNKNOWN,PA-500,LOCAL_RULESET,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,PALO ALTO NETWORKS PA-500
-Palo Alto Networks PA-5020,palo alto networks pa-5020,Palo Alto Networks,UNKNOWN,PA-5020,LOCAL_RULESET,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Palo Alto Networks PA-5020
-Palo Alto Networks PA-5050,palo alto networks pa-5050,Palo Alto Networks,UNKNOWN,PA-5050,LOCAL_RULESET,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Palo Alto Networks PA-5050
-PALO ALTO NETWORKS PA-5060,palo alto networks pa-5060,Palo Alto Networks,UNKNOWN,PA-5060,LOCAL_RULESET,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,PALO ALTO NETWORKS PA-5060
-Palo Alto Networks PA-5220,palo alto networks pa-5220,Palo Alto Networks,UNKNOWN,PA-5220,LOCAL_RULESET,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Palo Alto Networks PA-5220
-Palo Alto Networks PA-5250,palo alto networks pa-5250,Palo Alto Networks,UNKNOWN,PA-5250,LOCAL_RULESET,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Palo Alto Networks PA-5250
-Palo Alto Networks PA-5260,palo alto networks pa-5260,Palo Alto Networks,UNKNOWN,PA-5260,LOCAL_RULESET,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Palo Alto Networks PA-5260
-Palo Alto Networks PA-5410,palo alto networks pa-5410,Palo Alto Networks,UNKNOWN,PA-5410,LOCAL_RULESET,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Palo Alto Networks PA-5410
-Palo Alto Networks PA-5420,palo alto networks pa-5420,Palo Alto Networks,UNKNOWN,PA-5420,LOCAL_RULESET,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Palo Alto Networks PA-5420
-Palo Alto Networks PA-5430,palo alto networks pa-5430,Palo Alto Networks,UNKNOWN,PA-5430,LOCAL_RULESET,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Palo Alto Networks PA-5430
-Palo Alto Networks PA-5450,palo alto networks pa-5450,Palo Alto Networks,UNKNOWN,PA-5450,LOCAL_RULESET,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Palo Alto Networks PA-5450
-Palo Alto Networks PA-820,palo alto networks pa-820,Palo Alto Networks,UNKNOWN,PA-820,LOCAL_RULESET,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Palo Alto Networks PA-820
-Palo Alto Networks PA-850,palo alto networks pa-850,Palo Alto Networks,UNKNOWN,PA-850,LOCAL_RULESET,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Palo Alto Networks PA-850
+Oracle 6350,oracle 6350,Oracle,UNKNOWN,6350,https://www.oracle.com/servers-storage/,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Oracle 6350
+Oracle Acme Packet 3820,oracle acme packet 3820,Oracle,acme packet,3820,https://www.oracle.com/servers-storage/,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,acme packet
+Oracle Acme Packet 4600,oracle acme packet 4600,Oracle,acme packet,4600,https://www.oracle.com/servers-storage/,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,acme packet
+Oracle Fire X4100 Server,oracle fire x4100 server,Oracle,fire x4100,UNKNOWN,https://www.oracle.com/servers-storage/,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Oracle Fire X4100 Server
+Oracle Sun Fire X4270 M2,oracle sun fire x4270 m2,Oracle,sun fire x4270 m2,UNKNOWN,https://www.oracle.com/servers-storage/,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Oracle Sun Fire X4270 M2
+Oracle Sun X4-2L,oracle sun x4-2l,Oracle,sun x4-2l,UNKNOWN,https://www.oracle.com/servers-storage/,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Oracle Sun X4-2L
+Oracle ZFS Storage ZS3-2,oracle zfs storage zs3-2,Oracle,zfs zs3-2,UNKNOWN,https://www.oracle.com/servers-storage/,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Oracle ZFS Storage ZS3-2
+Palo Alto Networks ION 1200-S-C5G-WW,palo alto networks ion 1200-s-c5g-ww,Palo Alto Networks,ion -c5g-ww,1200-S,https://www.paloaltonetworks.com/network-security,network security - palo alto networks products solutions resources get started search all tech docs close search mo,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,ion -c5g-ww
+Palo Alto Networks Ion 9000,palo alto networks ion 9000,Palo Alto Networks,ion,9000,https://www.paloaltonetworks.com/network-security,network security - palo alto networks products solutions resources get started search all tech docs close search modal if it s ai conne,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,ion
+PALO ALTO NETWORKS M-100,palo alto networks m-100,Palo Alto Networks,m-,100,https://www.paloaltonetworks.com/network-security, networks announces certificate lifecycle solution read the press release quantum-safe summit secure today ready for tomorrow register now quantum-safe ai-driven ,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,m-
+Palo Alto Networks M-500,palo alto networks m-500,Palo Alto Networks,m-,500,https://www.paloaltonetworks.com/network-security, networks announces certificate lifecycle solution read the press release quantum-safe summit secure today ready for tomorrow register now quantum-safe ai-driven ,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,m-
+Palo Alto Networks PA-3020,palo alto networks pa-3020,Palo Alto Networks,UNKNOWN,PA-3020,https://www.paloaltonetworks.com/network-security,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Palo Alto Networks PA-3020
+Palo Alto Networks PA-3050,palo alto networks pa-3050,Palo Alto Networks,UNKNOWN,PA-3050,https://www.paloaltonetworks.com/network-security,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Palo Alto Networks PA-3050
+Palo Alto Networks PA-3060,palo alto networks pa-3060,Palo Alto Networks,UNKNOWN,PA-3060,https://www.paloaltonetworks.com/network-security,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Palo Alto Networks PA-3060
+Palo Alto Networks PA-3220,palo alto networks pa-3220,Palo Alto Networks,UNKNOWN,PA-3220,https://www.paloaltonetworks.com/network-security,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Palo Alto Networks PA-3220
+Palo Alto Networks PA-3410,palo alto networks pa-3410,Palo Alto Networks,UNKNOWN,PA-3410,https://www.paloaltonetworks.com/network-security,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Palo Alto Networks PA-3410
+Palo Alto Networks PA-3420,palo alto networks pa-3420,Palo Alto Networks,UNKNOWN,PA-3420,https://www.paloaltonetworks.com/network-security,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Palo Alto Networks PA-3420
+Palo Alto Networks PA-3430,palo alto networks pa-3430,Palo Alto Networks,UNKNOWN,PA-3430,https://www.paloaltonetworks.com/network-security,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Palo Alto Networks PA-3430
+Palo Alto Networks PA-3440,palo alto networks pa-3440,Palo Alto Networks,UNKNOWN,PA-3440,https://www.paloaltonetworks.com/network-security,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Palo Alto Networks PA-3440
+PALO ALTO NETWORKS PA-500,palo alto networks pa-500,Palo Alto Networks,UNKNOWN,PA-500,https://www.paloaltonetworks.com/network-security,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,PALO ALTO NETWORKS PA-500
+Palo Alto Networks PA-5020,palo alto networks pa-5020,Palo Alto Networks,UNKNOWN,PA-5020,https://www.paloaltonetworks.com/network-security,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Palo Alto Networks PA-5020
+Palo Alto Networks PA-5050,palo alto networks pa-5050,Palo Alto Networks,UNKNOWN,PA-5050,https://www.paloaltonetworks.com/network-security,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Palo Alto Networks PA-5050
+PALO ALTO NETWORKS PA-5060,palo alto networks pa-5060,Palo Alto Networks,UNKNOWN,PA-5060,https://www.paloaltonetworks.com/network-security,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,PALO ALTO NETWORKS PA-5060
+Palo Alto Networks PA-5220,palo alto networks pa-5220,Palo Alto Networks,UNKNOWN,PA-5220,https://www.paloaltonetworks.com/network-security,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Palo Alto Networks PA-5220
+Palo Alto Networks PA-5250,palo alto networks pa-5250,Palo Alto Networks,UNKNOWN,PA-5250,https://www.paloaltonetworks.com/network-security,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Palo Alto Networks PA-5250
+Palo Alto Networks PA-5260,palo alto networks pa-5260,Palo Alto Networks,UNKNOWN,PA-5260,https://www.paloaltonetworks.com/network-security,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Palo Alto Networks PA-5260
+Palo Alto Networks PA-5410,palo alto networks pa-5410,Palo Alto Networks,UNKNOWN,PA-5410,https://www.paloaltonetworks.com/network-security,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Palo Alto Networks PA-5410
+Palo Alto Networks PA-5420,palo alto networks pa-5420,Palo Alto Networks,UNKNOWN,PA-5420,https://www.paloaltonetworks.com/network-security,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Palo Alto Networks PA-5420
+Palo Alto Networks PA-5430,palo alto networks pa-5430,Palo Alto Networks,UNKNOWN,PA-5430,https://www.paloaltonetworks.com/network-security,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Palo Alto Networks PA-5430
+Palo Alto Networks PA-5450,palo alto networks pa-5450,Palo Alto Networks,UNKNOWN,PA-5450,https://www.paloaltonetworks.com/network-security,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Palo Alto Networks PA-5450
+Palo Alto Networks PA-820,palo alto networks pa-820,Palo Alto Networks,UNKNOWN,PA-820,https://www.paloaltonetworks.com/network-security,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Palo Alto Networks PA-820
+Palo Alto Networks PA-850,palo alto networks pa-850,Palo Alto Networks,UNKNOWN,PA-850,https://www.paloaltonetworks.com/network-security,,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Palo Alto Networks PA-850
 Panduit Eagle-I,panduit eagle-i,UNKNOWN,panduit eagle-i,UNKNOWN,LOCAL_RULESET,panduit eagle-i,0.35,NO_CHANGE,CONFIDENCE_LOW,False,Panduit Eagle-I
 Panduit Hawk-I,panduit hawk-i,UNKNOWN,panduit hawk-i,UNKNOWN,LOCAL_RULESET,panduit hawk-i,0.35,NO_CHANGE,CONFIDENCE_LOW,False,Panduit Hawk-I
 POLYCOM ACCESS DIRECTOR,polycom access director,UNKNOWN,polycom access director,UNKNOWN,LOCAL_RULESET,polycom access director,0.35,NO_CHANGE,CONFIDENCE_LOW,False,POLYCOM ACCESS DIRECTOR
@@ -490,10 +490,10 @@ Procera PacketLogic PL8840,procera packetlogic pl8840,UNKNOWN,procera packetlogi
 Procera Procera Server,procera procera server,UNKNOWN,procera procera,UNKNOWN,LOCAL_RULESET,procera procera,0.35,NO_CHANGE,CONFIDENCE_LOW,False,Procera Procera Server
 PROTEGO NETWORKS MARS-50,protego networks mars-50,UNKNOWN,protego networks mars-50,UNKNOWN,LOCAL_RULESET,protego networks mars-50,0.35,NO_CHANGE,CONFIDENCE_LOW,False,PROTEGO NETWORKS MARS-50
 Pure Storage FA-X20R3,pure storage fa-x20r3,UNKNOWN,pure fa-x20r3,UNKNOWN,LOCAL_RULESET,pure fa-x20r3,0.35,NO_CHANGE,CONFIDENCE_LOW,False,Pure Storage FA-X20R3
-Qnap QNAP 1U,qnap qnap 1u,Qnap,1u,UNKNOWN,LOCAL_RULESET,1u,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Qnap QNAP 1U
-Qnap QNAP 2U,qnap qnap 2u,Qnap,2u,UNKNOWN,LOCAL_RULESET,2u,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Qnap QNAP 2U
-Qnap QNAP REXP-1600U-RP,qnap qnap rexp-1600u-rp,Qnap,rexp-,1600U-RP,LOCAL_RULESET,rexp-,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,rexp-
-Qnap QNAP TS-EC2480U-RP Turbo NAS,qnap qnap ts-ec2480u-rp turbo nas,Qnap,ts-ec2480u-rp turbo nas,UNKNOWN,LOCAL_RULESET,ts-ec2480u-rp turbo nas,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Qnap QNAP TS-EC2480U-RP Turbo NAS
+Qnap QNAP 1U,qnap qnap 1u,Qnap,1u,UNKNOWN,https://www.qnap.com/en-us/,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Qnap QNAP 1U
+Qnap QNAP 2U,qnap qnap 2u,Qnap,2u,UNKNOWN,https://www.qnap.com/en-us/,he best enterprise surveillance solution connect storage expansion units qxp-40g2uc qxp-1630s-3816 qxp-830s-3808 view all customize drive usage qda-ump4a qda-ump4,0.89,APPLY_CHANGE,CONFIDENCE_HIGH,True,2u
+Qnap QNAP REXP-1600U-RP,qnap qnap rexp-1600u-rp,Qnap,rexp-,1600U-RP,https://www.qnap.com/en-us/,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,rexp-
+Qnap QNAP TS-EC2480U-RP Turbo NAS,qnap qnap ts-ec2480u-rp turbo nas,Qnap,ts-ec2480u-rp turbo nas,UNKNOWN,https://www.qnap.com/en-us/,networking surveillance expansion accessory dual-controller nas es1686dc r2 es2486dc view all all-flash nas ts-h1077afu new,0.86,APPLY_CHANGE,CONFIDENCE_HIGH,True,ts-ec2480u-rp turbo nas
 QUALYS QGSA-2120-D2,qualys qgsa-2120-d2,UNKNOWN,qualys qgsa-,2120-D2,LOCAL_RULESET,qualys qgsa-,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,QUALYS QGSA-2120-D2
 Quanta Computer T1048-LB9A,quanta computer t1048-lb9a,UNKNOWN,quanta computer t1048-lb9a,UNKNOWN,LOCAL_RULESET,quanta computer t1048-lb9a,0.35,NO_CHANGE,CONFIDENCE_LOW,False,Quanta Computer T1048-LB9A
 QUANTEL 113,quantel 113,UNKNOWN,quantel,113,LOCAL_RULESET,quantel,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,QUANTEL 113
@@ -528,28 +528,28 @@ SevOne PAS 200k,sevone pas 200k,UNKNOWN,sevone pas,200K,LOCAL_RULESET,sevone pas
 Sevone PAS 200k M2,sevone pas 200k m2,UNKNOWN,sevone pas m2,200K,LOCAL_RULESET,sevone pas m2,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Sevone PAS 200k M2
 Sinetica Hawk-I,sinetica hawk-i,UNKNOWN,sinetica hawk-i,UNKNOWN,LOCAL_RULESET,sinetica hawk-i,0.35,NO_CHANGE,CONFIDENCE_LOW,False,Sinetica Hawk-I
 SINETICA ZAEI-01,sinetica zaei-01,UNKNOWN,sinetica zaei-01,UNKNOWN,LOCAL_RULESET,sinetica zaei-01,0.35,NO_CHANGE,CONFIDENCE_LOW,False,SINETICA ZAEI-01
-SUN ENTERPRISE M3000,sun enterprise m3000,Oracle Sun,enterprise m3000,UNKNOWN,LOCAL_RULESET,enterprise m3000,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,SUN ENTERPRISE M3000
-SUN ENTERPRISE T5120,sun enterprise t5120,Oracle Sun,enterprise t5120,UNKNOWN,LOCAL_RULESET,enterprise t5120,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,SUN ENTERPRISE T5120
-SUN ENTERPRISE T5220,sun enterprise t5220,Oracle Sun,enterprise t5220,UNKNOWN,LOCAL_RULESET,enterprise t5220,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,SUN ENTERPRISE T5220
-SUN ENTERPRISE T5240,sun enterprise t5240,Oracle Sun,enterprise t5240,UNKNOWN,LOCAL_RULESET,enterprise t5240,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,SUN ENTERPRISE T5240
-SUN L100,sun l100,Oracle Sun,l100,UNKNOWN,LOCAL_RULESET,l100,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,SUN L100
-SUN SPARC T3-1,sun sparc t3-1,Oracle Sun,sparc t3-1,UNKNOWN,LOCAL_RULESET,sparc t3-1,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,SUN SPARC T3-1
-SUN SPARC T4-1,sun sparc t4-1,Oracle Sun,sparc t4-1,UNKNOWN,LOCAL_RULESET,sparc t4-1,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,SUN SPARC T4-1
-Sun Storage Tek 2500 Array,sun storage tek 2500 array,Oracle Sun,tek array,2500,LOCAL_RULESET,tek array,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,tek array
-Sun Storagetek 2540,sun storagetek 2540,Oracle Sun,storagetek,2540,LOCAL_RULESET,storagetek,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,storagetek
-Sun Storagetek DAT 72 External Tape Drive,sun storagetek dat 72 external tape drive,Oracle Sun,storagetek dat 72 external tape drive,UNKNOWN,LOCAL_RULESET,storagetek dat 72 external tape drive,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Sun Storagetek DAT 72 External Tape Drive
-Sun Storedge 3320 SCSI,sun storedge 3320 scsi,Oracle Sun,storedge scsi,3320,LOCAL_RULESET,storedge scsi,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,storedge scsi
-SUN STOREDGE D1000,sun storedge d1000,Oracle Sun,storedge d1000,UNKNOWN,LOCAL_RULESET,storedge d1000,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,SUN STOREDGE D1000
-SUN STOREDGE S1,sun storedge s1,Oracle Sun,storedge s1,UNKNOWN,LOCAL_RULESET,storedge s1,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,SUN STOREDGE S1
-SUN STOREDGE T3,sun storedge t3,Oracle Sun,storedge t3,UNKNOWN,LOCAL_RULESET,storedge t3,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,SUN STOREDGE T3
-SUN SUNFIRE T2000,sun sunfire t2000,Oracle Sun,fire t2000,UNKNOWN,LOCAL_RULESET,fire t2000,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,SUN SUNFIRE T2000
-SUN T5120,sun t5120,Oracle Sun,t5120,UNKNOWN,LOCAL_RULESET,t5120,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,SUN T5120
-SUN T5220,sun t5220,Oracle Sun,t5220,UNKNOWN,LOCAL_RULESET,t5220,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,SUN T5220
-Super Micro CSE-216-X08,super micro cse-216-x08,Super Micro,cse-,216-X08,LOCAL_RULESET,cse-,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,cse-
-Super Micro CSE-216-X09,super micro cse-216-x09,Super Micro,cse-,216-X09,LOCAL_RULESET,cse-,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,cse-
-Super Micro CSE-216-X10,super micro cse-216-x10,Super Micro,cse-,216-X10,LOCAL_RULESET,cse-,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,cse-
-Super Micro CSE-216-X10 - 200 -0025-01,super micro cse-216-x10 - 200 -0025-01,Super Micro,cse- - 200 -0025-01,216-X10,LOCAL_RULESET,cse- - 200 -0025-01,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,cse- - 200 -0025-01
-Super Micro CSE-216-X10 - 200-0025-01,super micro cse-216-x10 - 200-0025-01,Super Micro,cse- - 200-0025-01,216-X10,LOCAL_RULESET,cse- - 200-0025-01,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,cse- - 200-0025-01
+SUN ENTERPRISE M3000,sun enterprise m3000,Oracle Sun,enterprise m3000,UNKNOWN,https://www.oracle.com/servers-storage/,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,SUN ENTERPRISE M3000
+SUN ENTERPRISE T5120,sun enterprise t5120,Oracle Sun,enterprise t5120,UNKNOWN,https://www.oracle.com/servers-storage/,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,SUN ENTERPRISE T5120
+SUN ENTERPRISE T5220,sun enterprise t5220,Oracle Sun,enterprise t5220,UNKNOWN,https://www.oracle.com/servers-storage/,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,SUN ENTERPRISE T5220
+SUN ENTERPRISE T5240,sun enterprise t5240,Oracle Sun,enterprise t5240,UNKNOWN,https://www.oracle.com/servers-storage/,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,SUN ENTERPRISE T5240
+SUN L100,sun l100,Oracle Sun,l100,UNKNOWN,https://www.oracle.com/servers-storage/,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,SUN L100
+SUN SPARC T3-1,sun sparc t3-1,Oracle Sun,sparc t3-1,UNKNOWN,https://www.oracle.com/servers-storage/,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,SUN SPARC T3-1
+SUN SPARC T4-1,sun sparc t4-1,Oracle Sun,sparc t4-1,UNKNOWN,https://www.oracle.com/servers-storage/,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,SUN SPARC T4-1
+Sun Storage Tek 2500 Array,sun storage tek 2500 array,Oracle Sun,tek array,2500,https://www.oracle.com/servers-storage/,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,tek array
+Sun Storagetek 2540,sun storagetek 2540,Oracle Sun,storagetek,2540,https://www.oracle.com/servers-storage/,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,storagetek
+Sun Storagetek DAT 72 External Tape Drive,sun storagetek dat 72 external tape drive,Oracle Sun,storagetek dat 72 external tape drive,UNKNOWN,https://www.oracle.com/servers-storage/,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Sun Storagetek DAT 72 External Tape Drive
+Sun Storedge 3320 SCSI,sun storedge 3320 scsi,Oracle Sun,storedge scsi,3320,https://www.oracle.com/servers-storage/,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,storedge scsi
+SUN STOREDGE D1000,sun storedge d1000,Oracle Sun,storedge d1000,UNKNOWN,https://www.oracle.com/servers-storage/,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,SUN STOREDGE D1000
+SUN STOREDGE S1,sun storedge s1,Oracle Sun,storedge s1,UNKNOWN,https://www.oracle.com/servers-storage/,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,SUN STOREDGE S1
+SUN STOREDGE T3,sun storedge t3,Oracle Sun,storedge t3,UNKNOWN,https://www.oracle.com/servers-storage/,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,SUN STOREDGE T3
+SUN SUNFIRE T2000,sun sunfire t2000,Oracle Sun,fire t2000,UNKNOWN,https://www.oracle.com/servers-storage/,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,SUN SUNFIRE T2000
+SUN T5120,sun t5120,Oracle Sun,t5120,UNKNOWN,https://www.oracle.com/servers-storage/,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,SUN T5120
+SUN T5220,sun t5220,Oracle Sun,t5220,UNKNOWN,https://www.oracle.com/servers-storage/,,0.80,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,SUN T5220
+Super Micro CSE-216-X08,super micro cse-216-x08,Super Micro,cse-,216-X08,https://www.supermicro.com/en/products,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,cse-
+Super Micro CSE-216-X09,super micro cse-216-x09,Super Micro,cse-,216-X09,https://www.supermicro.com/en/products,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,cse-
+Super Micro CSE-216-X10,super micro cse-216-x10,Super Micro,cse-,216-X10,https://www.supermicro.com/en/products,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,cse-
+Super Micro CSE-216-X10 - 200 -0025-01,super micro cse-216-x10 - 200 -0025-01,Super Micro,cse- - 200 -0025-01,216-X10,https://www.supermicro.com/en/products,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,cse- - 200 -0025-01
+Super Micro CSE-216-X10 - 200-0025-01,super micro cse-216-x10 - 200-0025-01,Super Micro,cse- - 200-0025-01,216-X10,https://www.supermicro.com/en/products,,1.00,APPLY_CHANGE,CONFIDENCE_HIGH,True,cse- - 200-0025-01
 Symantec NetBackup 5230,symantec netbackup 5230,UNKNOWN,symantec netbackup,5230,LOCAL_RULESET,symantec netbackup,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Symantec NetBackup 5230
 Symantec NetBackUp 5230 - Shelf,symantec netbackup 5230 - shelf,UNKNOWN,symantec netbackup - shelf,5230,LOCAL_RULESET,symantec netbackup - shelf,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Symantec NetBackUp 5230 - Shelf
 Symmetricom Timeprovider 1000,symmetricom timeprovider 1000,UNKNOWN,symmetricom timeprovider,1000,LOCAL_RULESET,symmetricom timeprovider,0.55,SUGGEST_ONLY,CONFIDENCE_MEDIUM,False,Symmetricom Timeprovider 1000

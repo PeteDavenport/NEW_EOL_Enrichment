@@ -9,14 +9,8 @@ The pipeline now supports a manufacturer-level external reference ruleset in `da
 - Direct manufacturer sources are prioritized and third-party sources are included with lower confidence.
 - The parser uses the vendor hint from the raw input and attaches the matching external reference URL.
 
-## Validation Script
-A validator script is available for confirming naming conventions from external reference sites:
-
-```bash
-python -m pipeline.reference_validator --input data/input/input.csv --reference-dir data/reference --output data/output/reference_validation.csv
-```
-
-This produces a CSV report showing which input models were found on each reference location.
+## Reference Evidence
+The parser now automatically fetches the configured `source_url` for a detected manufacturer when available, extracts short evidence quotes when the input model is found on that page, and adjusts the confidence slightly based on the quality of the evidence and the configured source confidence. The previous separate `reference_validator` script has been removed — validation and evidence extraction are performed during parsing and recorded in the output fields `source_url` and `evidence_quote`.
 
 ## Usage
 Run the pipeline with the default reference directory:

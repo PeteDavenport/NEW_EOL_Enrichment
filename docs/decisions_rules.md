@@ -19,6 +19,8 @@ Final confidence is composed of:
 - source_quality_score
 - evidence_quality_score
 
+Note: When a manufacturer `source_url` is available, the parser will attempt to fetch the page and extract short evidence quotes. The `source_quality_score` and `evidence_quality_score` are derived from the configured source `confidence` and the presence/quality of extracted matches; evidence may slightly boost the final confidence but will not cause non-deterministic overwrites.
+
 ## 4. Determinism
 Given same:
 - input
