@@ -36,11 +36,9 @@ KNOWN_VENDORS = sorted(VENDOR_ALIASES.keys(), key=len, reverse=True)
 
 @dataclass
 class ReferenceRule:
-    pattern: str
-    vendor: Optional[str]
-    model: Optional[str]
-    version: Optional[str]
+    manufacturer: str
     source_url: str
+    source_type: str
     confidence: Optional[float] = None
 
 
@@ -80,8 +78,9 @@ def _load_rules_from_json(path: Path) -> List[ReferenceRule]:
         data = [data]
 
     for item in data:
-        pattern = str(item.get('pattern', '')).strip()
-        if not pattern:
+        manufacturer = str(item.get('manufacturer', '')).strip()
+        source_url = str(item.get('source_url', '')).strip()
+        if not manufacturer or not source_url:
             continue
         rules.append(_build_reference_rule(item, path))
     return rules
@@ -93,8 +92,9 @@ def _load_rules_from_csv(path: Path) -> List[ReferenceRule]:
         with path.open(newline='', encoding='utf-8') as fh:
             reader = csv.DictReader(fh)
             for item in reader:
-                pattern = str(item.get('pattern', '')).strip()
-                if not pattern:
+                manufacturer = str(item.get('manufacturer', '')).strip()
+                source_url = str(item.get('source_url', '')).strip()
+                if not manufacturer or not source_url:
                     continue
                 rules.append(_build_reference_rule(item, path))
     except OSError:
@@ -115,11 +115,9 @@ def _build_reference_rule(item: Dict[str, str], path: Path) -> ReferenceRule:
         source_url = path.resolve().as_uri()
 
     return ReferenceRule(
-        pattern=str(item.get('pattern', '')).strip(),
-        vendor=str(item.get('vendor', '')).strip() or None,
-        model=str(item.get('model', '')).strip() or None,
-        version=str(item.get('version', '')).strip() or None,
+        manufacturer=str(item.get('manufacturer', '')).strip(),
         source_url=source_url,
+        source_type=str(item.get('source_type', 'manufacturer')).strip() or 'manufacturer',
         confidence=confidence,
     )
 
@@ -178,37 +176,25 @@ def decision_action(confidence: float) -> Dict[str, str]:
     return {"action": "NO_CHANGE", "reason_code": "CONFIDENCE_LOW"}
 
 
-def match_reference_rule(input_raw: str, rules: List[ReferenceRule]) -> Optional[ReferenceRule]:
-    text = normalise_text(input_raw)
-    for rule in rules:
-        pattern = rule.pattern.strip()
-        if not pattern:
-            continue
-        if pattern.startswith('re:'):
-            regex = pattern[3:].strip()
-            if re.search(regex, text, flags=re.IGNORECASE):
-                return rule
-        elif pattern.lower() in text:
-            return rule
-    return None
+def find_reference_source(vendor: str, rules: List[ReferenceRule]) -> Optional[ReferenceRule]:
+    matches = [rule for rule in rules if rule.manufacturer and rule.manufacturer.lower() == vendor.lower()]
+    if not matches:
+        return None
+    return max(matches, key=lambda rule: rule.confidence or 0.0)
 
 
 def parse_row(input_raw: str, reference_rules: Optional[List[ReferenceRule]] = None) -> Dict[str, str]:
     reference_rules = reference_rules or []
-    reference_rule = match_reference_rule(input_raw, reference_rules)
+    vendor_hint = detect_vendor(input_raw)
+    reference_source = find_reference_source(vendor_hint, reference_rules)
+    version_hint = extract_version(input_raw)
+    model_hint = strip_vendor_and_version(input_raw, vendor_hint, version_hint)
+    confidence = score_confidence(vendor_hint, model_hint, version_hint)
 
-    if reference_rule:
-        vendor_hint = reference_rule.vendor or detect_vendor(input_raw)
-        version_hint = reference_rule.version or extract_version(input_raw)
-        model_hint = reference_rule.model or strip_vendor_and_version(input_raw, vendor_hint, version_hint)
-        confidence = reference_rule.confidence if reference_rule.confidence is not None else score_confidence(vendor_hint, model_hint, version_hint)
-        source_url = reference_rule.source_url
-        evidence_quote = reference_rule.pattern
+    if reference_source:
+        source_url = reference_source.source_url
+        evidence_quote = reference_source.source_type
     else:
-        vendor_hint = detect_vendor(input_raw)
-        version_hint = extract_version(input_raw)
-        model_hint = strip_vendor_and_version(input_raw, vendor_hint, version_hint)
-        confidence = score_confidence(vendor_hint, model_hint, version_hint)
         source_url = "LOCAL_RULESET"
         evidence_quote = model_hint if model_hint != "UNKNOWN" else ""
 

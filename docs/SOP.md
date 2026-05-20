@@ -13,7 +13,7 @@ with confidence scoring and auditability.
 
 ## 3. Inputs
 - CSV file with raw hardware strings
-- External reference ruleset directory containing canonical rule files (`.csv` or `.json`)
+- Manufacturer-level external reference directory containing source URLs (`.csv` or `.json`)
 
 ## 4. Outputs
 - CSV with:
@@ -30,7 +30,7 @@ with confidence scoring and auditability.
 - Clean string
 - Tokenise
 - Identify candidate vendor/model/version hints
-- Consult external reference ruleset for exact pattern matches
+- Consult manufacturer-level external reference sources for vendor evidence
 
 ### Step 2 — Generate Candidates
 - Query predefined internet sources
