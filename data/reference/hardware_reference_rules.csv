@@ -1,0 +1,208 @@
+pattern,vendor,model,version,confidence
+Dell PowerEdge R650,Dell,PowerEdge R650,,0.99
+CISCO NEXUS 5548UP,Cisco,Nexus 5548UP,,0.99
+Hewlett Packard ProLiant DL360 Gen9,Hewlett Packard,ProLiant DL360,Gen9,0.99
+Dark Trace DCIP-M,Dark Trace,DCIP-M,,0.80
+F5 Big-ip 5050 Switch,F5,Big-IP 5050 Switch,,0.99
+Dell PowerEdge R640,Dell,PowerEdge R640,,0.99
+JUNIPER IDP8200,Juniper,IDP8200,,0.99
+Intel True Scale Fabric 12200 Switch,Intel,True Scale Fabric 12200 Switch,,0.99
+Cisco Catalyst 4948,Cisco,Catalyst 4948,,0.99
+Cisco Nexus 93180YC-FX,Cisco,Nexus 93180YC-FX,,0.99
+Raritan DOMINION SX32,Raritan,DOMINION SX32,,0.99
+CISCO ASA 5585-X,Cisco,ASA 5585-X,,0.99
+Cisco WS-C3750-48T-L,Cisco,WS-C3750-48T-L,,0.99
+CISCO NEXUS 2248TP GE,Cisco,Nexus 2248TP GE,,0.99
+Cisco Nexus 2248TP-E,Cisco,Nexus 2248TP-E,,0.99
+Cisco UCS C220 M5,Cisco,UCS C220 M5,,0.99
+Dell PowerEdge R730xd,Dell,PowerEdge R730xd,,0.99
+Hewlett Packard ProLiant DL325 Gen10,Hewlett Packard,ProLiant DL325,Gen10,0.99
+Hewlett Packard ProLiant DL360p Gen8,Hewlett Packard,ProLiant DL360p,Gen8,0.99
+Opengear CM7148-2-DAC,Opengear,CM7148-2-DAC,,0.99
+Raritan KX2-232,Raritan,KX2-232,,0.99
+Mellanox SN3700C,Mellanox,SN3700C,,0.99
+Cisco ASR 1006,Cisco,ASR 1006,,0.99
+Cisco Nexus 9336C-FX2,Cisco,Nexus 9336C-FX2,,0.99
+Cisco Catalyst 2950g-48,Cisco,Catalyst 2950g-48,,0.99
+Palo Alto Networks PA-3430,Palo Alto Networks,PA-3430,,0.99
+Panduit Hawk-I,Panduit,Hawk-I,,0.99
+Comtrol Devicemaster Pro 8-Port,Comtrol,Devicemaster Pro 8-Port,,0.99
+Hewlett Packard Apollo 4200 G9,Hewlett Packard,Apollo 4200,Gen9,0.99
+Oracle Sun Fire X4270 M2,Oracle Sun,Fire X4270 M2,,0.99
+Hewlett Packard ProLiant DL380 Gen9,Hewlett Packard,ProLiant DL380,Gen9,0.99
+HP Proliant Dl360 G10,Hewlett Packard,ProLiant Dl360,Gen10,0.99
+Adva FSP 3000R7,Adva,FSP 3000R7,,0.99
+Nortel Media Gateway 3200,Nortel,Media Gateway 3200,,0.99
+Cisco UCS S3260,Cisco,UCS S3260,,0.99
+Cisco Nexus 93108TC-FX Switch,Cisco,Nexus 93108TC-FX,,0.99
+HEWLETT PACKARD PROLIANT DL380 G7,Hewlett Packard,ProLiant DL380 G7,,0.99
+Arista 7280SR-48C6,Arista,7280SR-48C6,,0.99
+Cisco Nexus 93180YC-FX3,Cisco,Nexus 93180YC-FX3,,0.99
+Cisco 4331 Integrated Services Routers,Cisco,4331 Integrated Services Routers,,0.99
+Appear TV XC5100,Appear TV,XC5100,,0.99
+Dell EMC Unity XT 680F DPE,Dell EMC,Unity XT 680F DPE,,0.99
+Cisco Nexus 93180YC-EX,Cisco,Nexus 93180YC-EX,,0.99
+Alcatel 7750 SR-12,Alcatel,7750 SR-12,,0.99
+Hewlett Packard ProLiant DL360 Gen11,Hewlett Packard,ProLiant DL360,Gen11,0.99
+Hewlett Packard ProLiant DL360 Gen10,Hewlett Packard,ProLiant DL360,Gen10,0.99
+Cisco Catalyst C9300-48P,Cisco,Catalyst C9300-48P,,0.99
+SUN SPARC T4-1,Oracle Sun,SPARC T4-1,,0.99
+CISCO ASA 5520,Cisco,ASA 5520,,0.99
+Cisco NCS 5508,Cisco,NCS 5508,,0.99
+Cisco MDS 9148,Cisco,MDS 9148,,0.99
+Sevone DNC 1000HF,Sevone,DNC 1000HF,,0.99
+Sinetica Hawk-I,Sinetica,Hawk-I,,0.99
+Qnap QNAP TS-EC2480U-RP Turbo NAS,Qnap,TS-EC2480U-RP Turbo NAS,,0.99
+Cisco 7200 VXR,Cisco,7200 VXR,,0.99
+CISCO ASA 5515-x,Cisco,ASA 5515-x,,0.99
+ALCATEL LUCENT 1830 PSS-32,Alcatel Lucent,1830 PSS-32,,0.99
+Cisco MDS 9396S 16G Multilayer Fabric Switch,Cisco,MDS 9396S 16G Multilayer Fabric Switch,,0.99
+EMC DS60,EMC,DS60,,0.99
+SINETICA ZAEI-01,Sinetica,ZAEI-01,,0.99
+Cisco 4321 Integrated Services Routers,Cisco,4321 Integrated Services Routers,,0.99
+IBM FlashSystem FS9500,IBM,FlashSystem FS9500,,0.99
+Cisco As5400,Cisco,As5400,,0.99
+MCAFEE DLP 4400,McAfee,DLP 4400,,0.99
+Cisco Catalyst 3750x-48t-s,Cisco,Catalyst 3750x-48t-s,,0.99
+Cisco Nexus 5596UP,Cisco,Nexus 5596UP,,0.99
+CISCO NEXUS 7010,Cisco,Nexus 7010,,0.99
+Cisco Nexus 9348GC-FXP,Cisco,Nexus 9348GC-FXP,,0.99
+Cisco 2821,Cisco,2821,,0.99
+MRV 4000T,MRV,4000T,,0.99
+Procera Procera Server,Procera,Procera Server,,0.99
+Cisco Nexus 2348TQ,Cisco,Nexus 2348TQ,,0.99
+AlgoSec 2040,AlgoSec,2040,,0.99
+PALO ALTO NETWORKS PA-5060,Palo Alto Networks,PA-5060,,0.99
+CISCO ASA 5520 - ASA5520-K8 V2,Cisco,ASA 5520 - ASA5520-K8 V2,,0.99
+Cisco 7609-s,Cisco,7609-s,,0.99
+Hewlett Packard ProLiant DL560 Gen8,Hewlett Packard,ProLiant DL560,Gen8,0.99
+Cisco 887,Cisco,887,,0.99
+GIGAMON SYSTEMS GIGAVUE-HB1,Gigamon,GIGAVUE-HB1,,0.99
+PALO ALTO NETWORKS M-100,Palo Alto Networks,M-100,,0.99
+CISCO CATALYST 4507R,Cisco,Catalyst 4507R,,0.99
+Dell PowerEdge R660,Dell,PowerEdge R660,,0.99
+HEWLETT PACKARD SANSWITCH 8/24,Hewlett Packard,SANSWITCH 8/24,,0.99
+Cisco ASA 5545-X,Cisco,ASA 5545-X,,0.99
+Hewlett Packard ProLiant DL380p Gen8,Hewlett Packard,ProLiant DL380p,Gen8,0.99
+Cisco ASR 1002-X,Cisco,ASR 1002-X,,0.99
+Cisco As5350xm,Cisco,As5350xm,,0.99
+Lantronix SECURELINX SLC8032,Lantronix,SECURELINX SLC8032,,0.99
+Cisco Catalyst 4507R+E,Cisco,Catalyst 4507R+E,,0.99
+Dell PowerEdge R740xd,Dell,PowerEdge R740xd,,0.99
+Palo Alto Networks PA-5050,Palo Alto Networks,PA-5050,,0.99
+Cisco C6807-XL,Cisco,C6807-XL,,0.99
+Cisco 9200L-48T-4G,Cisco,9200L-48T-4G,,0.99
+Cisco ASR 9904,Cisco,ASR 9904,,0.99
+EATON APS6-300,EATON,APS6-300,,0.99
+Ruckus Zone Director 3000,Ruckus,Zone Director 3000,,0.99
+IMPERVA SECURESPHERE X2500,Imperva,SECURESPHERE X2500,,0.99
+Hewlett Packard ProLiant DL560 Gen10,Hewlett Packard,ProLiant DL560,Gen10,0.99
+F5 BIGIP I 5600,F5,BIG-IP I 5600,,0.99
+CISCO NEXUS 7018,Cisco,Nexus 7018,,0.99
+VMWare Edge 3810,VMWare,Edge 3810,,0.99
+Juniper Nsmx Press Series Ii,Juniper,Nsmx Press Series Ii,,0.99
+Cisco UCS C220 M4,Cisco,UCS C220 M4,,0.99
+Arista 7010T-48 Gigabit Ethernet Data Center Switches,Arista,7010T-48 Gigabit Ethernet Data Center Switches,,0.99
+Alcatel 7302 ISAM,Alcatel,7302 ISAM,,0.99
+Palo Alto Networks M-500,Palo Alto Networks,M-500,,0.99
+Dell SonicWALL SuperMassive 9400,Dell,SonicWALL SuperMassive 9400,,0.99
+SUN SPARC T3-1,Oracle Sun,SPARC T3-1,,0.99
+QUANTEL SQ SERVER,QUANTEL,SQ SERVER,,0.80
+Cisco C9300-24P,Cisco,C9300-24P,,0.99
+Cisco Nexus 9504,Cisco,Nexus 9504,,0.99
+EVS XTAccess XTA1-4301D,EVS,XTAccess XTA1-4301D,,0.80
+Cisco CISCO NCS-55A1-24H,Cisco,NCS-55A1-24H,,0.99
+Cisco ASR-9903,Cisco,ASR-9903,,0.99
+F5 BIGIP I 4800,F5,BIG-IP I 4800,,0.99
+Dell PowerEdge R6515,Dell,PowerEdge R6515,,0.99
+Cisco ASR-9902,Cisco,ASR-9902,,0.99
+Celestica Redstone D2020,Celestica,Redstone D2020,,0.99
+Sanmina BSP-26,Sanmina,BSP-26,,0.99
+A10 Networks Thunder 4440(S) ADC,A10 Networks,Thunder 4440(S) ADC,,0.99
+Palo Alto Networks PA-5220,Palo Alto Networks,PA-5220,,0.99
+Hewlett Packard 3PAR StoreServ 20000,Hewlett Packard,3PAR StoreServ 20000,,0.99
+CISCO CATALYST 4948-E,Cisco,Catalyst 4948-E,,0.99
+Cisco Nexus 9364C,Cisco,Nexus 9364C,,0.99
+Cisco ASR 1001,Cisco,ASR 1001,,0.99
+EMC FS25,EMC,FS25,,0.99
+CISCO NEXUS 2232PP,Cisco,Nexus 2232PP,,0.99
+Dell RSA SecurID Appliance 350,Dell,RSA SecurID Appliance 350,,0.99
+Cisco 2801,Cisco,2801,,0.99
+Raritan DOMINION KX2-232,Raritan,DOMINION KX2-232,,0.99
+SevOne PAS 200k,Sevone,PAS 200k,,0.99
+HP Storageworks MSA 2060,Hewlett Packard,Storageworks MSA 2060,,0.99
+F5 VIPRION C2400,F5,VIPRION C2400,,0.99
+Lantronix SLC32,Lantronix,SLC32,,0.99
+Cisco ASA 5525-X,Cisco,ASA 5525-X,,0.99
+Cisco Nexus 3048TP,Cisco,Nexus 3048TP,,0.99
+Cisco MDS 9710,Cisco,MDS 9710,,0.99
+Qnap QNAP REXP-1600U-RP,Qnap,REXP-1600U-RP,,0.99
+Cisco ASR-9001,Cisco,ASR-9001,,0.99
+CISCO CATALYST 2960-48TC-L,Cisco,Catalyst 2960-48TC-L,,0.99
+Cisco SNS-3655-K9,Cisco,SNS-3655-K9,,0.99
+CISCO ASR 9010,Cisco,ASR 9010,,0.99
+HEWLETT PACKARD PROLIANT DL580 G7,Hewlett Packard,ProLiant DL580 G7,,0.99
+22 DOMINION SX16,DOMINION,22 SX16,,0.80
+Lantronix SLC8032,Lantronix,SLC8032,,0.99
+Palo Alto Networks PA-5450,Palo Alto Networks,PA-5450,,0.99
+EMC Isilon X410,EMC,Isilon X410,,0.99
+Hewlett Packard ProLiant DL380 Gen10,Hewlett Packard,ProLiant DL380,Gen10,0.99
+Oracle 6350,Oracle,6350,,0.99
+HEWLETT PACKARD PROLIANT DL380 G6,Hewlett Packard,ProLiant DL380 G6,,0.99
+Cisco WS-C3650-24PD,Cisco,WS-C3650-24PD,,0.99
+Cisco UCS C220 M3 High-Density Rack Server Large Form Factor,Cisco,UCS C220 M3 High-Density Rack Server Large Form Factor,,0.99
+Super Micro CSE-216-X09,Super Micro,CSE-216-X09,,0.99
+Cisco Nexus 92348GC-X,Cisco,Nexus 92348GC-X,,0.99
+Lantronix SECURELINX SLC32,Lantronix,SECURELINX SLC32,,0.99
+Delta Networks AK7448,Delta Networks,AK7448,,0.99
+Palo Alto Networks PA-3220,Palo Alto Networks,PA-3220,,0.99
+HP ProLiant DL360 Gen11,Hewlett Packard,ProLiant DL360,Gen11,0.99
+Dell EMC ME484 Expansion Enclosure,Dell EMC,ME484 Expansion Enclosure,,0.99
+Cisco Nexus C9336C-FX2,Cisco,Nexus C9336C-FX2,,0.99
+Veritas NetBackup 5250,Veritas,NetBackup 5250,,0.99
+Cisco Catalyst 4900m,Cisco,Catalyst 4900m,,0.99
+Dell PowerEdge R750,Dell,PowerEdge R750,,0.99
+Cisco Catalyst 2960 L Series,Cisco,Catalyst 2960 L Series,,0.99
+Cisco Nexus 9372PX,Cisco,Nexus 9372PX,,0.99
+Alcatel Lucent 1626LM,Alcatel Lucent,1626LM,,0.99
+Alcatel Lucent 7210 SAS-X,Alcatel Lucent,7210 SAS-X,,0.99
+Cisco WS-C3650-48P,Cisco,WS-C3650-48P,,0.99
+Citrix NetScaler MPX 9100,Citrix,NetScaler MPX 9100,,0.99
+Arista 7280CR3,Arista,7280CR3,,0.99
+Oracle Fire X4100 Server,Oracle,Fire X4100 Server,,0.99
+Oracle Acme Packet 4600,Oracle,Acme Packet 4600,,0.99
+Cisco Nexus 2232TM,Cisco,Nexus 2232TM,,0.99
+NetOptics Regeneration Tap In-Line,NetOptics,Regeneration Tap In-Line,,0.99
+F5 BIG-IP r10900 Series,F5,BIG-IP r10900 Series,,0.99
+Arista 7280CR2,Arista,7280CR2,,0.99
+Hewlett Packard HP ProLiant DL360 Gen11,Hewlett Packard,HP ProLiant DL360,Gen11,0.99
+HEWLETT PACKARD STORAGEWORKS,Hewlett Packard,StorageWorks,,0.99
+Palo Alto Networks PA-3420,Palo Alto Networks,PA-3420,,0.99
+F5 VIPRION 2400,F5,VIPRION 2400,,0.99
+Cisco C9800-40-K9,Cisco,C9800-40-K9,,0.99
+Procera PacketLogic PL8840,Procera,PacketLogic PL8840,,0.99
+Cisco As5300,Cisco,As5300,,0.99
+Hewlett Packard Apollo 4510 G10,Hewlett Packard,Apollo 4510,Gen10,0.99
+Cisco 8510,Cisco,8510,,0.99
+Radware Defensepro 20,Radware,Defensepro 20,,0.99
+Tektronix Medius Manager,Tektronix,Medius Manager,,0.99
+Cisco 1921/K9,Cisco,1921/K9,,0.99
+Dallmeier S Matrix,Dallmeier,S Matrix,,0.99
+Brocade 6510,Brocade,6510,,0.99
+Palo Alto Networks PA-5420,Palo Alto Networks,PA-5420,,0.99
+Cisco C9300-24S-E,Cisco,C9300-24S-E,,0.99
+HEWLETT PACKARD MSA2000,Hewlett Packard,MSA2000,,0.99
+Hewlett Packard MSA P2000 G3,Hewlett Packard,MSA P2000 G3,,0.99
+Sevone DNC 100,Sevone,DNC 100,,0.99
+Harmonic Electra XOS,Harmonic,Electra XOS,,0.99
+Panduit Eagle-I,Panduit,Eagle-I,,0.99
+Super Micro CSE-216-X08,Super Micro,CSE-216-X08,,0.99
+US Robotics 56K Modem,US Robotics,56K Modem,,0.99
+Bluecoat Systems Director,Bluecoat,Systems Director,,0.99
+Hewlett Packard 3PAR StoreServ 8000,Hewlett Packard,3PAR StoreServ 8000,,0.99
+Opengear IM7200 Infrastructure Manager,Opengear,IM7200 Infrastructure Manager,,0.99
+EMC Isilon X200,EMC,Isilon X200,,0.99
+Hewlett Packard Apollo 4510,Hewlett Packard,Apollo 4510,,0.99
+Oracle Sun X4-2L,Oracle Sun,X4-2L,,0.99
+HEWLETT PACKARD PROLIANT DL360p GEN 10,Hewlett Packard,ProLiant DL360p,Gen10,0.99
+Symantec NetBackUp 5230 - Shelf,Symantec,NetBackUp 5230 - Shelf,,0.99
