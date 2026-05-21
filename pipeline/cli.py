@@ -28,6 +28,7 @@ def write_output(path: Path, records: list[dict]) -> None:
         'version_hint',
         'source_url',
         'evidence_quote',
+        'third_party_result',
         'confidence',
         'action',
         'reason_code',

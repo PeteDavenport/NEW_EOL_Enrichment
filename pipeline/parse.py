@@ -252,44 +252,71 @@ def decision_action(confidence: float) -> Dict[str, str]:
     return {"action": "NO_CHANGE", "reason_code": "CONFIDENCE_LOW"}
 
 
-def find_reference_source(vendor: str, rules: List[ReferenceRule]) -> Optional[ReferenceRule]:
-    matches = [rule for rule in rules if rule.manufacturer and rule.manufacturer.lower() == vendor.lower()]
+def find_reference_source(vendor: str, rules: List[ReferenceRule], source_type: Optional[str] = None) -> Optional[ReferenceRule]:
+    matches = [
+        rule for rule in rules
+        if rule.manufacturer and rule.manufacturer.lower() == vendor.lower()
+        and (source_type is None or rule.source_type.lower() == source_type.lower())
+    ]
     if not matches:
         return None
     return max(matches, key=lambda rule: rule.confidence or 0.0)
 
 
+def _evaluate_source_for_model(source: ReferenceRule, model_hint: str) -> tuple[str, float]:
+    evidence_quote = ""
+    evidence_score = 0.0
+    try:
+        page_text = _fetch_text_from_url(source.source_url)
+        if page_text:
+            snippet, evidence_score = _find_model_evidence(model_hint, page_text)
+            if snippet and evidence_score > 0.0:
+                evidence_quote = snippet
+    except Exception:
+        evidence_quote = ""
+        evidence_score = 0.0
+    return evidence_quote, evidence_score
+
+
+def _apply_evidence_boost(confidence: float, evidence_score: float, source_confidence: float, multiplier: float = 0.10) -> float:
+    return min(1.0, confidence + evidence_score * source_confidence * multiplier)
+
+
 def parse_row(input_raw: str, reference_rules: Optional[List[ReferenceRule]] = None) -> Dict[str, str]:
     reference_rules = reference_rules or []
     vendor_hint = detect_vendor(input_raw)
-    reference_source = find_reference_source(vendor_hint, reference_rules)
     version_hint = extract_version(input_raw)
     model_hint = strip_vendor_and_version(input_raw, vendor_hint, version_hint)
     confidence = score_confidence(vendor_hint, model_hint, version_hint)
 
-    # If we have a reference source for the detected vendor, try to confirm the model
+    reference_source = find_reference_source(vendor_hint, reference_rules, source_type='manufacturer')
+    source_url = "LOCAL_RULESET"
+    evidence_quote = ""
+    third_party_result = "NOT_CHECKED"
+
     if reference_source:
         source_url = reference_source.source_url
-        evidence_quote = ""
-        try:
-            page_text = _fetch_text_from_url(source_url)
-            if page_text:
-                snippet, evidence_score = _find_model_evidence(model_hint, page_text)
-                if snippet and evidence_score > 0.0:
-                    # boost confidence slightly based on evidence and source quality
-                    src_conf = reference_source.confidence or 0.0
-                    boost = evidence_score * src_conf * 0.10
-                    confidence = min(1.0, confidence + boost)
-                    evidence_quote = snippet
+        evidence_quote, evidence_score = _evaluate_source_for_model(reference_source, model_hint)
+        if evidence_score > 0.0:
+            confidence = _apply_evidence_boost(confidence, evidence_score, reference_source.confidence or 0.0)
+
+        # If the primary manufacturer source still leaves confidence at 0.8 or below,
+        # check a third-party vendor page for a stronger confirmation.
+        if confidence <= 0.80:
+            third_party_source = find_reference_source(vendor_hint, reference_rules, source_type='third_party')
+            if third_party_source:
+                third_quote, third_score = _evaluate_source_for_model(third_party_source, model_hint)
+                if third_quote and third_score >= 0.70:
+                    confidence = max(confidence, 0.85)
+                    source_url = third_party_source.source_url
+                    evidence_quote = third_quote
+                    third_party_result = f"ACCEPTED:{third_quote}"
+                elif third_quote and third_score > 0.0:
+                    confidence = min(confidence, 0.80)
+                    third_party_result = f"REJECTED:{third_quote}"
                 else:
-                    # no evidence found on page; keep source recorded but no quote
-                    evidence_quote = ""
-            else:
-                evidence_quote = ""
-        except Exception:
-            evidence_quote = ""
+                    third_party_result = "REJECTED:NO_EVIDENCE"
     else:
-        source_url = "LOCAL_RULESET"
         evidence_quote = model_hint if model_hint != "UNKNOWN" else ""
 
     action_info = decision_action(confidence)
@@ -303,6 +330,7 @@ def parse_row(input_raw: str, reference_rules: Optional[List[ReferenceRule]] = N
         "version_hint": version_hint,
         "source_url": source_url,
         "evidence_quote": evidence_quote,
+        "third_party_result": third_party_result,
         "confidence": f"{confidence:.2f}",
         "action": action_info["action"],
         "reason_code": action_info["reason_code"],
