@@ -244,6 +244,61 @@ def _find_model_evidence(model: str, page_text: str) -> (Optional[str], float):
     return None, 0.0
 
 
+def _find_version_candidates(text: str) -> List[str]:
+    text_lower = normalise_text(text)
+    patterns = [
+        r'\bgen\s?\d{1,2}\b',
+        r'\basa[-_ ]?\d{3,4}\b',
+        r'\bpa[-_ ]?\d{3,4}\b',
+        r'\b\d{3,4}[a-zA-Z]?(?:-[a-zA-Z0-9]+)?\b',
+    ]
+    candidates: List[str] = []
+    for pattern in patterns:
+        candidates.extend(re.findall(pattern, text_lower))
+    return [candidate.upper() for candidate in candidates if candidate]
+
+
+def _choose_best_version_candidate(current_version: str, candidates: List[str]) -> str:
+    if not candidates:
+        return current_version
+
+    current_version = current_version.upper() if current_version else "UNKNOWN"
+    if current_version == "UNKNOWN":
+        return candidates[0]
+
+    if current_version in candidates:
+        return current_version
+
+    def candidate_score(version: str) -> tuple[int, int]:
+        return (
+            1 if re.search(r'[A-Z\-]', version) else 0,
+            len(version),
+        )
+
+    best_candidate = max(candidates, key=candidate_score)
+    if candidate_score(best_candidate) > candidate_score(current_version):
+        return best_candidate
+
+    return current_version
+
+
+def _update_hints_from_evidence(vendor_hint: str, model_hint: str, version_hint: str, evidence_quote: str) -> tuple[str, str, str]:
+    if not evidence_quote:
+        return vendor_hint, model_hint, version_hint
+
+    improved_vendor = detect_vendor(evidence_quote)
+    if improved_vendor == "UNKNOWN":
+        improved_vendor = vendor_hint
+
+    improved_version = _choose_best_version_candidate(version_hint, _find_version_candidates(evidence_quote))
+    improved_model = strip_vendor_and_version(evidence_quote, improved_vendor, improved_version)
+
+    if improved_model == "UNKNOWN":
+        improved_model = model_hint
+
+    return improved_vendor, improved_model, improved_version
+
+
 def decision_action(confidence: float) -> Dict[str, str]:
     if confidence >= 0.80:
         return {"action": "APPLY_CHANGE", "reason_code": "CONFIDENCE_HIGH"}
@@ -298,6 +353,13 @@ def parse_row(input_raw: str, reference_rules: Optional[List[ReferenceRule]] = N
         source_url = reference_source.source_url
         evidence_quote, evidence_score = _evaluate_source_for_model(reference_source, model_hint)
         if evidence_score > 0.0:
+            vendor_hint, model_hint, version_hint = _update_hints_from_evidence(
+                vendor_hint,
+                model_hint,
+                version_hint,
+                evidence_quote,
+            )
+            confidence = score_confidence(vendor_hint, model_hint, version_hint)
             confidence = _apply_evidence_boost(confidence, evidence_score, reference_source.confidence or 0.0)
 
         # If the primary manufacturer source still leaves confidence at 0.8 or below,
@@ -307,6 +369,13 @@ def parse_row(input_raw: str, reference_rules: Optional[List[ReferenceRule]] = N
             if third_party_source:
                 third_quote, third_score = _evaluate_source_for_model(third_party_source, model_hint)
                 if third_quote and third_score >= 0.70:
+                    vendor_hint, model_hint, version_hint = _update_hints_from_evidence(
+                        vendor_hint,
+                        model_hint,
+                        version_hint,
+                        third_quote,
+                    )
+                    confidence = score_confidence(vendor_hint, model_hint, version_hint)
                     confidence = max(confidence, 0.85)
                     source_url = third_party_source.source_url
                     evidence_quote = third_quote

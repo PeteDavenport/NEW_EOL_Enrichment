@@ -22,14 +22,19 @@ Create a repeatable pipeline that:
 ## Output
 A structured dataset with:
 - input_raw
-- make
-- model
-- version
-- confidence
-- rename_applied
-- reason_code
+- vendor_hint
+- model_hint
+- version_hint
 - source_url
 - evidence_quote
+- third_party_result
+- confidence
+- action
+- reason_code
+- parse_applied
+- output_value
+
+The parser may use page evidence to improve inferred vendor/model/version hints before computing the final confidence.
 
 ## Key Requirement
 - No hallucination
