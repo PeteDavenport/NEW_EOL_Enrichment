@@ -49,6 +49,16 @@ class ReferenceRule:
     confidence: Optional[float] = None
 
 
+@dataclass
+class OverrideRule:
+    input_raw: str
+    normalised_raw: str
+    vendor_hint: str
+    model_hint: str
+    version_hint: str
+    comment: str = ""
+
+
 def normalise_text(text: str) -> str:
     text = text or ""
     text = text.lower()
@@ -72,6 +82,43 @@ def load_reference_rules(reference_dir: Path) -> List[ReferenceRule]:
         elif path.suffix.lower() == '.csv':
             rules.extend(_load_rules_from_csv(path))
     return rules
+
+
+def load_override_rules(override_file: Path) -> Dict[str, OverrideRule]:
+    rules: Dict[str, OverrideRule] = {}
+    if not override_file.exists() or not override_file.is_file():
+        return rules
+
+    try:
+        with override_file.open(newline='', encoding='utf-8') as fh:
+            reader = csv.DictReader(fh)
+            for item in reader:
+                override_rule = _build_override_rule(item)
+                if override_rule:
+                    rules[override_rule.normalised_raw] = override_rule
+    except OSError:
+        return {}
+    return rules
+
+
+def _build_override_rule(item: Dict[str, str]) -> Optional[OverrideRule]:
+    input_raw = str(item.get('input_raw', '')).strip()
+    if not input_raw:
+        return None
+
+    vendor_hint = str(item.get('vendor_hint', '')).strip() or ""
+    model_hint = str(item.get('model_hint', '')).strip() or ""
+    version_hint = str(item.get('version_hint', '')).strip() or ""
+    comment = str(item.get('comment', '')).strip() or ""
+
+    return OverrideRule(
+        input_raw=input_raw,
+        normalised_raw=normalise_text(input_raw),
+        vendor_hint=vendor_hint,
+        model_hint=model_hint,
+        version_hint=version_hint,
+        comment=comment,
+    )
 
 
 def _load_rules_from_json(path: Path) -> List[ReferenceRule]:
@@ -337,12 +384,48 @@ def _apply_evidence_boost(confidence: float, evidence_score: float, source_confi
     return min(1.0, confidence + evidence_score * source_confidence * multiplier)
 
 
-def parse_row(input_raw: str, reference_rules: Optional[List[ReferenceRule]] = None) -> Dict[str, str]:
+def parse_row(
+    input_raw: str,
+    reference_rules: Optional[List[ReferenceRule]] = None,
+    override_rules: Optional[Dict[str, OverrideRule]] = None,
+) -> Dict[str, str]:
     reference_rules = reference_rules or []
+    override_rules = override_rules or {}
+    normalised_raw = normalise_text(input_raw)
+
     vendor_hint = detect_vendor(input_raw)
     version_hint = extract_version(input_raw)
     model_hint = strip_vendor_and_version(input_raw, vendor_hint, version_hint)
     confidence = score_confidence(vendor_hint, model_hint, version_hint)
+
+    # Manual overrides take top priority and are treated as fully trusted.
+    override_rule = override_rules.get(normalised_raw)
+    if override_rule:
+        vendor_hint = override_rule.vendor_hint or vendor_hint
+        model_hint = override_rule.model_hint or model_hint
+        version_hint = override_rule.version_hint or version_hint
+        confidence = 1.0
+        source_url = "OVERRIDE_RULESET"
+        evidence_quote = override_rule.comment
+        third_party_result = "OVERRIDE"
+        action_info = {"action": "APPLY_CHANGE", "reason_code": "OVERRIDE"}
+        parse_applied = True
+
+        return {
+            "input_raw": input_raw,
+            "normalised_raw": normalised_raw,
+            "vendor_hint": vendor_hint,
+            "model_hint": model_hint,
+            "version_hint": version_hint,
+            "source_url": source_url,
+            "evidence_quote": evidence_quote,
+            "third_party_result": third_party_result,
+            "confidence": f"{confidence:.2f}",
+            "action": action_info["action"],
+            "reason_code": action_info["reason_code"],
+            "parse_applied": str(parse_applied),
+            "output_value": model_hint,
+        }
 
     reference_source = find_reference_source(vendor_hint, reference_rules, source_type='manufacturer')
     source_url = "LOCAL_RULESET"

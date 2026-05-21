@@ -22,6 +22,8 @@ Final confidence is composed of:
 Note: When a manufacturer `source_url` is available, the parser will attempt to fetch the page and extract short evidence quotes. The parser can use that evidence to refine the inferred `vendor_hint`, `model_hint`, and `version_hint` before the final confidence is computed.
 The `source_quality_score` and `evidence_quality_score` are derived from the configured source `confidence` and the presence/quality of extracted matches; evidence may boost the final confidence, but the pipeline still only overwrites input when the final decision is `APPLY_CHANGE`.
 
+Manual override rules are always trusted when matched, and they are assigned confidence `1.00` with `source_url` set to `OVERRIDE_RULESET`.
+
 ## 4. Determinism
 Given same:
 - input

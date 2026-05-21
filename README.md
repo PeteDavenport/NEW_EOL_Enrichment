@@ -25,4 +25,19 @@ python -m pipeline.cli --input data/input/input.csv --output data/output/parsed.
 
 The `--reference-dir` option can point to any directory containing external source files.
 
+## Manual Override Rules
+The pipeline also supports an optional manual override CSV file.
+- The override file should contain columns: `input_raw`, `vendor_hint`, `model_hint`, `version_hint`, and optional `comment`.
+- Overrides are matched against the normalized raw input string.
+- When an override is found, the parser applies the manual hints with confidence `1.00` and records `source_url` as `OVERRIDE_RULESET`.
+- This is useful for fixing local ruleset values or tweaking parsed values manually.
+
+You can pass the override file with:
+
+```bash
+python -m pipeline.cli --input data/input/input.csv --output data/output/parsed.csv --reference-dir data/reference --override-file data/input/override.csv
+```
+
+If you want the default automatic override file location, place `override.csv` under `data/input/` and the CLI will use `data/input/override.csv` by default.
+
 Breaking into small parts and using Policies

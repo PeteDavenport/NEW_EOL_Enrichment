@@ -2,7 +2,7 @@ import argparse
 import csv
 from pathlib import Path
 
-from pipeline.parse import load_reference_rules, normalise_text, parse_row
+from pipeline.parse import load_override_rules, load_reference_rules, normalise_text, parse_row
 
 
 def load_input(path: Path) -> list[str]:
@@ -58,16 +58,23 @@ def main() -> None:
         default='data/reference',
         help='Directory containing external reference rulesets (.json or .csv).',
     )
+    parser.add_argument(
+        '--override-file',
+        default='data/input/override.csv',
+        help='Optional CSV file containing manual override hints.',
+    )
     args = parser.parse_args()
 
     input_path = Path(args.input)
     output_path = Path(args.output)
     reference_dir = Path(args.reference_dir)
+    override_file = Path(args.override_file) if args.override_file else None
 
     rows = load_input(input_path)
     rules = load_reference_rules(reference_dir)
+    override_rules = load_override_rules(override_file) if override_file else {}
     sorted_rows = sort_rows(rows)
-    records = [parse_row(value, rules) for value in sorted_rows]
+    records = [parse_row(value, rules, override_rules) for value in sorted_rows]
     write_output(output_path, records)
     print(f'Parsed {len(records)} rows with {len(rules)} reference rules and wrote sorted output to {output_path}')
 

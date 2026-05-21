@@ -36,6 +36,8 @@ A structured dataset with:
 
 The parser may use page evidence to improve inferred vendor/model/version hints before computing the final confidence.
 
+The pipeline also supports manual override rules via `data/input/override.csv`, which can enforce vendor/model/version values with maximum confidence for specific raw inputs.
+
 ## Key Requirement
 - No hallucination
 - No uncontrolled overwrites
