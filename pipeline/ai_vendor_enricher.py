@@ -1,8 +1,8 @@
 """
 AI-powered vendor/model enrichment with deterministic fallback and audit controls.
 
-This module integrates with an LLM (OpenAI, Anthropic, etc.) to enrich hardware
-model strings. All results are supplemental and logged for auditability.
+This module integrates with GitHub Copilot (via Azure OpenAI endpoints) to enrich 
+hardware model strings. All results are supplemental and logged for auditability.
 
 Determinism is ensured via:
 - Consistent prompts
@@ -13,7 +13,7 @@ Determinism is ensured via:
 Audit trails include:
 - ai_confidence: score from 0.0 to 1.0
 - ai_reason: WHY the AI made this decision
-- ai_source: WHERE the result came from (LLM_OPENAI, DETERMINISTIC_FALLBACK, CACHE, etc.)
+- ai_source: WHERE the result came from (LLM_COPILOT, DETERMINISTIC_FALLBACK, CACHE, etc.)
 - ai_vendor_hint, ai_model_hint: the enriched values
 """
 
@@ -45,40 +45,46 @@ class AIVendorEnricher:
     def __init__(
         self,
         api_key: Optional[str] = None,
-        model: str = "gpt-4-turbo",
-        provider: str = "openai",
+        model: str = "gpt-4",
         cache_dir: Optional[Path] = None,
         enable_cache: bool = True,
         fallback_func=None,
     ):
         """
         Args:
-            api_key: LLM API key (if None, uses fallback only)
-            model: Model identifier (e.g., 'gpt-4-turbo', 'claude-3-opus')
-            provider: LLM provider ('openai', 'anthropic', etc.)
+            api_key: GitHub Copilot / Azure OpenAI API key (if None, uses fallback only)
+            model: Model identifier (e.g., 'gpt-4', deployment name)
             cache_dir: Directory to store result cache
             enable_cache: Whether to cache results
             fallback_func: Callable(input_raw, vendor_hint, model_hint, version_hint, reference_rules) -> AIEnrichmentResult
         """
         self.api_key = api_key
         self.model = model
-        self.provider = provider
         self.enable_cache = enable_cache
         self.cache_dir = cache_dir or Path(".cache/ai_vendor_enricher")
         self.fallback_func = fallback_func
         self._cache: Dict[str, AIEnrichmentResult] = {}
         self._llm_client = None
 
-        if api_key and provider == "openai":
-            try:
-                import openai
-                openai.api_key = api_key
-                self._llm_client = openai
-            except ImportError:
-                logger.warning("openai package not installed; using deterministic fallback only")
+        # Initialize GitHub Copilot (Azure OpenAI) client
+        if api_key:
+            self._init_copilot_client(api_key)
 
         if enable_cache:
             self.cache_dir.mkdir(parents=True, exist_ok=True)
+
+    def _init_copilot_client(self, api_key: str) -> None:
+        """Initialize GitHub Copilot client (via Azure OpenAI)."""
+        try:
+            import openai
+            openai.api_key = api_key
+            self._llm_client = openai
+            logger.debug("GitHub Copilot (Azure OpenAI) client initialized")
+        except ImportError:
+            logger.warning("openai package not installed; using deterministic fallback only")
+        except Exception as e:
+            logger.warning(f"Failed to initialize Copilot client: {e}")
+
 
     def _cache_key(self, input_raw: str) -> str:
         """Generate deterministic cache key."""
@@ -112,9 +118,9 @@ class AIVendorEnricher:
         except Exception as e:
             logger.warning(f"Failed to save cache: {e}")
 
-    def _call_llm_openai(self, prompt: str) -> Tuple[Optional[str], str]:
+    def _call_llm(self, prompt: str) -> Tuple[Optional[str], str]:
         """
-        Call OpenAI API with fixed parameters for determinism.
+        Call GitHub Copilot (Azure OpenAI) API with fixed parameters for determinism.
         Returns (response_text, error_reason).
         """
         if not self._llm_client:
@@ -141,7 +147,7 @@ class AIVendorEnricher:
             return text, ""
         except Exception as e:
             reason = f"LLM_ERROR:{str(e)[:50]}"
-            logger.warning(f"LLM call failed: {reason}")
+            logger.warning(f"Copilot call failed: {reason}")
             return None, reason
 
     def _parse_llm_response(self, response_text: str) -> Tuple[str, str, float, str]:
@@ -168,7 +174,7 @@ class AIVendorEnricher:
         model_hint: str,
         version_hint: str,
     ) -> AIEnrichmentResult:
-        """Call LLM with structured prompt and return enriched result."""
+        """Call GitHub Copilot with structured prompt and return enriched result."""
         prompt = (
             f"Parse this hardware model string into structured components.\n\n"
             f"Input: {input_raw}\n"
@@ -189,7 +195,7 @@ class AIVendorEnricher:
             f"- Return ONLY JSON, no explanation"
         )
 
-        response_text, error_reason = self._call_llm_openai(prompt)
+        response_text, error_reason = self._call_llm(prompt)
 
         if response_text:
             vendor, model, confidence, reason = self._parse_llm_response(response_text)
@@ -198,7 +204,7 @@ class AIVendorEnricher:
                 ai_model_hint=model,
                 ai_confidence=confidence,
                 ai_reason=reason,
-                ai_source="LLM_OPENAI",
+                ai_source="LLM_COPILOT",
             )
         else:
             logger.info(f"LLM enrichment failed ({error_reason}), falling back to deterministic")

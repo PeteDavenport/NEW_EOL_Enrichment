@@ -8,14 +8,14 @@ This repository normalises raw hardware model strings into structured `vendor`, 
 
 ## Quick Start
 
-### 1. Deterministic-Only (No AI)
+### 1. Deterministic-Only (No AI, No API Key Needed)
 ```bash
 python pipeline/cli.py --input data/input/input.csv --output data/output/parsed.csv
 ```
 
-### 2. With AI Enrichment (Requires OpenAI Key)
+### 2. With GitHub Copilot AI Enrichment (Requires Azure OpenAI Key)
 ```bash
-export OPENAI_API_KEY="sk-..."
+export COPILOT_API_KEY="your-azure-openai-key"
 python pipeline/cli.py --input data/input/input.csv --output data/output/parsed.csv
 ```
 
@@ -27,17 +27,9 @@ python pipeline/cli.py \
   --override-file data/input/override.csv
 ```
 
-### 4. With Custom Reference Directory
+### 4. Full Command (All Options)
 ```bash
-python pipeline/cli.py \
-  --input data/input/input.csv \
-  --output data/output/parsed.csv \
-  --reference-dir data/reference
-```
-
-### 5. Full Command (All Options)
-```bash
-export OPENAI_API_KEY="sk-..."
+export COPILOT_API_KEY="your-azure-openai-key"
 python pipeline/cli.py \
   --input data/input/input.csv \
   --output data/output/parsed.csv \
@@ -73,6 +65,36 @@ Raw Input String
         ↓
 Structured Output (vendor, model, version, confidence, reason_code, ai_*, etc.)
 ```
+
+---
+
+## AI Configuration
+
+The pipeline integrates with **GitHub Copilot** (Azure OpenAI) for enhanced vendor/model detection, or can run in **deterministic-only mode** without any API calls.
+
+### Setup GitHub Copilot
+
+Create a `.env` file (copy from `.env.example`):
+
+```bash
+# GitHub Copilot API key (required for AI mode; optional for deterministic-only mode)
+COPILOT_API_KEY=your-azure-openai-key
+
+# Model to use (default: gpt-4)
+COPILOT_MODEL=gpt-4
+
+# Optional Azure OpenAI settings
+# OPENAI_API_BASE=https://your-resource.openai.azure.com/
+# OPENAI_API_VERSION=2023-05-15
+
+# Optional: Cache settings
+AI_CACHE_DIR=.cache/ai_vendor_enricher
+AI_CACHE_ENABLED=true
+```
+
+**No API key?** The pipeline automatically falls back to deterministic mode (no LLM calls, fast, still accurate).
+
+See [docs/AI_INTEGRATION.md](docs/AI_INTEGRATION.md) for detailed setup & troubleshooting.
 
 ---
 

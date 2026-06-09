@@ -26,12 +26,21 @@ class TestAIVendorEnricher:
         print("✓ Initialization without API key works")
 
     def test_init_with_api_key(self):
-        """Test initialization with API key (mocked OpenAI)."""
+        """Test initialization with GitHub Copilot API key."""
         with patch("ai_vendor_enricher.openai") as mock_openai:
-            enricher = AIVendorEnricher(api_key="sk-test-key")
+            enricher = AIVendorEnricher(api_key="azure-test-key")
             # Note: actual initialization will fail if openai not installed
             # This test is for structure validation
-            print("✓ Initialization with API key works")
+            print("✓ Initialization with Copilot API key works")
+
+    def test_init_with_custom_model(self):
+        """Test initialization with custom Copilot model."""
+        enricher = AIVendorEnricher(
+            api_key=None,
+            model="gpt-4"
+        )
+        assert enricher.model == "gpt-4"
+        print("✓ Initialization with custom Copilot model works")
 
     def test_cache_key_determinism(self):
         """Test that cache keys are deterministic (same input → same key)."""
@@ -164,6 +173,50 @@ class TestAIVendorEnricher:
         # This is a demonstration of a potential issue
         print(f"✓ Confidence value: {result.ai_confidence} (should be <= 1.0)")
 
+    def test_provider_dispatch_openai(self):
+        """Test that Copilot provider is correctly initialized."""
+        def dummy_fallback(input_raw, vendor_hint, model_hint, version_hint, reference_rules):
+            return AIEnrichmentResult(
+                ai_vendor_hint="FALLBACK",
+                ai_model_hint="FALLBACK",
+                ai_confidence=0.5,
+                ai_reason="FALLBACK",
+                ai_source="DETERMINISTIC_FALLBACK",
+            )
+        
+        enricher = AIVendorEnricher(
+            fallback_func=dummy_fallback,
+            enable_cache=False,
+        )
+        
+        # Without API key, should use fallback
+        result = enricher.enrich(
+            input_raw="Test",
+            vendor_hint="Test",
+            model_hint="Test",
+            version_hint="Test",
+        )
+        
+        assert result.ai_source == "DETERMINISTIC_FALLBACK"
+        print("✓ Copilot provider fallback works")
+
+    def test_copilot_model_default(self):
+        """Test that default Copilot model is gpt-4."""
+        enricher = AIVendorEnricher(enable_cache=False)
+        
+        assert enricher.model == "gpt-4"
+        print("✓ Copilot default model is gpt-4")
+
+    def test_copilot_model_custom(self):
+        """Test that custom Copilot model can be set."""
+        enricher = AIVendorEnricher(
+            model="gpt-3.5-turbo",
+            enable_cache=False,
+        )
+        
+        assert enricher.model == "gpt-3.5-turbo"
+        print("✓ Custom Copilot model works")
+
 
 def test_integration_parse_module():
     """Test that parse module can import and initialize AI enricher."""
@@ -182,16 +235,20 @@ def test_integration_parse_module():
 
 
 if __name__ == "__main__":
-    print("\n=== AI Vendor Enricher Integration Tests ===\n")
+    print("\n=== AI Vendor Enricher Integration Tests (GitHub Copilot) ===\n")
     
     test = TestAIVendorEnricher()
     test.test_init_without_api_key()
     test.test_init_with_api_key()
+    test.test_init_with_custom_model()
     test.test_cache_key_determinism()
     test.test_cache_save_and_load()
     test.test_fallback_with_no_cache_or_llm()
     test.test_audit_fields_present()
     test.test_confidence_clamping()
+    test.test_provider_dispatch_openai()
+    test.test_copilot_model_default()
+    test.test_copilot_model_custom()
     
     test_integration_parse_module()
     

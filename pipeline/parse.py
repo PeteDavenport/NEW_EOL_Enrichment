@@ -70,7 +70,7 @@ class OverrideRule:
 
 def _init_ai_enricher() -> AIVendorEnricher:
     """
-    Initialize the global AI enricher on first use.
+    Initialize the global AI enricher on first use using GitHub Copilot.
     Respects environment variables for API key and model configuration.
     Falls back to deterministic enrichment if no API key is provided.
     """
@@ -78,23 +78,21 @@ def _init_ai_enricher() -> AIVendorEnricher:
     if _ai_enricher is not None:
         return _ai_enricher
 
-    api_key = os.environ.get("OPENAI_API_KEY")
-    model = os.environ.get("OPENAI_MODEL", "gpt-4-turbo")
-    provider = os.environ.get("AI_PROVIDER", "openai")
+    api_key = os.environ.get("COPILOT_API_KEY")
+    model = os.environ.get("COPILOT_MODEL", "gpt-4")
     cache_dir = Path(os.environ.get("AI_CACHE_DIR", ".cache/ai_vendor_enricher"))
     enable_cache = os.environ.get("AI_CACHE_ENABLED", "true").lower() == "true"
 
     _ai_enricher = AIVendorEnricher(
         api_key=api_key,
         model=model,
-        provider=provider,
         cache_dir=cache_dir,
         enable_cache=enable_cache,
         fallback_func=_deterministic_enrich_vendor_model,
     )
 
     if api_key:
-        logger.info(f"AI enricher initialized with {provider}/{model}")
+        logger.info(f"AI enricher initialized with GitHub Copilot/{model}")
     else:
         logger.info("AI enricher initialized in DETERMINISTIC_FALLBACK mode (no API key)")
 

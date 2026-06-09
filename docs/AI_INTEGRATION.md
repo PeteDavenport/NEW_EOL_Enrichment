@@ -2,7 +2,7 @@
 
 ## Overview
 
-The hardware normalisation pipeline now includes a real AI integration layer that enriches vendor/model detection using LLMs (Language Models) while maintaining full backward compatibility with deterministic fallback and comprehensive audit controls.
+The hardware normalisation pipeline integrates with **GitHub Copilot** (via Azure OpenAI endpoints) to enrich vendor/model detection using AI while maintaining full backward compatibility with deterministic fallback and comprehensive audit controls.
 
 ## Architecture
 
@@ -10,8 +10,8 @@ The hardware normalisation pipeline now includes a real AI integration layer tha
 ai_enrich_vendor_model()
     ↓
 AIVendorEnricher (with caching & fallback)
-    ├→ LLM API (if configured)
-    │   ├ OpenAI GPT-4 (temperature=0.0 for determinism)
+    ├→ GitHub Copilot API (Azure OpenAI)
+    │   ├ GPT-4 (temperature=0.0 for determinism)
     │   ├ Cached results for determinism
     │   └ Structured JSON prompts to minimize hallucination
     └→ Deterministic fallback
@@ -28,17 +28,18 @@ pip install openai>=1.0.0
 
 ### 2. Environment Variables
 
-Configure the AI layer via environment variables:
+Configure GitHub Copilot via environment variables:
 
 ```bash
-# OpenAI API key (required for AI mode; optional for deterministic-only mode)
-export OPENAI_API_KEY="sk-..."
+# GitHub Copilot API key (required for AI mode; optional for deterministic-only mode)
+export COPILOT_API_KEY="your-azure-openai-key"
 
-# Model to use (default: gpt-4-turbo)
-export OPENAI_MODEL="gpt-4-turbo"
+# Model to use (default: gpt-4)
+export COPILOT_MODEL="gpt-4"
 
-# LLM provider (default: openai)
-export AI_PROVIDER="openai"
+# Optional: Azure OpenAI specific settings
+export OPENAI_API_BASE="https://your-resource.openai.azure.com/"
+export OPENAI_API_VERSION="2023-05-15"
 
 # Cache directory (default: .cache/ai_vendor_enricher)
 export AI_CACHE_DIR=".cache/ai_vendor_enricher"
@@ -50,7 +51,8 @@ export AI_CACHE_ENABLED="true"
 ### 3. Running the Pipeline
 
 ```bash
-# With AI (requires OPENAI_API_KEY)
+# With GitHub Copilot (requires COPILOT_API_KEY)
+export COPILOT_API_KEY="your-key"
 python cli.py --input data/input/input.csv --output data/output/parsed.csv
 
 # Deterministic-only (no API key needed)
@@ -67,7 +69,7 @@ All AI enrichment decisions are recorded in the output CSV with these supplement
 | `ai_model_hint` | string | AI's model guess (supplemental) |
 | `ai_confidence` | float [0.0–1.0] | AI's confidence in its parse |
 | `ai_reason` | string | Why AI made this decision (e.g., `PARSE_SUCCESS`, `REFERENCE_MANUFACTURER_MATCH`, `NO_AI_ACTION`) |
-| `ai_source` | string | Source of the result (e.g., `LLM_OPENAI`, `DETERMINISTIC_FALLBACK`, `CACHE`) |
+| `ai_source` | string | Source of the result (e.g., `LLM_COPILOT`, `DETERMINISTIC_FALLBACK`, `CACHE`) |
 
 ## Decision Flow
 
@@ -155,10 +157,10 @@ ai_source: "CACHE"              ← Fast result, no LLM call
 ## Performance
 
 - **Cache Hit**: ~0.5ms per record (in-memory + disk)
-- **LLM Call**: ~1-3s per record (network latency)
+- **Copilot API Call**: ~1-3s per record (network latency)
 - **Deterministic Fallback**: ~1-5ms per record
 
-For large datasets, enable caching and consider batching LLM calls.
+For large datasets, enable caching to maximize performance.
 
 ## Testing Determinism
 
