@@ -34,6 +34,11 @@ def write_output(path: Path, records: list[dict]) -> None:
         'reason_code',
         'parse_applied',
         'output_value',
+        'ai_vendor_hint',
+        'ai_model_hint',
+        'ai_confidence',
+        'ai_reason',
+        'ai_source',
     ]
     with path.open('w', newline='', encoding='utf-8') as fh:
         writer = csv.DictWriter(fh, fieldnames=fieldnames)

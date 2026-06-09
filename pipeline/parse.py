@@ -1,6 +1,8 @@
 import csv
 import json
 import re
+import os
+import logging
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Dict, List, Optional
@@ -11,6 +13,13 @@ except Exception:
     requests = None
 import urllib.request
 from html import unescape
+
+from ai_vendor_enricher import AIVendorEnricher, AIEnrichmentResult
+
+logger = logging.getLogger(__name__)
+
+# Global AI enricher instance (lazy-initialized)
+_ai_enricher: Optional[AIVendorEnricher] = None
 
 VENDOR_ALIASES = {
     "dell": "Dell",
@@ -57,6 +66,129 @@ class OverrideRule:
     model_hint: str
     version_hint: str
     comment: str = ""
+
+
+def _init_ai_enricher() -> AIVendorEnricher:
+    """
+    Initialize the global AI enricher on first use.
+    Respects environment variables for API key and model configuration.
+    Falls back to deterministic enrichment if no API key is provided.
+    """
+    global _ai_enricher
+    if _ai_enricher is not None:
+        return _ai_enricher
+
+    api_key = os.environ.get("OPENAI_API_KEY")
+    model = os.environ.get("OPENAI_MODEL", "gpt-4-turbo")
+    provider = os.environ.get("AI_PROVIDER", "openai")
+    cache_dir = Path(os.environ.get("AI_CACHE_DIR", ".cache/ai_vendor_enricher"))
+    enable_cache = os.environ.get("AI_CACHE_ENABLED", "true").lower() == "true"
+
+    _ai_enricher = AIVendorEnricher(
+        api_key=api_key,
+        model=model,
+        provider=provider,
+        cache_dir=cache_dir,
+        enable_cache=enable_cache,
+        fallback_func=_deterministic_enrich_vendor_model,
+    )
+
+    if api_key:
+        logger.info(f"AI enricher initialized with {provider}/{model}")
+    else:
+        logger.info("AI enricher initialized in DETERMINISTIC_FALLBACK mode (no API key)")
+
+    return _ai_enricher
+
+
+def _deterministic_enrich_vendor_model(
+    input_raw: str,
+    vendor_hint: str,
+    model_hint: str,
+    version_hint: str,
+    reference_rules: Optional[List[ReferenceRule]] = None,
+) -> AIEnrichmentResult:
+    """
+    Original deterministic vendor/model enrichment.
+    Used as fallback when AI is unavailable.
+    """
+    reference_rules = reference_rules or []
+    ai_vendor_hint = vendor_hint
+    ai_model_hint = model_hint
+    ai_confidence = 0.0
+    ai_reason = "NO_AI_ACTION"
+    ai_source = "AGENT_VENDOR_MODEL"
+
+    input_norm = normalise_text(input_raw)
+    if ai_vendor_hint == "UNKNOWN":
+        for rule in reference_rules:
+            manufacturer_norm = normalise_text(rule.manufacturer)
+            if manufacturer_norm and manufacturer_norm in input_norm:
+                ai_vendor_hint = rule.manufacturer
+                ai_reason = "REFERENCE_MANUFACTURER_MATCH"
+                ai_source = rule.source_url
+                ai_confidence = 0.45
+                break
+
+    if ai_model_hint == "UNKNOWN" and ai_vendor_hint != "UNKNOWN":
+        candidate = strip_vendor_and_version(input_raw, ai_vendor_hint, version_hint)
+        if candidate != "UNKNOWN":
+            ai_model_hint = candidate
+            if ai_reason == "NO_AI_ACTION":
+                ai_reason = "MODEL_FROM_CLEANED_TEXT"
+            ai_confidence = max(ai_confidence, 0.55)
+            ai_source = ai_source or "AGENT_VENDOR_MODEL"
+
+    if ai_vendor_hint != "UNKNOWN" and ai_model_hint != "UNKNOWN":
+        ai_confidence = max(ai_confidence, 0.70)
+
+    return AIEnrichmentResult(
+        ai_vendor_hint=ai_vendor_hint,
+        ai_model_hint=ai_model_hint,
+        ai_confidence=ai_confidence,
+        ai_reason=ai_reason,
+        ai_source=ai_source,
+    )
+
+
+def ai_enrich_vendor_model(
+    input_raw: str,
+    vendor_hint: str,
+    model_hint: str,
+    version_hint: str,
+    reference_rules: Optional[List[ReferenceRule]] = None,
+) -> AIEnrichmentResult:
+    """
+    Enrich vendor/model using AI with deterministic fallback and audit controls.
+
+    This function uses the global AI enricher, which:
+    - Attempts LLM-based enrichment (if API key configured)
+    - Falls back to deterministic logic if LLM unavailable
+    - Caches results for determinism
+    - Records all decisions for auditability
+
+    All returned fields are supplemental and non-authoritative.
+    The canonical decision is made separately based on confidence thresholds.
+
+    Args:
+        input_raw: Raw hardware string
+        vendor_hint: Current vendor guess (from deterministic parse)
+        model_hint: Current model guess (from deterministic parse)
+        version_hint: Current version guess (from deterministic parse)
+        reference_rules: Reference rules (passed to fallback for context)
+
+    Returns:
+        AIEnrichmentResult with ai_* fields for audit and context
+    """
+    enricher = _init_ai_enricher()
+    result = enricher.enrich(
+        input_raw,
+        vendor_hint,
+        model_hint,
+        version_hint,
+        reference_rules,
+    )
+    return result
 
 
 def normalise_text(text: str) -> str:
@@ -397,6 +529,13 @@ def parse_row(
     version_hint = extract_version(input_raw)
     model_hint = strip_vendor_and_version(input_raw, vendor_hint, version_hint)
     confidence = score_confidence(vendor_hint, model_hint, version_hint)
+    ai_enrichment = ai_enrich_vendor_model(
+        input_raw,
+        vendor_hint,
+        model_hint,
+        version_hint,
+        reference_rules,
+    )
 
     # Manual overrides take top priority and are treated as fully trusted.
     override_rule = override_rules.get(normalised_raw)
@@ -425,6 +564,11 @@ def parse_row(
             "reason_code": action_info["reason_code"],
             "parse_applied": str(parse_applied),
             "output_value": model_hint,
+            "ai_vendor_hint": ai_enrichment.ai_vendor_hint,
+            "ai_model_hint": ai_enrichment.ai_model_hint,
+            "ai_confidence": f"{ai_enrichment.ai_confidence:.2f}",
+            "ai_reason": ai_enrichment.ai_reason,
+            "ai_source": ai_enrichment.ai_source,
         }
 
     reference_source = find_reference_source(vendor_hint, reference_rules, source_type='manufacturer')
@@ -488,4 +632,9 @@ def parse_row(
         "reason_code": action_info["reason_code"],
         "parse_applied": str(parse_applied),
         "output_value": model_hint if parse_applied else input_raw,
+        "ai_vendor_hint": ai_enrichment.ai_vendor_hint,
+        "ai_model_hint": ai_enrichment.ai_model_hint,
+        "ai_confidence": f"{ai_enrichment.ai_confidence:.2f}",
+        "ai_reason": ai_enrichment.ai_reason,
+        "ai_source": ai_enrichment.ai_source,
     }

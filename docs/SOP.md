@@ -30,6 +30,7 @@ with confidence scoring and auditability.
 - Clean string
 - Tokenise
 - Identify candidate vendor/model/version hints
+- Enrich vendor/model candidates with a deterministic AI-style agent and record supplemental `ai_*` metadata
 - If a manufacturer reference exists, fetch its `source_url` and search for the candidate model text to gather evidence (short quote) and source metadata
 
 ### Step 2 — Generate Candidates
@@ -48,6 +49,7 @@ with confidence scoring and auditability.
 ### Step 5 — Output Results
 - Persist results with audit fields
 - Record `source_url` and `evidence_quote` from the matched rule when using the external ruleset
+- Record supplemental AI-derived fields such as `ai_vendor_hint`, `ai_model_hint`, `ai_confidence`, `ai_reason`, and `ai_source` as non-authoritative enrichment metadata
 - When evidence is found on an external source, slightly boost the candidate confidence proportional to evidence quality and the configured source confidence
 
 Note: The previous standalone `reference_validator` utility has been removed; its responsibilities (fetching reference pages and checking model presence) are integrated into the parsing step and recorded in the output for auditability.

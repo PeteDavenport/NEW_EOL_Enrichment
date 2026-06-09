@@ -33,9 +33,14 @@ A structured dataset with:
 - reason_code
 - parse_applied
 - output_value
+- ai_vendor_hint
+- ai_model_hint
+- ai_confidence
+- ai_reason
+- ai_source
 
 The parser may use page evidence to improve inferred vendor/model/version hints before computing the final confidence.
-
+- The parser may also produce AI-derived vendor/model supplemental metadata in `ai_*` fields for audit and review.
 The pipeline also supports manual override rules via `data/input/override.csv`, which can enforce vendor/model/version values with maximum confidence for specific raw inputs.
 
 ## Key Requirement

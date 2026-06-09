@@ -10,6 +10,7 @@
 - Never overwrite input if confidence < 0.80
 - Always produce reason_code
 - Always include evidence if available
+- AI-derived fields are supplemental and must not replace the canonical parse decision
 
 ## 3. Confidence Components
 Final confidence is composed of:
