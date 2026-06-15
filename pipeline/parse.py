@@ -1,7 +1,6 @@
 import csv
 import json
 import re
-import os
 import logging
 from dataclasses import dataclass
 from pathlib import Path
@@ -14,7 +13,10 @@ except Exception:
 import urllib.request
 from html import unescape
 
-from ai_vendor_enricher import AIVendorEnricher, AIEnrichmentResult
+try:
+    from pipeline.ai_vendor_enricher import AIVendorEnricher, AIEnrichmentResult
+except Exception:
+    from ai_vendor_enricher import AIVendorEnricher, AIEnrichmentResult
 
 logger = logging.getLogger(__name__)
 
@@ -70,31 +72,19 @@ class OverrideRule:
 
 def _init_ai_enricher() -> AIVendorEnricher:
     """
-    Initialize the global AI enricher on first use using GitHub Copilot.
-    Respects environment variables for API key and model configuration.
-    Falls back to deterministic enrichment if no API key is provided.
+    Initialize the global enrichment helper on first use.
+    This project runs in no-runtime-API mode: enrichment is deterministic,
+    supplemental, and auditable.
     """
     global _ai_enricher
     if _ai_enricher is not None:
         return _ai_enricher
 
-    api_key = os.environ.get("COPILOT_API_KEY")
-    model = os.environ.get("COPILOT_MODEL", "gpt-4")
-    cache_dir = Path(os.environ.get("AI_CACHE_DIR", ".cache/ai_vendor_enricher"))
-    enable_cache = os.environ.get("AI_CACHE_ENABLED", "true").lower() == "true"
-
     _ai_enricher = AIVendorEnricher(
-        api_key=api_key,
-        model=model,
-        cache_dir=cache_dir,
-        enable_cache=enable_cache,
         fallback_func=_deterministic_enrich_vendor_model,
     )
 
-    if api_key:
-        logger.info(f"AI enricher initialized with GitHub Copilot/{model}")
-    else:
-        logger.info("AI enricher initialized in DETERMINISTIC_FALLBACK mode (no API key)")
+    logger.info("AI enricher initialized in deterministic supplemental mode")
 
     return _ai_enricher
 
@@ -157,13 +147,7 @@ def ai_enrich_vendor_model(
     reference_rules: Optional[List[ReferenceRule]] = None,
 ) -> AIEnrichmentResult:
     """
-    Enrich vendor/model using AI with deterministic fallback and audit controls.
-
-    This function uses the global AI enricher, which:
-    - Attempts LLM-based enrichment (if API key configured)
-    - Falls back to deterministic logic if LLM unavailable
-    - Caches results for determinism
-    - Records all decisions for auditability
+    Enrich vendor/model using deterministic supplemental logic and audit controls.
 
     All returned fields are supplemental and non-authoritative.
     The canonical decision is made separately based on confidence thresholds.
@@ -176,7 +160,7 @@ def ai_enrich_vendor_model(
         reference_rules: Reference rules (passed to fallback for context)
 
     Returns:
-        AIEnrichmentResult with ai_* fields for audit and context
+        AIEnrichmentResult with ai_* fields for audit and context.
     """
     enricher = _init_ai_enricher()
     result = enricher.enrich(
@@ -187,6 +171,49 @@ def ai_enrich_vendor_model(
         reference_rules,
     )
     return result
+
+
+def build_reviewer_triage(
+    action: str,
+    source_url: str,
+    evidence_quote: str,
+    vendor_hint: str,
+    model_hint: str,
+) -> Dict[str, str]:
+    has_evidence = bool(evidence_quote.strip()) and source_url not in {"", "LOCAL_RULESET"}
+    hints_known = vendor_hint != "UNKNOWN" and model_hint != "UNKNOWN"
+
+    if action == "APPLY_CHANGE":
+        return {
+            "review_required": "False",
+            "review_queue_status": "NOT_REQUIRED",
+            "review_recommendation": "NONE",
+            "review_gate": "NONE",
+            "review_decision_code": "NOT_REQUIRED",
+        }
+
+    if action == "SUGGEST_ONLY":
+        recommendation = "REVIEW_FOR_OVERRIDE" if has_evidence else "REVIEW_NEEDS_EVIDENCE"
+        return {
+            "review_required": "True",
+            "review_queue_status": "PENDING_REVIEW",
+            "review_recommendation": recommendation,
+            "review_gate": "DIRECT_MODEL_EVIDENCE_REQUIRED",
+            "review_decision_code": "REVIEW_PENDING",
+        }
+
+    # NO_CHANGE strict rule: reject by default unless evidence and naming consistency checks pass.
+    recommendation = "REJECT_BY_DEFAULT"
+    if has_evidence and hints_known:
+        recommendation = "STRICT_REVIEW_EXCEPTION_CANDIDATE"
+
+    return {
+        "review_required": "True",
+        "review_queue_status": "PENDING_REVIEW",
+        "review_recommendation": recommendation,
+        "review_gate": "EVIDENCE_AND_RULE_CONSISTENCY_REQUIRED",
+        "review_decision_code": "REVIEW_PENDING",
+    }
 
 
 def normalise_text(text: str) -> str:
@@ -567,6 +594,11 @@ def parse_row(
             "ai_confidence": f"{ai_enrichment.ai_confidence:.2f}",
             "ai_reason": ai_enrichment.ai_reason,
             "ai_source": ai_enrichment.ai_source,
+            "review_required": "False",
+            "review_queue_status": "NOT_REQUIRED",
+            "review_recommendation": "OVERRIDE_APPLIED",
+            "review_gate": "NONE",
+            "review_decision_code": "NOT_REQUIRED",
         }
 
     reference_source = find_reference_source(vendor_hint, reference_rules, source_type='manufacturer')
@@ -615,6 +647,13 @@ def parse_row(
 
     action_info = decision_action(confidence)
     parse_applied = action_info["action"] == "APPLY_CHANGE"
+    triage = build_reviewer_triage(
+        action_info["action"],
+        source_url,
+        evidence_quote,
+        vendor_hint,
+        model_hint,
+    )
 
     return {
         "input_raw": input_raw,
@@ -635,4 +674,9 @@ def parse_row(
         "ai_confidence": f"{ai_enrichment.ai_confidence:.2f}",
         "ai_reason": ai_enrichment.ai_reason,
         "ai_source": ai_enrichment.ai_source,
+        "review_required": triage["review_required"],
+        "review_queue_status": triage["review_queue_status"],
+        "review_recommendation": triage["review_recommendation"],
+        "review_gate": triage["review_gate"],
+        "review_decision_code": triage["review_decision_code"],
     }

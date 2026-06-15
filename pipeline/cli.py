@@ -2,7 +2,10 @@ import argparse
 import csv
 from pathlib import Path
 
-from pipeline.parse import load_override_rules, load_reference_rules, normalise_text, parse_row
+try:
+    from pipeline.parse import load_override_rules, load_reference_rules, normalise_text, parse_row
+except Exception:
+    from parse import load_override_rules, load_reference_rules, normalise_text, parse_row
 
 
 def load_input(path: Path) -> list[str]:
@@ -39,6 +42,11 @@ def write_output(path: Path, records: list[dict]) -> None:
         'ai_confidence',
         'ai_reason',
         'ai_source',
+        'review_required',
+        'review_queue_status',
+        'review_recommendation',
+        'review_gate',
+        'review_decision_code',
     ]
     with path.open('w', newline='', encoding='utf-8') as fh:
         writer = csv.DictWriter(fh, fieldnames=fieldnames)

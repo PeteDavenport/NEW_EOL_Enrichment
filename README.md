@@ -1,25 +1,23 @@
 # NEW_EOL_Enrichment
 
-**A deterministic, auditable hardware normalisation pipeline.**
+A deterministic, auditable hardware normalisation pipeline.
 
-This repository normalises raw hardware model strings into structured `vendor`, `model`, and `version` values with confidence scoring and full auditability.
-
----
+This repository normalises raw hardware model strings into structured vendor, model, and version values with confidence scoring and full auditability.
 
 ## Quick Start
 
-### 1. Deterministic-Only (No AI, No API Key Needed)
+### 1. Deterministic Parse
 ```bash
 python pipeline/cli.py --input data/input/input.csv --output data/output/parsed.csv
 ```
 
-### 2. With GitHub Copilot AI Enrichment (Requires Azure OpenAI Key)
+### 2. Deterministic Parse + Manual Review Queue
 ```bash
-export COPILOT_API_KEY="your-azure-openai-key"
 python pipeline/cli.py --input data/input/input.csv --output data/output/parsed.csv
 ```
+Then review rows where `action != APPLY_CHANGE` and promote approved fixes into `data/input/override.csv`.
 
-### 3. With Manual Overrides
+### 3. Deterministic Parse + Overrides
 ```bash
 python pipeline/cli.py \
   --input data/input/input.csv \
@@ -27,9 +25,8 @@ python pipeline/cli.py \
   --override-file data/input/override.csv
 ```
 
-### 4. Full Command (All Options)
+### 4. Full Command
 ```bash
-export COPILOT_API_KEY="your-azure-openai-key"
 python pipeline/cli.py \
   --input data/input/input.csv \
   --output data/output/parsed.csv \
@@ -37,173 +34,143 @@ python pipeline/cli.py \
   --override-file data/input/override.csv
 ```
 
----
+## Process Flow
 
-## Process Overview
-
+```text
+INPUT CSV
+  |
+  +--> Step 1: Deterministic Parse
+  |      - detect_vendor()
+  |      - extract_version()
+  |      - strip_vendor_and_version()
+  |
+  +--> Step 2: Supplemental Deterministic Enrichment
+  |      - generate ai_vendor_hint / ai_model_hint / ai_confidence
+  |      - ai_* fields are advisory only
+  |
+  +--> Step 3: Reference Evidence Validation
+  |      - fetch approved source_url
+  |      - extract evidence_quote
+  |      - apply bounded evidence boost
+  |
+  +--> Step 4: Decision Engine
+  |      - confidence >= 0.80 -> APPLY_CHANGE
+  |      - 0.50 to 0.79 -> SUGGEST_ONLY
+  |      - < 0.50 -> NO_CHANGE
+  |
+  +--> Step 5: Reviewer Triage (pending rows only)
+  |      - export rows with review_required=True
+  |      - reviewer sets reviewer_decision_code and reviewer_comment
+  |      - REVIEW_APPROVED_OVERRIDE requires non-empty reviewer_comment
+  |
+  +--> Step 6: Override Upsert + Re-run
+     - apply approved decisions into data/input/override.csv
+     - rerun parser for deterministic application
 ```
-Raw Input String
-        ↓
-[1] Deterministic Parse
-    - detect_vendor()
-    - extract_version()
-    - strip_vendor_and_version()
-        ↓
-[2] AI Enrichment (Optional)
-    - LLM call (if OPENAI_API_KEY set)
-    - Cache & fallback to deterministic
-        ↓
-[3] Reference Validation
-    - Fetch external source URL
-    - Extract evidence quote
-    - Boost confidence if match found
-        ↓
-[4] Score & Decide
-    - Calculate final confidence
-    - If confidence >= 0.80 → APPLY_CHANGE
-    - Otherwise → preserve original
-        ↓
-Structured Output (vendor, model, version, confidence, reason_code, ai_*, etc.)
-```
 
----
+## Deterministic Enrichment Model
 
-## AI Configuration
+The project uses a deterministic enrichment helper for supplemental fields.
 
-The pipeline integrates with **GitHub Copilot** (Azure OpenAI) for enhanced vendor/model detection, or can run in **deterministic-only mode** without any API calls.
+- No runtime API keys are required.
+- `ai_*` fields are advisory metadata only.
+- Canonical decisions remain rule-based and threshold-gated.
 
-### Setup GitHub Copilot
+## Operator Steps
 
-Create a `.env` file (copy from `.env.example`):
+1. Run deterministic parse.
 
 ```bash
-# GitHub Copilot API key (required for AI mode; optional for deterministic-only mode)
-COPILOT_API_KEY=your-azure-openai-key
-
-# Model to use (default: gpt-4)
-COPILOT_MODEL=gpt-4
-
-# Optional Azure OpenAI settings
-# OPENAI_API_BASE=https://your-resource.openai.azure.com/
-# OPENAI_API_VERSION=2023-05-15
-
-# Optional: Cache settings
-AI_CACHE_DIR=.cache/ai_vendor_enricher
-AI_CACHE_ENABLED=true
+python -m pipeline.cli --input data/input/input.csv --output data/output/parsed.csv
 ```
 
-**No API key?** The pipeline automatically falls back to deterministic mode (no LLM calls, fast, still accurate).
+2. Export pending review queue.
 
-See [docs/AI_INTEGRATION.md](docs/AI_INTEGRATION.md) for detailed setup & troubleshooting.
+```bash
+python -m pipeline.review_queue export-pending \
+  --parsed-file data/output/parsed.csv \
+  --output-file data/output/review_queue.csv
+```
 
----
+3. Reviewer updates `data/output/review_queue.csv`.
+- Set `reviewer_decision_code`.
+- Add `reviewer_comment` for all approved overrides.
+- Optional: set `approved_vendor_hint`, `approved_model_hint`, `approved_version_hint` to override parser hints.
 
-## File Reference
+4. Apply reviewer decisions to override rules.
 
-### Configuration & Execution
-| File | Purpose |
-|------|---------|
-| `pipeline/cli.py` | Command-line entry point; handles arguments and orchestrates pipeline |
-| `pipeline/parse.py` | Core parsing logic; vendor/model/version detection + scoring |
-| `pipeline/ai_vendor_enricher.py` | **NEW:** LLM integration with caching & fallback |
-| `.env.example` | **NEW:** Environment variable template (copy to `.env`) |
+```bash
+python -m pipeline.review_queue apply-decisions \
+  --review-file data/output/review_queue.csv \
+  --override-file data/input/override.csv
+```
 
-### Data
-| Directory | Purpose |
-|-----------|---------|
-| `data/input/input.csv` | Raw hardware strings to parse |
-| `data/input/override.csv` | Manual overrides (optional; matched before parsing) |
-| `data/reference/hardware_reference_rules.csv` | External sources: manufacturer URLs for validation |
-| `data/output/parsed.csv` | Output: parsed vendor/model/version + confidence scores |
+5. Re-run parser with overrides.
 
-### Documentation
-| File | Purpose |
-|------|---------|
-| `docs/SOP.md` | Standard Operating Procedure (5-step process) |
-| `docs/decisions_rules.md` | Confidence thresholds & decision rules |
-| `docs/project_idea.md` | Original project requirements |
-| `docs/AI_INTEGRATION.md` | **NEW:** AI setup guide & troubleshooting |
-| `docs/AI_ARCHITECTURE.md` | **NEW:** Technical architecture & audit trail |
-| `AI_IMPLEMENTATION.md` | **NEW:** Summary of AI integration |
-| `IMPLEMENTATION_CHECKLIST.md` | **NEW:** Deployment verification |
+```bash
+python -m pipeline.cli \
+  --input data/input/input.csv \
+  --output data/output/parsed.csv \
+  --override-file data/input/override.csv
+```
 
-### Tests
-| File | Purpose |
-|------|---------|
-| `tests/test_ai_enrichment.py` | **NEW:** AI enrichment test suite |
+6. Optional validation pass before writing overrides.
 
----
+```bash
+python -m pipeline.review_queue apply-decisions \
+  --review-file data/output/review_queue.csv \
+  --override-file data/input/override.csv \
+  --dry-run
+```
 
-## How It Works: Step by Step
+### Review Queue Utility
 
-### Step 1: Parse Input
-- Clean and tokenize raw string
-- Detect vendor (match against known aliases)
-- Extract version (regex patterns)
-- Strip vendor/version from remainder → model hint
+Use the commands in **Operator Steps** for export and apply.
+This section defines reviewer decisions and safeguards only.
 
-### Step 2: AI Enrichment (Optional)
-- If `OPENAI_API_KEY` set: Call GPT-4-turbo with structured prompt
-- Check cache first (fast, deterministic)
-- Fall back to deterministic logic if LLM unavailable
-- Record `ai_vendor_hint`, `ai_model_hint`, `ai_confidence`, `ai_reason`, `ai_source` for audit
+Allowed reviewer decision codes:
 
-### Step 3: Reference Validation
-- Look up manufacturer in `data/reference/hardware_reference_rules.csv`
-- Fetch external source URL (webpage)
-- Search for model string on page
-- Extract evidence quote if match found
-- Boost confidence if evidence quality high
+- `REVIEW_APPROVED_OVERRIDE`
+- `REVIEW_REJECTED_INSUFFICIENT_EVIDENCE`
+- `REVIEW_REJECTED_RULE_CONFLICT`
+- `REVIEW_UNKNOWN`
 
-### Step 4: Score & Decide
-- Combine vendor/model/version confidence scores
-- Apply evidence boost if applicable
-- Calculate final confidence (0.0–1.0)
-- If confidence >= 0.80 → APPLY_CHANGE (overwrite original)
-- Otherwise → NO_CHANGE (preserve original)
+Safeguard:
 
-### Step 5: Output Results
-- CSV with all audit fields:
-  - `input_raw`: original string
-  - `vendor_hint`, `model_hint`, `version_hint`: parsed values
-  - `confidence`: final confidence score (0.0–1.0)
-  - `reason_code`: why decision was made (CONFIDENCE_HIGH, CONFIDENCE_LOW, etc.)
-  - `source_url`: where evidence came from (if any)
-  - `evidence_quote`: snippet from source page (if any)
-  - `ai_vendor_hint`, `ai_model_hint`, `ai_confidence`, `ai_reason`, `ai_source`: AI audit fields
-  - `output_value`: final normalized value (or original if not applied)
+- `REVIEW_APPROVED_OVERRIDE` fails apply-decisions when `reviewer_comment` is blank.
 
----
+## Output Fields
+
+- `input_raw`
+- `vendor_hint`, `model_hint`, `version_hint`
+- `confidence`, `action`, `reason_code`
+- `source_url`, `evidence_quote`, `third_party_result`
+- `ai_vendor_hint`, `ai_model_hint`, `ai_confidence`, `ai_reason`, `ai_source`
+- `review_required`, `review_queue_status`, `review_recommendation`, `review_gate`, `review_decision_code`
+- `output_value`
 
 ## Examples
 
-### Example 1: Simple Parse (No References, No AI)
+### Example 1: Deterministic Parse
 ```bash
 python pipeline/cli.py --input data/input/input.csv --output data/output/parsed.csv
 ```
 
-Input: `"Dell PowerEdge R750 Gen13"`  
-Output:
-```csv
-input_raw,vendor_hint,model_hint,version_hint,confidence,reason_code,source_url,evidence_quote,output_value
-"Dell PowerEdge R750 Gen13","Dell","R750","Gen13","0.95","CONFIDENCE_HIGH","LOCAL_RULESET","","R750"
-```
-
-### Example 2: With AI Enrichment
+### Example 2: Review Candidate Rows
 ```bash
-export OPENAI_API_KEY="sk-..."
-python pipeline/cli.py --input data/input/input.csv --output data/output/parsed.csv
+python - <<'PY'
+import csv
+from pathlib import Path
+p = Path('data/output/parsed.csv')
+with p.open(newline='', encoding='utf-8') as fh:
+    rows = list(csv.DictReader(fh))
+for r in rows:
+    if r.get('action') != 'APPLY_CHANGE':
+        print(r.get('input_raw'), r.get('action'), r.get('confidence'))
+PY
 ```
 
-Same input; additional AI audit fields:
-```csv
-ai_vendor_hint,ai_model_hint,ai_confidence,ai_reason,ai_source
-"Dell","R750","0.95","PARSE_SUCCESS","LLM_OPENAI"
-```
-
-(Second run uses cache, shows `ai_source: CACHE`)
-
-### Example 3: With Manual Override
+### Example 3: Apply Manual Overrides
 ```bash
 python pipeline/cli.py \
   --input data/input/input.csv \
@@ -211,83 +178,40 @@ python pipeline/cli.py \
   --override-file data/input/override.csv
 ```
 
-If `override.csv` contains:
-```csv
-input_raw,vendor_hint,model_hint,version_hint,comment
-"Dell PowerEdge R750 Gen13","Dell","PowerEdge R750","Gen13","Manual correction"
-```
-
-Output will use override values with `source_url: OVERRIDE_RULESET` and `confidence: 1.00`.
-
----
-
 ## Environment Variables
 
-| Variable | Default | Purpose |
-|----------|---------|---------|
-| `OPENAI_API_KEY` | (none) | OpenAI API key; if set, enables AI enrichment |
-| `OPENAI_MODEL` | `gpt-4-turbo` | Which GPT model to use |
-| `AI_CACHE_DIR` | `.cache/ai_vendor_enricher` | Where to store LLM result cache |
-| `AI_CACHE_ENABLED` | `true` | Enable/disable result caching |
-| `AI_PROVIDER` | `openai` | LLM provider (currently: openai) |
+No runtime model API variables are required for supported operation.
 
-### Setup Example
-```bash
-cp .env.example .env
-# Edit .env and add your OpenAI API key
-export OPENAI_API_KEY="sk-..."
-python pipeline/cli.py --input data/input/input.csv --output data/output/parsed.csv
-```
+Optional local settings:
 
----
+- `AI_CACHE_DIR` (if cache is used by deterministic enrichment helper)
+- `AI_CACHE_ENABLED`
 
 ## Key Features
 
-✅ **Deterministic**: Same inputs always produce same outputs (cache + fixed temperature)  
-✅ **Auditable**: Full audit trail in every record (confidence, reason_code, ai_* fields)  
-✅ **No Hallucination**: Uses only approved sources; returns UNKNOWN when unsure  
-✅ **AI-Optional**: Works without OpenAI key (deterministic fallback)  
-✅ **Cached**: Results cached by input hash; fast repeat processing  
-✅ **Reference-Aware**: Validates against external manufacturer sources  
-✅ **Overridable**: Manual corrections via CSV file  
-✅ **Backward-Compatible**: Existing logic unchanged; AI is supplemental  
-
----
+- Deterministic: same inputs and rules yield same outputs.
+- Auditable: full trace via confidence, reason_code, evidence, and ai_* fields.
+- No hallucination: UNKNOWN is used when evidence is insufficient.
+- Review-first: low-confidence rows move to manual review.
+- Override-driven improvement: approved corrections become reusable rules.
 
 ## Compliance
 
-- ✅ [docs/SOP.md](docs/SOP.md) — 5-step standard operating procedure
-- ✅ [docs/decisions_rules.md](docs/decisions_rules.md) — Confidence thresholds (>= 0.80 to apply)
-- ✅ [docs/project_idea.md](docs/project_idea.md) — Original requirements
-
----
+- `docs/SOP.md` - 5-step standard operating procedure
+- `docs/decisions_rules.md` - confidence thresholds and decision rules
+- `docs/project_idea.md` - original requirements
 
 ## Troubleshooting
 
-### LLM Timeout or Connection Error
-The pipeline falls back to deterministic parsing automatically. Check `ai_source` field in output to confirm.
+### Missing optional enrichment module behavior
+Pipeline continues using deterministic parse logic; inspect `ai_source` and `ai_reason`.
 
-### "ModuleNotFoundError: No module named 'openai'"
-Install: `pip install openai>=1.0.0`  
-Or run in deterministic-only mode (don't set `OPENAI_API_KEY`).
-
-### Cache Corruption
-Delete `.cache/ai_vendor_enricher/` and re-run. Results will be recomputed and cached.
-
-### How to Run Deterministically (No AI)
-Don't set `OPENAI_API_KEY`:
-```bash
-unset OPENAI_API_KEY
-python pipeline/cli.py --input data/input/input.csv --output data/output/parsed.csv
-```
-
-Output will show `ai_source: DETERMINISTIC_FALLBACK` for all records.
-
----
+### How to run without any enrichment helper behavior
+Run the CLI normally and rely on canonical fields and evidence-based scoring.
 
 ## Further Reading
 
-- **Getting Started**: [docs/AI_INTEGRATION.md](docs/AI_INTEGRATION.md)
-- **Architecture**: [docs/AI_ARCHITECTURE.md](docs/AI_ARCHITECTURE.md)
-- **Implementation Details**: [AI_IMPLEMENTATION.md](AI_IMPLEMENTATION.md)
-- **Deployment Checklist**: [IMPLEMENTATION_CHECKLIST.md](IMPLEMENTATION_CHECKLIST.md)
+- `docs/AI_INTEGRATION.md`
+- `docs/AI_ARCHITECTURE.md`
+- `AI_IMPLEMENTATION.md`
+- `IMPLEMENTATION_CHECKLIST.md`

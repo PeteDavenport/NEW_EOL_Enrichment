@@ -63,3 +63,33 @@ Note: The previous standalone `reference_validator` utility has been removed; it
 - Must be deterministic
 - Must be auditable
 - Must not hallucinate
+
+## 8. Reviewer SOP — Triage Playbook
+
+### Scope
+- Apply this playbook only to rows where `action` is `SUGGEST_ONLY` or `NO_CHANGE`.
+- `APPLY_CHANGE` rows do not require manual triage unless flagged by QA.
+
+### Required Checks (in order)
+1. Verify `input_raw` is complete and not truncated.
+2. Verify `vendor_hint` and `model_hint` against approved source evidence.
+3. Confirm `source_url` is valid and `evidence_quote` supports the proposed value.
+4. Review `ai_*` fields as supplemental context only.
+5. Confirm proposed change does not violate known aliases or override policy.
+
+### Triage Rules
+1. `SUGGEST_ONLY`:
+  - Approve into override when evidence is clear and specific.
+  - Otherwise keep original value and mark for follow-up.
+2. `NO_CHANGE`:
+  - Do not overwrite by default.
+  - Only approve override when two independent checks agree: source evidence and internal naming rules.
+
+### Reviewer Output Actions
+1. If approved: add row to `data/input/override.csv` with a short `comment` citing evidence.
+2. If rejected: keep original output and log reason as `REVIEW_REJECTED_INSUFFICIENT_EVIDENCE`.
+3. If unknown: log `REVIEW_UNKNOWN` and leave canonical fields unchanged.
+
+### Audit Requirements
+- Every manual approval must include evidence notes in override `comment`.
+- Reviewer decisions must be reproducible from saved source and quoted text.
